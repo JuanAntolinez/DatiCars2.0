@@ -1,0 +1,139 @@
+		/*GENERALES*/
+		
+		*{
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		}
+		
+
+
+		body{
+			background: url(banner.jpg);
+			background-repeat: no-repeat; 
+			background-size: 100% 720px;
+		}
+
+		.container{
+			width: 450px;
+			height: 350px;
+			text-align: center;
+			background-color: #a4e31e;
+			border-radius: 4px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		.container img{
+			width: 200px;
+			height: 80px;
+			margin-top: -50px;
+			margin-bottom: 30px;
+		}
+
+		.Titulo{
+			color: #040D3B;
+			text-align: center;
+		}
+
+		.input-100{
+			width: 100%;
+		}
+
+		input{
+			margin-bottom: 15px;
+			padding: 15px;
+			
+		}
+
+		.container-input{
+			padding: 10px 20px;
+			display: flex;
+			flex-wrap: wrap;
+			
+		}
+		
+		.container-input-texto{
+			padding: 15px 20px;
+			display: flex;
+			flex-wrap: wrap;
+			
+		}
+
+		.btn-recuperar{
+			padding: 15px 30px;
+			cursor: pointer;
+			border-radius: 4px;
+			border: none;
+			color: #fff;
+			background-color: #040D3B;
+			margin: auto; 
+		} 
+		
+	
+		.btn-recuperar:hover{
+			color: #fff;
+			background-color: #110DEC;
+			margin: auto;
+		}
+
+		.btn-recuperar:active{
+			color: #fff;
+			background-color: #110DEC;
+			margin: auto;
+		}
+		
+		
+		.btn-atrás{
+			padding: 15px 30px;
+			cursor: pointer;
+			border-radius: 4px;
+			border: none;
+			color: #fff;
+			background-color: #040D3B;
+			margin: auto; 
+		} 
+		.btn-atrás:hover{
+			color: #fff;
+			background-color: #110DEC;
+			margin: auto;
+		}
+			.btn-atrás:active{
+			color: #fff;
+			background-color: #110DEC;
+			margin: auto;
+		}
+		
+		
+		/* ------ PIE DE PAGINA ------ */
+
+		footer{
+		  background: #040D3B;
+		  padding: 20px 0;
+		  text-align: center;
+		  margin-top: 55px;
+		}
+		
+		footer .copy{
+		  color: #fff;
+		  font-size: 0.9rem;
+		  font-weight: 400;
+		  margin-bottom: 15px;
+		}
+		
+		footer .footer-redes a{
+		  display: inline-block;
+		  padding: 0 10px;
+		  color: #040D3B;
+		  text-decoration: none;
+		  font-weight: 500;
+		  font-size: 0.875rem;
+		  letter-spacing: 0;
+		  line-height: 1.5em;
+		  transition: all .3s ease;
+		}
+		
+		footer .footer-redes a:hover{
+		  color: #fff;
+		}
+

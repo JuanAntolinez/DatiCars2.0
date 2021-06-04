@@ -1,0 +1,576 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta lang = "esp">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>DatiCars</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <!-- Boton "Volver Arriba" -->
+    <div class="btn-volver-arriba" id="btnVolverArriba">
+      <a href="#" class="volver-arriba">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+      <!-- Versión móvil -->
+      <div class="menu-mobile">
+        <div class="barra">
+          <a href="#" class="logo">
+            <img src="img/logotipo.png" alt="Logo Daticars - DatiCars">
+          </a>
+          <a href="#" id="btnMenu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
+        <nav class="menu-principal">
+          <a href="#" class="volver-arriba">INICIO</a>
+          <a href="#acercaDe" class="scroll-acercaDe">NUESTROS SERVICIOS</a>
+          <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+          <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
+          <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
+          <a href="#contacto" class="scroll-suave">CONTACTO</a>
+        </nav>
+      </div>
+
+      <!-- Versión escritorio -->
+      <div class="menu-bar-pc">
+
+        <a href="#" class="logo">
+          <img src="img/logotipo.png" alt="Logo Daticars - DatiCars">
+        </a>
+
+        <nav class="menu-principal">
+          <a href="#" class="volver-arriba">INICIO</a>
+          <a href="#proyectos" class="scroll-suave">NUESTROS SERVICIOS</a>
+          <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+          <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
+          <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
+          <a href="#contacto" class="scroll-suave">CONTACTO</a>
+        </nav>
+
+        <div class="top-redes">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="fixed-header" id="fixedHeader">
+      <a href="#"  class="logo">
+        <img src="img/logotipo.png" alt="logotipoDaticars - Daticars">
+      </a>
+      <nav class="menu-principal">
+        <a href="#" class="volver-arriba">INICIO</a>
+        <a href="#proyectos" class="scroll-suave">NUESTROS SERVICIOS</a>
+        <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+        <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
+        <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
+        <a href="#contacto" class="scroll-suave">CONTACTO</a>
+      </nav>
+      <div class="top-redes">
+        <a href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <section class="main">
+
+
+      <!-- Banner Principal MODAL LOGIN-->
+
+      <section class="banner-principal">
+        <div class="banner" id="banner"></div>
+        <div class="texto-banner">
+          <h2>¡Todo para ti y tu vehículo!</h2>
+          <h1>DatiCars</h1>
+          <button onclick="location.href='#openModal'">INICIO DE SESIÓN</button>
+          <button onclick="location.href='#openModalRegistro'">REGISTRARSE</button>
+       
+
+<!-- MODAL LOGIN-->
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    
+    <!-- login -->
+    
+    <div class="login-box">
+    
+    
+		<form action="usuario" method="post">
+		
+		<div class="con">
+
+   <div class="head-form">
+    <br>
+      <h2>Iniciar Sesión</h2>
+      <!--     bienvenida  -->
+      <p>Inicie sesión aquí­ con su email y contraseña</p>
+      <br>
+   </div>
+   
+   <div id="Mensaje"> 
+   
+        <%
+      	if (request.getAttribute("mensaje")!=null){
+      		out.println(request.getAttribute("mensaje"));
+      	    
+      	}
+        %>
+        
+   </div>
+   
+   <br>
+   <div class="field-set">
+     
+     
+      <!--   email -->
+         <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <!--   email Input-->
+         <input class="form-input" id="txt-input" type="text" name="email" placeholder="E-mail" required>
+      <br>
+         
+         
+      
+      
+           <!--   contraseña -->
+           
+     
+      <span class="input-item">
+        <i class="fa fa-key"></i>
+       </span>
+      <!--   contraseña Input-->
+      <input class="form-input" type="password" placeholder="password" id="pwd"  name="contraseña" required>
+     
+     
+     
+<!--      Show/hide contraseña ver  -->
+     <span>
+        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+     </span>
+      <br>
+      
+      
+      
+<!--        buttons -->
+<!--      button iniciar sesión -->
+		<td colspan="2"><button class="log-in">iniciar sesion</button></td>
+
+
+  				 </div>
+ 
+       		 </div>
+			
+		</form>
+		
+		
+	</div>
+	
+	
+	<!--     olvide mi contraseña  -->
+      
+        <a href="olvidemiContraseña.jsp">¿Olvidaste tu contraseña?</a> 
+        
+        
+        
+  </div>
+  <div>
+  
+  </div>
+  
+  
+</div>
+
+<!-- cierre login -->
+
+<!-- CIERRE MODAL LOGIN-->
+
+
+<!-- MODAL REGISTRO-->
+        <div id="openModalRegistro" class="modalDialogRegistro">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+              <div class="overlay">
+
+<!-- Registro-->
+
+<form action = "ServletRegistroUsuario" method = "post" >
+   
+   <div class="con">
+   
+   <div class="head-form">
+    <br>
+      <h2>Regístrate </h2>
+      <!--     Bienvenida -->
+      <p>Ingresa tus datos y se parte de esta gran familia.</p>
+      <br>
+      <br>
+      
+    
+      
+      <%
+      	if (request.getAttribute("mensaje")!=null){
+      		out.println(request.getAttribute("mensaje"));
+      	    
+      	}
+      %>
+     
+      
+      <br>
+   </div>
+
+   <br>
+   <div class="field-set">
+     
+      <!--   usuario -->
+         <span class="input-item-Registro">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <!--   usuario Input-->
+         <input class="form-input-Registro" id="txt-input" type="text" name= "user" placeholder="@pepito03" required>
+         
+      <br>
+
+      <!--   Nombre -->
+         <span class="input-item-Registro">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <!--   Nombre Input-->
+         <input class="form-input-Registro" id="txt-input" type="text" name = "nombre" placeholder="Nombre" required>
+      <br>
+       <!--   Apellido -->
+         <span class="input-item-Registro">
+           <i class="fa fa-user-circle"></i>
+         </span>
+        <!--   Apellido Input-->
+         <input class="form-input-Registro" id="txt-input" type="text" name = "apellido" placeholder="Apellido" required>
+      <br>
+
+       <!--   Email -->
+         <span class="input-item-Registro">
+           <i class="fa fa-fas fa-envelope"></i>
+         </span>
+        <!--   Email Input-->
+         <input class="form-input-Registro" id="txt-input" type="text" name = "email" placeholder="E-mail" required>
+      <br>
+
+
+             <!--  Confirmar  Email -->
+         <span class="input-item-Registro">
+           <i class="fa fa-fas fa-envelope"></i>
+         </span>
+        <!--  confirmar Email Input-->
+         <input class="form-input-Registro" id="txt-input" type="text" name = "confirmar_email " placeholder="Confirmar E-mail" required>
+      <br>
+
+           <!--   Contrasñea -->
+     
+      <span class="input-item-Registro">
+        <i class="fa fa-key"></i>
+       </span>
+      <!--   Contraseña Input-->
+      <input class="form-input-Registro" type="password" placeholder="Contraseña" id="pwd"  name="contraseña" required>
+     
+<!--      Show/hide Contraseña  -->
+     <span>
+        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
+     </span>
+      <br>
+
+       <!--  Confirmar Contrasñea -->
+     
+      <span class="input-item-Registro">
+        <i class="fa fa-key"></i>
+       </span>
+      <!--  Confirmar Contraseña Input-->
+      <input class="form-input-Registro" type="password" placeholder="Confirmar Contraseña" id="pwd"  name="confirmar_contraseña" required>
+
+<!--      Show/hide Confirmar Contraseña  -->
+     <span>
+        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
+     </span>
+      <br>
+    
+    
+<br>
+    <input style="opacity:1;" type="checkbox" data-required="1" name="terminos"><p style="color:black;padding-left:20px;">Aceptar los <a style="color:blue;" href="TerminosyCondiciones.jsp">Términos y Condiciones</a></p>  
+    
+   
+
+
+<!--        buttons -->
+<!--      button Registro -->
+     
+      <td colspan="2"><button class="log-in">Regístrate</button></td>
+   </div>
+  </div>
+</form>
+</div>
+         
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+<!--CIERRE MODAL REGISTRO-->
+
+
+
+      <!-- Proyectos -->
+      <section class="proyectos" id="proyectos">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Nuestros Servicios</h2>
+          </div>
+          <div class="galeria-proyectos">
+            <div class="proyecto">
+              <img src="img/proyecto1.png" alt="Proyecto" >
+              <p><center><br>Centros de diagnostico automotriz</center></p>
+            </div>
+            <div class="proyecto">
+              <img src="img/proyecto2.jpg" alt="Proyecto" >
+              <p><center><br>Estación de servicio</center></p><br>
+            </div>
+            <div class="proyecto">
+              <img src="img/proyecto3.jpg" alt="Proyecto" >
+              <p><center><br>Restaurantes</center></p>
+            </div>
+          </div>
+          <a href="http://localhost:8080/DatiCarsProyecto/index.jsp#openModal"><center><p><h3>Para acceder a nuestros servicios debe iniciar sesión.</h3></p></center></a>
+           
+        </div>
+      </section>
+
+      <!-- Acerca de -->
+      <section class="acerca-de" id="acercaDe">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Acerca de</h2>
+            <p>Conoce más sobre nosotros, lo que hacemos y como lo hacemos</p>
+          </div>
+          <div class="texto-acerca-de">
+            <p>Somos un grupo de estudiantes del SENA, el cual diseñamos este sistema de informacion, para que todos los conductores de la ciudad puedan encontrar todos sus sitios de interes que permita tener información clara, optima y concisa con todo lo relacionado a su vehiculo con el fin de optimizar tiempos de búsqueda y no afectar su jornada laboral.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slider -->
+      <section class="contenedor-slider">
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img src="img/slide1.jpg" alt="Slide">
+          </div>
+          <div class="slide">
+            <img src="img/slide2.jpg" alt="Slide">
+          </div>
+          <div class="slide">
+            <img src="img/slide3.jpg" alt="Slide">
+          </div>
+          <div class="slide">
+            <img src="img/slide4.jpg" alt="Slide">
+          </div>
+        </div>
+        <div class="btn-anterior" id="btnAnterior">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <div class="btn-siguiente" id="btnSiguiente">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </section>
+
+      <!-- Nuestro equipo -->
+      <section class="nuestro-equipo" id="equipo">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Nuestro equipo</h2>
+            <p>Estudiantes del SENA apasionados por lo que hacen.</p>
+          </div>
+          <div class="equipo">
+            <div class="persona-equipo">
+              <div class="foto">
+                <img src="img/foto1.jpg" alt="Persona">
+              </div>
+              <div class="texto">
+                <h3>Over Felipe Orejuela Castro</h3>
+                <h4>Analista y desarrollador de sistemas de información</h4>
+                <p>Estudiante de quinto trimestre de analisis y desarrollo de sistemas de informacion en el servicio nacional de aprendizaje SENA.</p>
+              </div>
+            </div>
+
+            <div class="persona-equipo">
+              <div class="foto">
+                <img src="img/foto2.jpg" alt="Persona">
+              </div>
+              <div class="texto">
+                <h3>Nancy Carolina Flechas</h3>
+                <h4>Analista y desarrollador de sistemas de información</h4>
+                <p>Estudiante de quinto trimestre de analisis y desarrollo de sistemas de informacion en el servicio nacional de aprendizaje SENA.</p>
+              </div>
+            </div>
+
+            <div class="persona-equipo">
+              <div class="foto">
+                <img src="img/foto3.jpg" alt="Persona">
+              </div>
+              <div class="texto">
+                <h3>Juan Gabriel Antolinez Galarza</h3>
+                <h4>Analista y desarrollador de sistemas de información</h4>
+                <p>Estudiante de quinto trimestre de analisis y desarrollo de sistemas de informacion en el servicio nacional de aprendizaje SENA.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion InformaciÃ³n extra -->
+      <section class="info-extra" id="extra">
+        <div class="contenedor">
+          <div class="info">
+
+            <div class="contenido-info">
+              
+              <div class="texto-info">
+                <h4>MISIÓN</h4>
+                <p>Mejorar por medio de la tecnología el trabajo diario de los conductores, satisfaciendo sus necesidades, con el fin de mejorar su calidad laboral.</p>
+              </div>
+            </div>
+
+            <div class="contenido-info">
+              
+              <div class="texto-info">
+                <h4>VISIÓN</h4>
+                <p>En el año 2030 seremos reconocidos como una de las mejores compañias de sistema de información para conductores de servicio público.</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <div class="contacto" id="contacto" data-parallax="scroll" data-image-src="img/bg-contacto.jpg">
+        <div class="contenedor">
+          <div class="contenedor-formulario">
+            <div class="formulario" id="formulario">
+              <h2>Contáctate con nosotros</h2>
+              <p>Ingresa tus datos personales y cuentanos en que te podemos ayudar.</p>
+              <form>
+                <div>
+                  <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                  <p class="error">Por favor escribe tu nombre</p>
+                </div>
+                <div>
+                  <input type="email" name="email" placeholder="Correo electrónico" id="email">
+                  <p class="error">Por favor escribe tu correo</p>
+                </div>
+                <div>
+                  <textarea name="mensaje" placeholder="Cuéntanos tu experiencia" id="mensaje"></textarea>
+                  <p class="error">Por favor escribe tu mensaje</p>
+                </div>
+                <div>
+                  <input type="submit" name="enviar" value="Enviar">
+                </div>
+              </form>
+            </div>
+
+            <div class="foto">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <div class="copy">
+        <p>Todos los derechos reservados</p>
+      </div>
+      <div class="footer-redes">
+        <a href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/banner.js"></script> -->
+    <script src="js/stickyHeader.js"></script>
+    <script src="js/scrollSuave.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- <script src="js/bgParallax.js"></script> -->
+    <script src="js/validacion.js"></script>
+    <script src="js/menuMobile.js"></script>
+
+
+    <script src="js/parallax.min.js"></script>
+    <!-- Buscar:
+    t(e).on("ready.px.parallax.data-api",function(){t('[data-parallax="scroll"]').parallax()})}
+
+    Reemplazar por:
+    t(function(){t('[data-parallax="scroll"]').parallax()})} -->
+    <script src="js/prefixfree.min.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function () {
+			    //Disable full page
+			    $('body').bind('cut copy paste', function (e) {
+			        e.preventDefault();
+			    });
+			    
+			    //Disable part of page
+			    $('#id').bind('cut copy paste', function (e) {
+			        e.preventDefault();
+			    });
+			    
+			   <% if (request.getAttribute("mensaje")!=null){ %>
+			   
+			   $('#openModal').modal('show');
+		      	    
+		      <%	} %>
+			});
+			
+			
+			
+			
+</script>
+
+  </body>
+</html>    
