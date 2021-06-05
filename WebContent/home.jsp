@@ -129,8 +129,9 @@
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </section>
-     
-      <!-- Proyectos -->
+      
+
+             <!-- Proyectos -->
       <section class="proyectos" id="proyectos">
         <div class="contenedor">
           <div class="titulo-seccion">
@@ -139,413 +140,149 @@
           </div>
           <div class="galeria-proyectos">
 
-            <!-- Estaciones de servicio -->
+          
 
+                <p>¡Tan solo a un clic tu sitio de interés!</p><br>
+                <a href="#EDS">Estaciones de Servicio </a><br>
+				<a href="#RES">Restaurantes </a><br>
+			    <a href="#CDA">Centro de disagnostico automotriz(CDA) </a></<br>
+	     
+	        
+	        
+	        <!-- Estaciones de servicio -->
+            
+             <h2 id ="EDS"></h2><br>
+             
+             
+             
             <div class="proyecto">
-              <img src="img/petrobras-avesperanza.png" alt="Proyecto">
-              <p><br>Nombre: EDS Petrobras<br>Direccion: calle 24a # 59-59 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <br><img src="img/petrobras-avesperanza.png" alt="Proyecto">
+              <p><br>Nombre: EDS Petrobras<br>Dirección: calle 24a # 59-59 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
             </div>
 
             <div class="proyecto">
-              <img src="img/petrobras-ak50.png" alt="Proyecto">
-              <p><br>Nombre: EDS Petrobras<br>Direccion: ak 50 #42 - 19 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio2" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radi1">★</label><!--
-                    --><input id="radi2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radi2">★</label><!--
-                    --><input id="radi3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radi3">★</label><!--
-                    --><input id="radi4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radi4">★</label><!--
-                    --><input id="radi5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radi5">★</label>
-                  </p>
-              </form>
+              <br><img src="img/petrobras-ak50.png" alt="Proyecto">
+              <p><br>Nombre: EDS Petrobras<br>Dirección: ak 50 #42 - 19 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
             </div>
 
             <div class="proyecto">
-              <img src="img/terpel-ak30.png" alt="Proyecto">
-              <p><br>Nombre: EDS terpel<br>Direccion: calle 71 #29B - 30 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <br><img src="img/terpel-ak30.png" alt="Proyecto">
+              <p><br>Nombre: EDS terpel<br>Dirección: calle 71 #29B - 30 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/esso.jpg" alt="Proyecto">
-              <p><br>Nombre: ESSO Los Andes<br>Direccion: avenida calle 68 # 38b-18 Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 3798000<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: ESSO Los Andes<br>Dirección: avenida calle 68 # 38b-18 Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 3798000<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/biomaxalqueria.jpg" alt="Proyecto">
-              <p><br>Nombre: Biomax alquería<br>Direccion: carrera 80 # 58l-15 sur Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 7823344<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Biomax alquería<br>Dirección: carrera 80 # 58l-15 sur Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 7823344<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/biomaxargelia.jpg" alt="Proyecto">
-              <p><br>Nombre: Biomax argelia<br>Direccion: carrera 72f # 39-07 sur Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 3798000<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Biomax argelia<br>Dirección: carrera 72f # 39-07 sur Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 3798000<br></p>
             </div>
 
              <div class="proyecto">
               <img src="img/biomaxruncar.jpg" alt="Proyecto">
-              <p><br>Nombre: Biomax runcar<br>Direccion: transversal 78h bis # 42g-13 Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 3798000<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Biomax runcar<br>Dirección: transversal 78h bis # 42g-13 Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 3798000<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/biomax primerademayo.jpg" alt="Proyecto">
-              <p><br>Nombre: Biomax primera de mayo con 68<br>Direccion: avenida primero de mayo # 68h-55 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Biomax primera de mayo con 68<br>Dirección: avenida primero de mayo # 68h-55 Bogotá D.C.<br>Horario de atención: 24 horas<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/texacoeldarien.jpg" alt="Proyecto">
-              <p><br>Nombre: texaco el darién<br>Direccion: carrera 69b # 26-35 sur Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 6394444<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: texaco el darién<br>Dirección: carrera 69b # 26-35 sur Bogotá D.C.<br>Horario de atención: 24 horas<br>Telefono: 6394444<br></p>
             </div>
+            
+            
+
 
             <!-- Restaurante -->
-
+            
+  
+             
+             
             <div class="proyecto">
               <img src="img/safari.jpg" alt="Proyecto">
-              <p><br>Nombre: Restaurante Safari<br>Direccion: Cra 69P # 64D - 92 Bogotá D.C.<br>Horario de atención:<br> lunes - Viernes 4:00 pm – 09:30 pm<br>Sabado - Domingo 01:00 pm – 09:30 pm<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Restaurante Safari<br>Dirección: Cra 69P # 64D - 92 Bogotá D.C.<br>Horario de atención:<br> lunes - Viernes 4:00 pm – 09:30 pm<br>Sabado - Domingo 01:00 pm – 09:30 pm<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/puertafalsa.jpg" alt="Proyecto">
-              <p><br>Nombre: Restaurante Puerta Falsa<br>Direccion: calle 11 # 06 - 50 Bogotá D.C.<br>Horario de atención:<br> lunes - Domingo 06:00 am – 09:00 pm<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Restaurante Puerta Falsa<br>Dirección: calle 11 # 06 - 50 Bogotá D.C.<br>Horario de atención:<br> lunes - Domingo 06:00 am – 09:00 pm<br></p>
             </div>
 
             <div class="proyecto">
               <img src="img/rock.jpg" alt="Proyecto">
-              <p><br>Nombre: Rock & Roll Circus Colombia<br>Direccion: Carrera 6 # 119 - 17 Bogotá D.C.<br>Horario de atención:<br> lunes 03:00 pm – 09:00 pm<br> Martes 03:00 pm – 01:00 am<br> miercoles Cerrado <br> Jueves 03:00 pm – 01:00 am<br> viernes 03:00 pm – 02:30 am<br> Sabado 02:00 pm – 02:30 am <br> Domingo 12:00 pm – 09:00 pm</p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Rock & Roll Circus Colombia<br>Dirección: Carrera 6 # 119 - 17 Bogotá D.C.<br>Horario de atención:<br> lunes 03:00 pm – 09:00 pm<br> Martes 03:00 pm – 01:00 am<br> miercoles Cerrado <br> Jueves 03:00 pm – 01:00 am<br> viernes 03:00 pm – 02:30 am<br> Sabado 02:00 pm – 02:30 am <br> Domingo 12:00 pm – 09:00 pm</p>
             </div>
+            
+            
+            <h2 id ="RES"></h2><br>
+
 
             <div class="proyecto">
               <img src="img/laplayita.png" alt="Proyecto">
-              <p><br>Nombre: Restaurante La Playita<br>Direccion: : ak. 70 # 71a - 03 Bogotá D.C.<br>Horario de atención:<br> lunes – jueves    7:00 am – 4:00 pm <br>
+              <p><br>Nombre: Restaurante La Playita<br>Dirección:  ak. 70 # 71a - 03 Bogotá D.C.<br>Horario de atención:<br> lunes – jueves    7:00 am – 4:00 pm <br>
               viernes – domingo   abierto 24 horas<br>Telefono: 301 7612315<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
             </div>
 
              <div class="proyecto">
               <img src="img/casalis.jpg" alt="Proyecto">
-              <p><br>Nombre: Restaurante Casa lis<br>Direccion: : direccion: cra. 7 #17-10 Bogotá D.C.<br>Horario de atención:<br> lunes – miércoles  8:00 am – 17:30 pm <br>jueves   8:00 am – 19:30 pm<br>viernes   7:30 am – 21:00 pm<br>sábado  8:00 am – 16:30 pm<br>domingo   9:00 am– 17:00 pm<br>
+              <p><br>Nombre: Restaurante Casa lis<br>Dirección:  direccion: cra. 7 #17-10 Bogotá D.C.<br>Horario de atención:<br> lunes – miércoles  8:00 am – 17:30 pm <br>jueves   8:00 am – 19:30 pm<br>viernes   7:30 am – 21:00 pm<br>sábado  8:00 am – 16:30 pm<br>domingo   9:00 am– 17:00 pm<br>
               viernes – domingo   abierto 24 horas<br>Telefono: 301 7612315<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
             </div>
 
             <div class="proyecto">
               <img src="img/tanpinchado.jpg" alt="Proyecto">
-              <p><br>Nombre: Restaurante Tan pinchado el gordo <br>Direccion: : ak. 19 #148 - 52 Bogotá D.C.<br>Horario de atención:<br> lunes – domingo  8:00 am – 17:00 pm <br>Telefono: 0316148369<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: Restaurante Tan pinchado el gordo <br>Dirección: : ak. 19 #148 - 52 Bogotá D.C.<br>Horario de atención:<br> lunes – domingo  8:00 am – 17:00 pm <br>Telefono: 0316148369<br></p>
             </div>
+
 
             <!-- Centro de diagnostico automotriz -->
 
+
+
             <div class="proyecto">
               <img src="img/CDAsantalibrada.jpg" alt="Proyecto">
-              <p><br>Nombre:CDA Santa Librada <br>Direccion: cra 11 # 69G - 25sur Bogotá D.C.<br>Horario de atención:<br> lunes - Sabado 07:00 am – 06:00 pm<br>domingo 08:00 am – 01:00 pm<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre:CDA Santa Librada <br>Dirección: cra 11 # 69G - 25sur Bogotá D.C.<br>Horario de atención:<br> lunes - Sabado 07:00 am – 06:00 pm<br>domingo 08:00 am – 01:00 pm<br></p>
             </div>
 
 
             <div class="proyecto">
               <img src="img/CDABogota.jpg" alt="Proyecto">
-              <p><br>Nombre: CDA Movilidad Bogotá <br>Direccion: cra 73A # 77a - 32 Bogotá D.C.<br>Horario de atención:<br> lunes - Sabado 06:00 am – 11:59 pm<br>domingo 07:00 am – 05:00 pm<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: CDA Movilidad Bogotá <br>Dirección: cra 73A # 77a - 32 Bogotá D.C.<br>Horario de atención:<br> lunes - Sabado 06:00 am – 11:59 pm<br>domingo 07:00 am – 05:00 pm<br></p>
             </div>
 
 
             <div class="proyecto">
               <img src="img/cda80.jpg" alt="Proyecto">
-              <p><br>Nombre: CDA Diagnostiya 80 <br>Direccion: cra 73A # 77A-62 Bogotá D.C.<br>Horario de atención:<br> Abierto las 24 horas<br></p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: CDA Diagnostiya 80 <br>Dirección: cra 73A # 77A-62 Bogotá D.C.<br>Horario de atención:<br> Abierto las 24 horas<br></p>
             </div>
+            
+            
+            <h2 id ="CDA"></h2>
+            
 
              <div class="proyecto">
               <img src="img/CDArevicars.jpg" alt="Proyecto">
-              <p><br>Nombre: CDA revicars <br>Direccion: carrera 24 # 73-38 Bogotá D.C.<br>Horario de atención:<br> lunes – sábado  7:00 am – 19:00 pm<br>Domingo Cerrado<br>Telefono: 0313904452</p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: CDA revicars <br>Dirección: carrera 24 # 73-38 Bogotá D.C.<br>Horario de atención:<br> lunes – sábado  7:00 am – 19:00 pm<br>Domingo Cerrado<br>Telefono: 0313904452</p>
             </div>
 
             <div class="proyecto">
               <img src="img/CDAmegaservice.jpg" alt="Proyecto">
-              <p><br>Nombre: CDA Megaservice car <br>Direccion: calle 68 # 20-41 Bogotá D.C.<br>Horario de atención:<br> lunes – viernes  7:00 am– 18:00 pm<br>Sabado - Domingo Cerrado<br>Telefono: 0316060007</p>
-               <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: CDA Megaservice car <br>Dirección: calle 68 # 20-41 Bogotá D.C.<br>Horario de atención:<br> lunes – viernes  7:00 am– 18:00 pm<br>Sabado - Domingo Cerrado<br>Telefono: 0316060007</p>
             </div>
 
             <div class="proyecto">
               <img src="img/CDAdiagnostiauto.jpg" alt="Proyecto">
-              <p><br>Nombre: CDA Diagnostiautos <br>Direccion: carrera 63 # 68-37 Bogotá D.C.<br>Horario de atención:<br> lunes – viernes   8:30 am – 18:30 pm<br>Sabado - Domingo Cerrado<br>Telefono: 0312505045</p>
-              <form>
-                  <p class="clasificacion">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                    --><label for="radio1">★</label><!--
-                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                    --><label for="radio2">★</label><!--
-                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                    --><label for="radio3">★</label><!--
-                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                    --><label for="radio4">★</label><!--
-                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                    --><label for="radio5">★</label>
-                  </p>
-              </form>
+              <p><br>Nombre: CDA Diagnostiautos <br>Dirección: carrera 63 # 68-37 Bogotá D.C.<br>Horario de atención:<br> lunes – viernes   8:30 am – 18:30 pm<br>Sabado - Domingo Cerrado<br>Telefono: 0312505045</p>
             </div>
 
 

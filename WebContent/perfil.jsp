@@ -18,6 +18,7 @@
 		<div class="container">
 			<div class="row">
 				<h3 style="text-align:center">ACTUALIZAR Y MODIFICAR DATOS</h3>
+				
 			</div>
 			
 			<form class="form-horizontal" method="POST" action="update.php" autocomplete="off">

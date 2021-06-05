@@ -183,6 +183,7 @@
       
 <!--        buttons -->
 <!--      button iniciar sesión -->
+
 		<td colspan="2"><button class="log-in">iniciar sesion</button></td>
 
 
@@ -196,7 +197,7 @@
 	</div>
 	
 	
-	<!--     olvide mi contraseña  -->
+	                               <!--     olvide mi contraseña  -->
       
         <a href="olvidemiContraseña.jsp">¿Olvidaste tu contraseña?</a> 
         
@@ -210,12 +211,14 @@
   
 </div>
 
-<!-- cierre login -->
+                                        <!-- cierre login -->
 
-<!-- CIERRE MODAL LOGIN-->
+                                     <!-- CIERRE MODAL LOGIN-->
 
 
-<!-- MODAL REGISTRO-->
+                                       <!-- MODAL REGISTRO-->
+                                       
+                                       
         <div id="openModalRegistro" class="modalDialogRegistro">
             <div>
               <a href="#close" title="Close" class="close">X</a>
@@ -235,7 +238,7 @@
       <br>
       <br>
       
-    
+     <div id="MensajeRegistro"> 
       
       <%
       	if (request.getAttribute("mensaje")!=null){
@@ -243,7 +246,7 @@
       	    
       	}
       %>
-     
+     </div>
       
       <br>
    </div>
@@ -256,64 +259,109 @@
            <i class="fa fa-user-circle"></i>
          </span>
         <!--   usuario Input-->
-         <input class="form-input-Registro" id="txt-input" type="text" name= "user" placeholder="@pepito03" required>
+        
+         
+         <input class="form-input-Registro" id="txt-input" type="text" id="user" name="user" placeholder="@pepito03" required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
+        	 <span class="validity"></span>
          
       <br>
 
-      <!--   Nombre -->
-         <span class="input-item-Registro">
-           <i class="fa fa-user-circle"></i>
-         </span>
-        <!--   Nombre Input-->
-         <input class="form-input-Registro" id="txt-input" type="text" name = "nombre" placeholder="Nombre" required>
-      <br>
-       <!--   Apellido -->
-         <span class="input-item-Registro">
-           <i class="fa fa-user-circle"></i>
-         </span>
-        <!--   Apellido Input-->
-         <input class="form-input-Registro" id="txt-input" type="text" name = "apellido" placeholder="Apellido" required>
-      <br>
 
-       <!--   Email -->
+                                              <!--   Nombre -->
+      
+         <span class="input-item-Registro">
+           <i class="fa fa-user-circle"></i>
+         </span>
+          
+                                             <!--   Nombre Input-->
+                                             
+        <input class="form-input-Registro" id="txt-input" type="text" name = "nombre" placeholder="Nombre" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
+        	 <span class="validity"></span>
+        <br>
+      
+      
+      
+                                              <!--   Apellido -->
+       
+         <span class="input-item-Registro">
+           <i class="fa fa-user-circle"></i>
+         </span>
+         
+        <!--   Apellido Input-->
+        
+         
+     	<input class="form-input-Registro" id="txt-input" type="text" name = "apellido" placeholder="Apellido" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}" title="El apellido debe tener almenos 3 digitos y no debe tener números.">
+        	 <span class="validity"></span>
+        <br>
+
+                                                 <!--   Email -->
+                                                   
          <span class="input-item-Registro">
            <i class="fa fa-fas fa-envelope"></i>
          </span>
         <!--   Email Input-->
-         <input class="form-input-Registro" id="txt-input" type="text" name = "email" placeholder="E-mail" required>
+        
+        
+         
+      <input class="form-input-Registro" id="txt-input" type="email" name = "email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Por digite su dirección de correo electrónico.">
+        	 <span class="validity"></span>
       <br>
 
 
-             <!--  Confirmar  Email -->
+                                         <!--  Confirmar  Email -->
+             
+             
          <span class="input-item-Registro">
            <i class="fa fa-fas fa-envelope"></i>
          </span>
-        <!--  confirmar Email Input-->
-         <input class="form-input-Registro" id="txt-input" type="text" name = "confirmar_email " placeholder="Confirmar E-mail" required>
-      <br>
+         
+         
+                                       <!--  confirmar Email Input-->
+                                       
+                                       
+         
+        
+        
+        <input class="form-input-Registro" id="txt-input" type="email" name = "confirmar_email " placeholder="Confirmar E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Por digite su dirección de correo electrónico.">
+        	 <span class="validity"></span>
+         <br>
 
            <!--   Contrasñea -->
      
-      <span class="input-item-Registro">
+        <span class="input-item-Registro">
         <i class="fa fa-key"></i>
-       </span>
-      <!--   Contraseña Input-->
-      <input class="form-input-Registro" type="password" placeholder="Contraseña" id="pwd"  name="contraseña" required>
-     
-<!--      Show/hide Contraseña  -->
+        </span>
+       
+       
+                                               <!--   Contraseña Input-->
+ 		
+      	 <input class="form-input-Registro" id="pwd" type="password" id="pwd" name="contraseña" placeholder="Contraseña" required size="15" pattern=(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$ title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        	 <span class="validity"></span>
+         		
+      
+      
+           									 <!--      Show/hide Contraseña  -->
+            
      <span>
         <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
      </span>
       <br>
 
-       <!--  Confirmar Contrasñea -->
+       										<!--  Confirmar Contrasñea -->
      
       <span class="input-item-Registro">
         <i class="fa fa-key"></i>
        </span>
-      <!--  Confirmar Contraseña Input-->
-      <input class="form-input-Registro" type="password" placeholder="Confirmar Contraseña" id="pwd"  name="confirmar_contraseña" required>
-
+       
+       
+     									 <!--  Confirmar Contraseña Input-->
+      
+      
+       <input class="form-input-Registro" id="pwd" type="password" id="pwd" name="confirmar_contraseña" placeholder="Confirmar contraseña" required size="15" pattern=(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$ title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        	 <span class="validity"></span>
+         		
+         		
+  
 <!--      Show/hide Confirmar Contraseña  -->
      <span>
         <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
