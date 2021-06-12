@@ -20,6 +20,7 @@ body{
 
 }
 
+
 .titulo-seccion{
   text-align: center;
   margin-bottom: 40px;
@@ -66,6 +67,7 @@ body{
   color: #fff;
   line-height: 40px;
 }
+
 
 /* ------ ENCABEZADO ------ */
 
@@ -332,6 +334,24 @@ button:hover {
   
 }
 .close:hover { background: #00d9ff; }
+
+/* contenedor de mensaje error login */
+
+.contenedor-mensaje-login{
+	
+	        width: 450px;
+			height: 350px;
+			text-align: center;
+			background-color: #a4e31e;
+			border-radius: 4px;
+			margin: auto;
+			margin-top: 100px;
+}
+
+
+/* cerrar contenedor de error login */
+
+
 
 /*MODAL REGISTRO*/
 

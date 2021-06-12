@@ -15,73 +15,261 @@ body{
 }
 
 
-.container{
-  position:relative;
-  top:100px;
-  left:35%;
-  display:block;
-  margin-bottom:100px;
-  width:500px;
-  height:620px;
-  background:#242A54;
-  border-radius:5px;
-  overflow:hidden;
-  z-index:1;
+/*usuario perfil sub menu*/
+
+      
+      ul, ol {
+        list-style:none;
+      }
+      
+      .nav {
+        width:150px; /*Le establecemos un ancho*/
+        margin:0 auto; /*Centramos automaticamente*/
+      }
+
+      .nav > li {
+        float:left;
+      }
+      
+      .nav li a {
+
+        background-color:#040D3B;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block;
+      }
+      
+      .nav li a:hover {
+        background-color:#040D3B;
+      }
+      
+      .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+      }
+      
+      .nav li:hover > ul {
+        display:block;
+      }
+      
+      .nav li ul li {
+        position:relative;
+      }
+      
+      .nav li ul li ul {
+        right:-140px;
+        top:0px;
+      }
+
+/*cerrar css submenu usuario perfil*/
+
+/* ------ ENCABEZADO ------ */
+
+.menu-bar-pc{
+  width: 100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(255,255,255, 0.15);
+  padding: 0 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 200;
+
 }
 
+.logo{
+  display: inline-block;
+  width: 50px;
+}
+
+.logo img{
+  width: 150px;
+  right:  350px;
+  vertical-align: top;
+}
+
+.menu-principal a, .top-redes a{
+  display: inline-block;
+  padding: 0 10px;
+  color: #040D3B;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.876rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all .3s ease;
+}
+
+.menu-principal a:last-child, .top-redes a:last-child{
+  padding-right: 0;
+
+}
+
+.top-redes a i{
+  font-size: 1rem;
+}
+
+.menu-principal a:hover, .top-redes a:hover{
+  color: #a4e31e;
+}
+
+.fixed-header{
+  width: 100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(204,204,204,0.5);
+  padding: 0 36px;
+  background: #A4E31E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all .4s ease;
+  margin-top: -68px;
+}
+
+.fixed-header .menu-principal a, .fixed-header .top-redes a{
+  color: #444444;
+}
+
+.fixed-header .menu-principal a:hover, .top-redes a:hover{
+  color: #110DEC;
+}
+
+/*Mobile menu*/
+.menu-mobile{
+  display: none;
+}
+
+
+
+.usuario{
+  padding:30px;
+  height: 100px;
+  position: relative;
+  right: -470px;
+  color:#000;
+  top: 10px;
+}
+
+.input_usuario{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -250px;
+  top: 5px;
+}
 
 .name{
   padding:30px;
   height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
+  position: relative;
+  right: -770px;
+  color:#000;
+  top: -60px;
+}
+
+.input_nombre{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -400px;
+  top: -30px;
 }
 
 
 .apellido{
   padding:30px;
   height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
+  position: relative;
+  right: -470px;
+  color:#000;
+  top: -50px;
+}
+
+.input_apellido{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -250px;
+  top: -25px;
 }
 
 
 .email{
   padding:30px;
   height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
+  position: relative;
+  right: -770px;
+  color:#000;
+  top: -120px;
 }
 
+.input_email{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -400px;
+  top: -60px;
+}
 
 .confirmaremail{
   padding:30px;
   height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
+  position: relative;
+  right: -470px;
+  color:#000;
+  top: -110px;
 }
 
+.input_confirmar_email{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -250px;
+  top: -55px;
+}
 
 .password{
   padding:30px;
   height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
+  position: relative;
+  right: -770px;
+  color:#000;
+  top: -180px;
 }
 
+.input_password{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -400px;
+  top: -90px;
+}
 
 .confirmarpassword{
   padding:30px;
   height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
+  position: relative;
+  right: -470px;
+  color:#000;
+  top: -170px;
 }
+
+.input_confirmar_password{
+  width:225px;
+  height:30px;
+  position: relative;
+  right: -250px;
+  top: -85px;
+}
+
 
 
 .h3{
@@ -95,14 +283,16 @@ body{
 
 input{
   display:block;
-  height:50px;
-  width:90%;
+  height: 30px;
+  width: 150px;
   margin:0 auto;
-  border:none;
+  border-radius:7px;
 }
 
 
-::placeholder{
+
+
+.placeholder{
   -webkit-transform:translateY(0px);
   transform:translateY(0px);
   -webkit-transition:.5s;
@@ -111,20 +301,36 @@ input{
 
 
   
-.button{
+.boton_guardar{
   cursor:pointer; 
   display:inline-block;
   float:left;
-  width:250px;
-  height:70px;
+  width:80px;
+  height:40px;
   margin-top:-10px;
   border:none;
   font-family: 'Open Sans', sans-serif;
   text-transform:uppercase;
   color:#fff;
+  background-color: #040D3B;
   -webkit-transition:.5s;
   transition:.5s;
+  position: relative;
+  right: -800px;
+  top: -220px;
 }
+
+.boton_guardar:hover{
+  color: #fff;
+  background-color: #110DEC;
+  margin: auto;
+}
+.boton_guardar:active{
+  color: #fff;
+  background-color: #110DEC;
+  margin: auto;
+}
+
 
  
  .span{
@@ -138,3 +344,37 @@ input{
  }
  
  
+ 
+
+ /* ------ PIE DE PAGINA ------ */
+
+footer{
+  background: #A4E31E;
+  padding: 54px 0;
+  text-align: center;
+}
+
+footer .copy{
+  color: #040D3B;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+footer .footer-redes a{
+  display: inline-block;
+  padding: 0 10px;
+  color: #040D3B;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all .3s ease;
+}
+
+footer .footer-redes a:hover{
+  color: #fff;
+}
+ 
+

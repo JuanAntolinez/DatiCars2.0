@@ -23,10 +23,19 @@
 			 <div class="container-input">
 			 	<p class="Titulo">La contraseña se enviara al correo que registro al inicio de la creación de la cuenta, por favor digítelo.</p>
 			</div>
+			
+			
+			
+			
+			
+			
 			 	 <div class="container-input-texto">
-			 	<input type="email" name="correo" placeholder="@gmail.com" class="input-100 "><br>
+			 	<input type="email" name="correo" placeholder="@gmail.com" class="input-100 "size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
+					    <span class="validity"></span>
+			 
+			 	<input type="submit" name="atras" value="Atrás" onclick="window.open('index.jsp')" class="btnatras">
 			 	<input type="submit" name="entrar" value="Enviar" class="btn-recuperar">
-			 	<input type="submit" name="atras" value="Atrás" onclick="window.open('index.jsp')" class="btn-atrás">
+			 	
 			 	
 			 </div>
 		</form>

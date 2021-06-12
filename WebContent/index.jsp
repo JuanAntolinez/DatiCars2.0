@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    
+
   </head>
   <body>
 
@@ -136,16 +138,13 @@
       <br>
    </div>
    
-   <div id="Mensaje"> 
    
-        <%
+       <%
       	if (request.getAttribute("mensaje")!=null){
       		out.println(request.getAttribute("mensaje"));
       	    
       	}
         %>
-        
-   </div>
    
    <br>
    <div class="field-set">
@@ -156,11 +155,13 @@
            <i class="fa fa-user-circle"></i>
          </span>
         <!--   email Input-->
-         <input class="form-input" id="txt-input" type="text" name="email" placeholder="E-mail" required>
+         
+         <input class="form-input" id="txt-input" type="text" name="email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
+        	 <span class="validity"></span>     
+      
+      
       <br>
          
-         
-      
       
            <!--   contraseña -->
            
@@ -169,8 +170,9 @@
         <i class="fa fa-key"></i>
        </span>
       <!--   contraseña Input-->
-      <input class="form-input" type="password" placeholder="password" id="pwd"  name="contraseña" required>
-     
+      
+       <input class="form-input" type="password" placeholder="password" id="pwd"  name="contraseña" required >
+        	 
      
      
 <!--      Show/hide contraseña ver  -->
@@ -184,7 +186,7 @@
 <!--        buttons -->
 <!--      button iniciar sesión -->
 
-		<td colspan="2"><button class="log-in">iniciar sesion</button></td>
+		<td colspan="2"><button class="log-in">iniciar sesión</button></td>
 
 
   				 </div>
@@ -226,7 +228,7 @@
 
 <!-- Registro-->
 
-<form action = "ServletRegistroUsuario" method = "post" >
+<form action = "ServletRegistroUsuario" method = "post" id="miformulario">
    
    <div class="con">
    
@@ -248,12 +250,18 @@
       %>
      </div>
       
+
+      
       <br>
    </div>
 
    <br>
    <div class="field-set">
-     
+   
+<!-- inicia opcion  1-->
+
+
+
       <!--   usuario -->
          <span class="input-item-Registro">
            <i class="fa fa-user-circle"></i>
@@ -275,7 +283,7 @@
           
                                              <!--   Nombre Input-->
                                              
-        <input class="form-input-Registro" id="txt-input" type="text" name = "nombre" placeholder="Nombre" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
+        <input class="form-input-Registro" id="txt-input" type="text" name = "nombre" placeholder="Nombre" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
         	 <span class="validity"></span>
         <br>
       
@@ -289,8 +297,9 @@
          
         <!--   Apellido Input-->
         
+        
          
-     	<input class="form-input-Registro" id="txt-input" type="text" name = "apellido" placeholder="Apellido" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}" title="El apellido debe tener almenos 3 digitos y no debe tener números.">
+     	<input class="form-input-Registro" id="txt-input" type="text" name = "apellido" placeholder="Apellido" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El apellido debe tener almenos 3 digitos y no debe tener números.">
         	 <span class="validity"></span>
         <br>
 
@@ -303,7 +312,7 @@
         
         
          
-      <input class="form-input-Registro" id="txt-input" type="email" name = "email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Por digite su dirección de correo electrónico.">
+      <input class="form-input-Registro" id="txt-input" type="email" name = "email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
         	 <span class="validity"></span>
       <br>
 
@@ -322,7 +331,7 @@
          
         
         
-        <input class="form-input-Registro" id="txt-input" type="email" name = "confirmar_email " placeholder="Confirmar E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Por digite su dirección de correo electrónico.">
+        <input class="form-input-Registro" id="txt-input" type="email" name = "confirmar_email " placeholder="Confirmar E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
         	 <span class="validity"></span>
          <br>
 
@@ -335,7 +344,7 @@
        
                                                <!--   Contraseña Input-->
  		
-      	 <input class="form-input-Registro" id="pwd" type="password" id="pwd" name="contraseña" placeholder="Contraseña" required size="15" pattern=(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$ title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+      	 <input class="form-input-Registro" id="pwd" type="password" name="contraseña" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 <span class="validity"></span>
          		
       
@@ -357,7 +366,7 @@
      									 <!--  Confirmar Contraseña Input-->
       
       
-       <input class="form-input-Registro" id="pwd" type="password" id="pwd" name="confirmar_contraseña" placeholder="Confirmar contraseña" required size="15" pattern=(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$ title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+       <input class="form-input-Registro" id="pwd" type="password"  name="confirmar_contraseña" required placeholder="Confirmar contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 <span class="validity"></span>
          		
          		
@@ -367,10 +376,18 @@
         <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
      </span>
       <br>
+      
+    <!-- terminatioa la opcion 1 -->
+    
+ 
+    
+        	 
+    <!-- termina opcion dos -->
+    
     
     
 <br>
-    <input style="opacity:1;" type="checkbox" data-required="1" name="terminos"><p style="color:black;padding-left:20px;">Aceptar los <a style="color:blue;" href="TerminosyCondiciones.jsp">Términos y Condiciones</a></p>  
+    <input style="opacity:1;" type="checkbox" data-required="1"  name="terminos" required pattern="true"><p style="color:black;padding-left:20px;">Aceptar los <a style="color:blue;"  href="TerminosyCondiciones.jsp">Términos y Condiciones</a></p>  
     
    
 
@@ -378,9 +395,14 @@
 <!--        buttons -->
 <!--      button Registro -->
      
-      <td colspan="2"><button class="log-in">Regístrate</button></td>
+      <td colspan="2"><button type="submit" class="log-in" >Regístrate</button></td>
    </div>
   </div>
+  
+ 
+  
+  
+  
 </form>
 </div>
          
@@ -614,11 +636,16 @@
 		      	    
 		      <%	} %>
 			});
-			
-			
-			
-			
-</script>
+	
+	</script>
+	
+	
+	
+	<!-- validación contraseñas -->
+	
+
+	
+	
 
   </body>
 </html>    

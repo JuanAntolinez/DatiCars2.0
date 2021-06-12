@@ -45,6 +45,8 @@
 			padding: 15px;
 			
 		}
+		
+	
 
 		.container-input{
 			padding: 10px 20px;
@@ -53,6 +55,7 @@
 			
 		}
 		
+
 		.container-input-texto{
 			padding: 15px 20px;
 			display: flex;
@@ -84,7 +87,7 @@
 		}
 		
 		
-		.btn-atrás{
+		.btnatras{
 			padding: 15px 30px;
 			cursor: pointer;
 			border-radius: 4px;
@@ -93,14 +96,14 @@
 			background-color: #040D3B;
 			margin: auto; 
 		} 
-		.btn-atrás:hover{
+		.btnatras:hover{
 			color: #fff;
-			background-color: #110DEC;
+			background-color: #040D3B;
 			margin: auto;
 		}
-			.btn-atrás:active{
+			.btnatras:active{
 			color: #fff;
-			background-color: #110DEC;
+			background-color: #040D3B;
 			margin: auto;
 		}
 		
@@ -111,7 +114,7 @@
 		  background: #040D3B;
 		  padding: 20px 0;
 		  text-align: center;
-		  margin-top: 55px;
+		  margin-top: 150px;
 		}
 		
 		footer .copy{
