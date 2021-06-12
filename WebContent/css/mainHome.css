@@ -328,44 +328,157 @@ body{
   line-height: 50px;
 }
 
-/*abre estrellas*/
-#form {
+
+
+
+
+
+/*contenedores de servicios*/
+
+/*Estaciones de servicio contenedores*/
+
+.contenedor-servicios-eds-uno {
   width: 350px;
-  margin: 0 auto;
-  height: 50px;
-}
-
-#form p {
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
   text-align: center;
+  margin: 5px;
+  
+  
 }
 
-#form label {
-  font-size: 20px;
+.nombre-empresa h2 , h3, h4, h5, h6{
+      font-weight: normal;
 }
 
-input[type="radio"] {
-  display: none;
+.texto{
+	opacity:0.5;
 }
 
-label {
-  color: grey;
+.contenedor-servicios-eds-dos{
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+   margin: 5px;
+ 
 }
 
-.clasificacion {
-  direction: rtl;
-  unicode-bidi: bidi-override;
+.contenedor-servicios-eds-tres {
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+  margin: 5px;
+  
 }
 
-label:hover,
-label:hover ~ label {
-  color: orange;
+.contenedor-servicios-cda-uno {
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+  margin: 5px;
+  
 }
 
-input[type="radio"]:checked ~ label {
-  color: orange;
+
+
+
+/*cierre estaciones de servicio contenedores*/
+
+/* cda contenedores*/
+
+.contenedor-servicios-cda-uno{
+	 width: 350px;
+ 	 heigth: 350px;
+ 	 color: #000000;
+ 	 background: #fff;
+     padding: 54px 0;
+     text-align: center;
+     margin:6px;
+     margin-top: 25px;
 }
 
-/*cieere estrellas*/
+/*cierre contenedores de cda*/
+
+
+
+
+
+
+/*pone de color azul la letra del contenedor
+.contenedor-servicios-cda-uno:hover{
+  color: #369DE1;
+}
+*/
+
+button {
+    display: inline-block;
+    color: #FFFFFF;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #040D3B;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*     contraseña button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     olvide mi contraseña button  */
+
+.sign-up {
+  background: #A4E31E;
+  width: 100%;
+}
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover animación */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+
+
+
+/*cierre contenedores de servicios*/
+
+/**cierre proyectos*/
+
+
 
 /*Acerca de*/
 
