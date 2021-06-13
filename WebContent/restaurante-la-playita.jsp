@@ -7,11 +7,11 @@
 <meta charset="ISO-8859-1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<title>EDS Petrobras</title>
+	<title>Restaurante la playita</title>
 	<link rel="icon" href="img/logotipo.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/eds-petrobras.css">
+    <link rel="stylesheet" href="css/cda-megaservice-car.css">
 
 
 
@@ -80,12 +80,12 @@
     
     <div class="contenedor">
      
-     <div class="eds-petrobras">
-    <p>EDS petrobras</p>
-		</div>
-	
+     
+     
+     
     <div class="mapa">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.856705370845!2d-74.11105494242719!3d4.644985220508334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bea672c03e9%3A0x854a1346d9d18a58!2sPetrobras!5e0!3m2!1ses!2sco!4v1623538235057!5m2!1ses!2sco"
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.023535823881!2d-74.09196357165118!3d4.6807411094021685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba3a6f185f2e61de!2sRestaurante%20La%20Playita!5e0!3m2!1ses!2sco!4v1623545189977!5m2!1ses!2sco"
      width="495" height="400"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
     </div>
     </div>    

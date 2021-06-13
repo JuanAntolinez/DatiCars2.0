@@ -21,13 +21,13 @@ body{
   color: #000000;
   background: #FFF;
   padding: 54px 0;
+  text-align: center;
   margin: 15px;
   position: relative;
   right:-35px;
   border-radius:20px;
  
 }
-
 
 .mapa{
 	  
@@ -44,15 +44,6 @@ body{
 
 .texto{
 	opacity:0.5;
-}
-
-
-.eds-petrobras{
-  
-  height: 10%;
-  position: relative;
-  right: 10px;
-  
 }
 
 
@@ -172,9 +163,3 @@ footer .footer-redes a{
 footer .footer-redes a:hover{
   color: #fff;
 }
- 
-
-
- 
- 
- 

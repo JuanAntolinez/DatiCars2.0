@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>DatiCars</title>
+    <link rel="icon" href="img/logotipo.png" type="image/png" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/mainHome.css">
@@ -177,20 +178,20 @@
                     <p>Calle 71 #29B - 30 Bogotá D.C.</p>
                     <p>24 horas</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='eds-terpel-calle71.jsp'">Ver más</button>
             </div>
             
              <div class="contenedor-servicios-eds-tres" id="EDS">
              <img src="img/biomaxalqueria.jpg" alt="Proyecto" width="300px" height="200px"><br>
              
                     <br><div class="nombre-empresa">
-              		<h2 class="name" itemprop="name" >Biomax alquería</h2>
+              		<h2 class="name" itemprop="name" >Biomax San Andresito</h2>
                     </div>
                     <div class="texto">
-                    <p>Carrera 80 # 58l-15 sur Bogotá D.C.</p>
+                    <p>Carrera 38 # 38 - 25 Bogotá D.C.</p>
                     <p>24 horas</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='eds-biomax-Sanandresito.jsp'" >Ver más</button>
             </div>
             
            									  <!-- CDA -->
@@ -205,7 +206,7 @@
                     <p>Carrera 73A # 77A-62 Bogotá D.C.</p>
                     <p>24 horas</p>
                     </div>
-                    <button>Ver más</button>
+                    <button onclick="location.href='cda-diagnostiya-80.jsp'" >Ver más</button>
                </div>
                
                
@@ -219,7 +220,7 @@
                     <p>Carrera 24 # 73-38 Bogotá D.C.</p>
                     <p>Lunes – Sábado  7:00 am – 19:00 pm</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='cda-revicars.jsp'" >Ver más</button>
                </div>
                
                
@@ -233,7 +234,7 @@
                     <p>Calle 68 # 20-41 Bogotá D.C.</p>
                     <p>Lunes – Viernes  7:00 am– 18:00 pm</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='cda-megaservice-car.jsp'" >Ver más</button>
                </div>
             
             								<!-- RESTAURANTES -->
@@ -248,7 +249,7 @@
                     <p>Carrera 70 # 71a - 03 Bogotá D.C.</p>
                     <p>lunes – jueves    7:00 am – 4:00 pm</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='restaurante-la-playita.jsp'" >Ver más</button>
                </div>
                
                <div class="contenedor-servicios-eds-uno" id="RES">
@@ -261,7 +262,7 @@
                     <p>carrera 7 #17-10 Bogotá D.C.</p>
                     <p>lunes – miércoles  8:00 am – 17:30 pm</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='restaurante-casa-lis.jsp'" >Ver más</button>
                </div>
                
                <div class="contenedor-servicios-eds-uno" id="RES">
@@ -274,7 +275,7 @@
                     <p>Carrera 19 #148 - 52 Bogotá D.C..</p>
                     <p>lunes – domingo  8:00 am – 17:00 pm</p>
                     </div>
-                    <button >Ver más</button>
+                    <button onclick="location.href='restaurante-tan-pinchado-el-gordo.jsp'" >Ver más</button>
                </div>
             
             
