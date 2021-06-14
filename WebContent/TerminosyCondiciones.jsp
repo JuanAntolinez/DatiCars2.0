@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/Terminos.css">
 	<title>DatiCars</title>
 	 <link rel="icon" href="img/logoicon.png" type="image/png" />
+	 <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
 	</head>
 	<body>
 	

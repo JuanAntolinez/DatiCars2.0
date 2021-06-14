@@ -8,6 +8,7 @@
      <link rel="icon" href="img/logoicon.png" type="image/png" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/mainHome.css">
   </head>
   <body>
@@ -112,11 +113,11 @@
         <div class="slider" id="slider">
           <div class="slide">
           <a href="Publicidad.jsp">
-            <img src="img/slide1.jpg" alt="Slide" ></a>
+            <img src="img/slide.jpg" alt="Slide" ></a>
           </div>
           <div class="slide">
           <a href="Publicidad.jsp">
-            <img src="img/slide2.jpg" alt="Slide"></a>
+            <img src="img/bono.jpg" alt="Slide"></a>
           </div>
           <div class="slide">
           <a href="Publicidad.jsp">

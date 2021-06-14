@@ -31,15 +31,15 @@ body{
 .mapa{
 	  
       position: relative;
-      right: -305px;
-      top: -40px;
+      right: -575px;
+      top: -230px;
 }
 
 .name{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 245px;
+  right: -145px;
   color:#040D3B;
   top: -30px;
 }
@@ -48,7 +48,7 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 10px;
+  right: -25px;
   color:#000000;
   top: -4px;
 }
@@ -57,9 +57,9 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 465px;
+  right: 195px;
   color:#000000;
-  top: 55px;
+  top: 40px;
 }
 
 .nombre-empresa h2 , h3, h4, h5, h6{

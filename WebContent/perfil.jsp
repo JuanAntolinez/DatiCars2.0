@@ -11,6 +11,7 @@
 	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/perfil.css">
 
 
@@ -76,15 +77,24 @@
     
     <br><br><h3 style="text-align:center">ACTUALIZAR PERFIL</h3>
 				
-	<br><form action = "Perfil-Usuario" method = "post" id="miformulario">		
-
+	<br><form action = "ActualizacionDatosUsuario" method = "post" id="miformulario">		
+             
+             <div id="MensajeRegistro"> 
+      
+      <%
+      	if (request.getAttribute("mensaje")!=null){
+      		out.println(request.getAttribute("mensaje"));
+      	    
+      	}
+      %>
+     </div>
 
 					
 					<label for="usuario" class="usuario">Usuario</label>
 					<br>
 					<div class="input_usuario">
-						<input type="text" class="input_usuario" id="usuario" name="usuario" placeholder="Usuario"  required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">
-					    <span class="validity"></span>
+						<input class="input_usuario" id="txt-input" type="text" id="user" name="user" placeholder="@pepito03" required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
+        	 <span class="validity"></span>
 					    
 					</div>
 					</br>
@@ -124,16 +134,16 @@
 					<label for="Password" class="password">Contraseña</label>
 					<br>
 					<div class="input_password">
-						<input type="password" class="input_password" id="password" name="´password" placeholder="Contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
-					    <span class="validity"></span>
+						<input class="input_password" id="pwd" type="password"  name="confirmar_contraseña" required placeholder="Confirmar contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        	 <span class="validity"></span>
 					</div>
 					</br>
 				
 					<label for="Confirmar Email" class="confirmarpassword">Confirmar Contraseña</label>
 					<br>
 					<div class="input_confirmar_password">
-						<input type="password" class="input_confirmar_password" id="password" name="´confirmarpassword" placeholder="Confirmar Contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener  entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
-					    <span class="validity"></span>
+						<input class="input_confirmar_password" id="pwd" type="password" name="contraseña" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        	 <span class="validity"></span>
 					</div>
 					</br>
 
@@ -143,7 +153,7 @@
         	<div class="texto-banner">
           	
           	
-          	<button class="boton_guardar" type="submit" class="log-in" >GUARDAR</button>
+          	<td colspan="2"><button class="boton_guardar" type="submit" class="log-in" >GUARDAR</button>
           </div>
           </section>
           

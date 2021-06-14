@@ -12,6 +12,7 @@
 	  <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/restaurante-tan-pinchado-el-gordo.css">
 
 
@@ -81,15 +82,15 @@
     
     <div class="contenedor">
      
-     <h2><label  class="name">RESTAURANTE TAN PINCHADO EL GORDO</label></h2>
-		 <label  class="horario">Horario: Lunes - Domingo: 8:00 - 17:00</label>
-		 <label  class="telefono">Teléfono: +5716148369 </label>
-     
-    <div class="mapa">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.223957440483!2d-74.04706918625295!3d4.7311191965637915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f856ed4f87857%3A0x90f4b8664e01da08!2sTAN%20PINCHADO%20EL%20GORDO!5e0!3m2!1ses!2sco!4v1623544834128!5m2!1ses!2sco"
-     width="495" height="400"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
-    </div>
+	     <h2><label  class="name">RESTAURANTE TAN PINCHADO EL GORDO</label></h2>
+			 <label  class="horario">Horario: Lunes - Domingo: 8:00 - 17:00</label>
+			 <label  class="telefono">Teléfono: 16148369 </label>
+	     
+	    <div class="mapa">
+	        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.223957440483!2d-74.04706918625295!3d4.7311191965637915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f856ed4f87857%3A0x90f4b8664e01da08!2sTAN%20PINCHADO%20EL%20GORDO!5e0!3m2!1ses!2sco!4v1623544834128!5m2!1ses!2sco"
+	        width="495" height="400"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
+	    </div>
+    
     </div>    
              
     

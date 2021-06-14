@@ -21,7 +21,6 @@ body{
   color: #000000;
   background: #FFF;
   padding: 54px 0;
-  text-align: center;
   margin: 15px;
   position: relative;
   right:-35px;
@@ -29,27 +28,27 @@ body{
  
 }
 
+
 .mapa{
-	  
       position: relative;
-      right: -305px;
-      top: -40px;
+      right: -585px;
+      top: -80px;
 }
 
 .name{
   padding:30px;
-  height: 100px;
+  height: 150px;
   position: relative;
-  right: 245px;
+  right: -10px;
   color:#040D3B;
   top: -30px;
 }
 
 .horario{
   padding:30px;
-  height: 100px;
+  height: 350px;
   position: relative;
-  right: 10px;
+  right: -35px;
   color:#000000;
   top: -4px;
 }
@@ -58,9 +57,9 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 465px;
+  right: 310px;
   color:#000000;
-  top: 55px;
+  top: 30px;
 }
 
 
@@ -68,9 +67,6 @@ body{
       font-weight: normal;
 }
 
-.texto{
-	opacity:0.5;
-}
 
 
 

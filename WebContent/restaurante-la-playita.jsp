@@ -11,6 +11,7 @@
 	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/cda-megaservice-car.css">
 
 
@@ -81,9 +82,9 @@
     <div class="contenedor">
      
      <h2><label  class="name">RESTAURANTE LA PLAYITA</label></h2>
-		 <label  class="horario">Horario: Lunes - Jueves: 7:00- 4:00</label>
-		 <label  class="horario">Viernes - Domingo: 24 horas</label>
-		 <label  class="telefono">Teléfono: +573017612315 </label>
+		 <label  class="horario">Horario: Lunes - Jueves: 7:00- 4:00</label><br>
+		 <br><label  class="horario">Viernes - Domingo: 24 horas</label>
+		 
      
      
     <div class="mapa">

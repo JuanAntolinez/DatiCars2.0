@@ -11,6 +11,7 @@
 	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/cda-revicars.css">
 
 
@@ -81,8 +82,8 @@
     <div class="contenedor">
      
      <h2><label  class="name">CDA REVICARS</label></h2>
-		 <label  class="horario">Horario: Lunes - sabado: 7:30 - 18:30</label>
-		 <label  class="horario">Domingo: 10:00- 14:00</label>
+		 <label  class="horario">Horario: Lunes - sabado: 7:30 - 18:30</label><br>
+		 <br><label  class="horario">Domingo: 10:00- 14:00</label>
      
     <div class="mapa">
 

@@ -14,32 +14,31 @@ body{
   background: #EBEBEB;
 }
 
-
-.contenedor{
-  width: 85%;
-  height: 430px;
-  color: #000000;
-  background: #FFF;
-  padding: 54px 0;
-  margin: 15px;
-  position: relative;
-  right:-35px;
-  border-radius:20px;
- 
+.contenedor {
+    width: 85%;
+    height: 430px;
+    color: #000000;
+    background: #FFF;
+    padding: 54px 0;
+    margin: 15px;
+    position: relative;
+    right: -35px;
+    border-radius: 20px;
 }
+
 
 .mapa{
 	  
       position: relative;
-      right: -305px;
-      top: -40px;
+      right: -595px;
+      top: -125px;
 }
 
 .name{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 245px;
+  right: -175px;
   color:#040D3B;
   top: -30px;
 }
@@ -48,7 +47,7 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 10px;
+  right: -25px;
   color:#000000;
   top: -4px;
 }
@@ -57,16 +56,16 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 205px;
+  right: 195px;
   color:#000000;
-  top: 25px;
+  top: 27px;
 }
 
 .telefono{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 465px;
+  right: 470px;
   color:#000000;
   top: 55px;
 }
