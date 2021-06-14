@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>DatiCars</title>
-    <link rel="icon" href="img/logotipo.png" type="image/png" />
+     <link rel="icon" href="img/logoicon.png" type="image/png" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/mainHome.css">
@@ -111,16 +111,20 @@
       <section class="contenedor-slider">
         <div class="slider" id="slider">
           <div class="slide">
-            <img src="img/slide1.jpg" alt="Slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide1.jpg" alt="Slide" ></a>
           </div>
           <div class="slide">
-            <img src="img/slide2.jpg" alt="Slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide2.jpg" alt="Slide"></a>
           </div>
           <div class="slide">
-            <img src="img/slide3.jpg" alt="Slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide3.jpg" alt="Slide"></a>
           </div>
           <div class="slide">
-            <img src="img/slide4.jpg" alt="Slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide4.jpg" alt="Slide"></a>
           </div>
         </div>
         <div class="btn-anterior" id="btnAnterior">

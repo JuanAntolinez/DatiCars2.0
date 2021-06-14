@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>CDA megaservice car</title>
-	<link rel="icon" href="img/logotipo.png" type="image/png" />
+	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/cda-megaservice-car.css">
@@ -81,7 +81,11 @@
     <div class="contenedor">
      
      
-     
+     <h2><label  class="name">CDA MEGASERVICE CAR</label></h2>
+		 <label  class="horario">Horario: Lunes - sabado: 7:00- 19:00</label>
+		 <label  class="horario">Domingo: 8:00- 13:00</label>
+		 <label  class="webmegaservicecar">Pagína web:<a style="text-decoration:none" href="http://www.megaservicecar.com/"> megaservicecar.com</a></label>
+		 <label  class="telefono">Teléfono: +5716060007 </label>
      
     <div class="mapa">
 

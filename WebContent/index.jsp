@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>DatiCars</title>
-    <link rel="icon" href="img/logotipo.png" type="image/png" />
+    <link rel="icon" href="img/logoicon.png" type="image/png" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -437,7 +437,7 @@
               <p><center><br>Restaurantes</center></p>
             </div>
           </div>
-          <a href="http://localhost:8080/DatiCarsProyecto/index.jsp#openModal"><center><p><h3>Para acceder a nuestros servicios debe iniciar sesión.</h3></p></center></a>
+          <a style="text-decoration:none" href="http://localhost:8080/DatiCarsProyecto/index.jsp#openModal"><center><p><h3>Para acceder a nuestros servicios debe iniciar sesión.</h3></p></center></a>
            
         </div>
       </section>

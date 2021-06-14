@@ -6,7 +6,7 @@
 	<meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-2″>
 	<link rel="stylesheet" href="css/Terminos.css">
 	<title>DatiCars</title>
-	<link rel="icon" href="img/logotipo.png" type="image/png" />
+	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	</head>
 	<body>
 	

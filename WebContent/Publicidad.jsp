@@ -11,7 +11,7 @@
 	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/cda-revicars.css">
+    <link rel="stylesheet" href="css/publicidad.css">
 
 
 
@@ -77,19 +77,41 @@
     <section class="proyectos" id="proyectos">
        
    
+    <center><h1>PROMOCIONES ACTUALES</h1></center>
     
-    <div class="contenedor">
-     
-     <h2><label  class="name">CDA REVICARS</label></h2>
-		 <label  class="horario">Horario: Lunes - sabado: 7:30 - 18:30</label>
-		 <label  class="horario">Domingo: 10:00- 14:00</label>
-     
-    <div class="mapa">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5957023031556!2d-74.06356558625333!3d4.6659470966107035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9baa49be4c81%3A0xc2c4ea89b2616b96!2sCDA%20Revicars%20Colombia%20S.A.S!5e0!3m2!1ses!2sco!4v1623544097655!5m2!1ses!2sco"
-     width="495" height="400"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
+    
+    <div class="contenedor">	
+     	
+     <div class="codigo-qr">
+     <p>casa lis bono</p>
+     		<img src="img/codigo-qr-RestauranteCasaLis.png" alt="Restaurante casa lis - DatiCars" width="250" height="250">
+      </div>
     </div>
-    </div>    
+    
+    
+   
+   <div class="contenedor-dos">
+     <div class="codigo-qr-dos">
+       <p>Terpel barrios unidos</p>
+             <img src="img/codigo-qr-Terpel.png" alt="EDS Terpel- DatiCars" width="250" height="250">     
+      </div>
+   </div>
+   
+   
+   
+   <div class="contenedor-tres">
+      <div class="codigo-qr-tres">
+        <p>Cda CDA revicars</p>
+        <img src="img/codigo-qr-CDA-revicars.png" alt="CDA revicars - DatiCars" width="250" height="250">
+      </div>
+   </div>
+   
+   <div class="contenedor-cuatro">
+      <div class="codigo-qr-cuatro">
+        <p>Restaurante la playita</p>
+        <img src="img/codigo-qr-RES-laplayita.png" alt="CDA revicars - DatiCars" width="250" height="250">
+      </div>
+   </div>
              
     
        

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>CDA diagnostiya 80</title>
 	<link rel="icon" href="img/logotipo.png" type="image/png" />
-	 <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="icon" href="img/logoicon.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/cda-diagnostiya-80.css">
 
@@ -82,7 +82,11 @@
      
      
      
-     
+         <h2><label  class="name">CDA DIAGNOSTIYA 80</label></h2>
+		 <label  class="horario">Horario: Lunes - sabado: 6:30- 21:00</label>
+		 <label  class="horario">Domingo: 8:00- 15:00</label>
+		 <label  class="webdiagnostiya80">Pagína web:<a style="text-decoration:none" href="https://diagnostiautos.com/"> diagnostiya.com</a></label>
+		 <label  class="telefono">Teléfono: +573153009543 </label>
      
      
      

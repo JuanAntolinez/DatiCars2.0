@@ -28,48 +28,81 @@ body{
  
 }
 
-.mapa{
-	  
-      position: relative;
-      right: -305px;
-      top: -40px;
+.codigo-qr{
+	 
+	  position: relative;
+      right: -770px;
+      top: 40px;
+	
 }
 
-.name{
-  padding:30px;
-  height: 100px;
+.contenedor-dos{
+  width: 85%;
+  height: 430px;
+  color: #000000;
+  background: #FFF;
+  padding: 54px 0;
+  margin: 15px;
   position: relative;
-  right: 245px;
-  color:#040D3B;
-  top: -30px;
+  right:-35px;
+  border-radius:20px;
+ 
 }
 
-.horario{
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: 10px;
-  color:#000000;
-  top: -4px;
+.codigo-qr-dos{
+	 
+	  position: relative;
+      right: -770px;
+      top: 40px;
+	
 }
 
-.webbiomaxsanandresito{
-  padding:30px;
-  height: 100px;
+.contenedor-tres{
+  width: 85%;
+  height: 430px;
+  color: #000000;
+  background: #FFF;
+  padding: 54px 0;
+  margin: 15px;
   position: relative;
-  right: 205px;
-  color:#000000;
-  top: 25px;
+  right:-35px;
+  border-radius:20px;
+ 
 }
 
-.telefono{
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: 465px;
-  color:#000000;
-  top: 55px;
+
+.codigo-qr-tres{
+	 
+	  position: relative;
+      right: -770px;
+      top: 40px;
+	
 }
+
+.contenedor-cuatro{
+  width: 85%;
+  height: 430px;
+  color: #000000;
+  background: #FFF;
+  padding: 54px 0;
+  margin: 15px;
+  position: relative;
+  right:-35px;
+  border-radius:20px;
+ 
+}
+
+
+.codigo-qr-cuatro{
+	 
+	  position: relative;
+      right: -770px;
+      top: 40px;
+	
+}
+
+
+
 
 
 
@@ -198,3 +231,6 @@ footer .footer-redes a{
 footer .footer-redes a:hover{
   color: #fff;
 }
+ 
+ 
+ 

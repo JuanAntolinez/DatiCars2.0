@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>EDS Petrobras</title>
-	<link rel="icon" href="img/logotipo.png" type="image/png" />
+	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/eds-petrobras.css">
@@ -80,13 +80,17 @@
     
     <div class="contenedor">
      
-     <div class="eds-petrobras">
-    <p>EDS petrobras</p>
-		</div>
+     
+     <h2><label  class="name">EDS PETROBRAS</label></h2>
+		 <label  class="horario">Horario: 24 Horas</label>
+		 <label  class="webpetrobras">Pagína web:<a style="text-decoration:none" href="https://www.petrobras.com/main.jsp?lumPageId=4028803B2C405217012C40E49D115A38&lumA=1&lumII=4028803B2C405217012C411000367A9F&locale=es&doui_processActionId=setLocaleProcessAction"> petrobras.com</a></label>
+		 <label  class="telefono">Teléfono: 01 8000 919 088 </label>
+		 <label  class="correo">Correo: lineadeatencion@petrobras.com </label>
+
 	
     <div class="mapa">
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.856705370845!2d-74.11105494242719!3d4.644985220508334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bea672c03e9%3A0x854a1346d9d18a58!2sPetrobras!5e0!3m2!1ses!2sco!4v1623538235057!5m2!1ses!2sco"
-     width="495" height="400"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
+     width="485" height="395"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
     </div>
     </div>    
              
@@ -102,7 +106,7 @@
         <p>Todos los derechos reservados</p>
       </div>
       <div class="footer-redes">
-        <a href="#">
+        <a href="https://www.facebook.com/petrobras">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
         <a href="#">

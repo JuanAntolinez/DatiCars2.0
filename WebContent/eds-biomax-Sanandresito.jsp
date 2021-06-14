@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>EDS Biomax Alquería</title>
-	<link rel="icon" href="img/logotipo.png" type="image/png" />
+	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/eds-biomax-Sanandresito.css">
@@ -80,11 +80,12 @@
     
     <div class="contenedor">
      
-     
-     
+    	<h2><label  class="name">EDS BIOMAX SAN ANDRESITO</label></h2>
+		 <label  class="horario">Horario: 24 Horas</label>
+		 <label  class="webbiomaxsanandresito">Pagína web:<a style="text-decoration:none" href="https://www.biomax.co/"> biomax.co</a></label>
+		 <label  class="telefono">Teléfono: +5713798000 </label>
      
     <div class="mapa">
-
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8538105559396!2d-74.10113428625367!3d4.620157596643665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99670b5e1f39%3A0xc14c56ff8795cb23!2sBIOMAX%20Estaci%C3%B3n%20San%20Andresito%20De%20La%2038!5e0!3m2!1ses!2sco!4v1623543536869!5m2!1ses!2sco"
      width="495" height="400"  style="border:1;" allowfullscreen="" loading="lazy"></iframe> 
     </div>

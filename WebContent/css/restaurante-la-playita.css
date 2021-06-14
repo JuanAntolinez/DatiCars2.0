@@ -21,7 +21,6 @@ body{
   color: #000000;
   background: #FFF;
   padding: 54px 0;
-  text-align: center;
   margin: 15px;
   position: relative;
   right:-35px;
@@ -36,7 +35,32 @@ body{
       top: -40px;
 }
 
+.name{
+  padding:30px;
+  height: 100px;
+  position: relative;
+  right: 245px;
+  color:#040D3B;
+  top: -30px;
+}
 
+.horario{
+  padding:30px;
+  height: 100px;
+  position: relative;
+  right: 10px;
+  color:#000000;
+  top: -4px;
+}
+
+.telefono{
+  padding:30px;
+  height: 100px;
+  position: relative;
+  right: 465px;
+  color:#000000;
+  top: 55px;
+}
 
 .nombre-empresa h2 , h3, h4, h5, h6{
       font-weight: normal;

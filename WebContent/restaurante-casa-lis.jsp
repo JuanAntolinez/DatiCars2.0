@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>Restaurante casa lis</title>
-	<link rel="icon" href="img/logotipo.png" type="image/png" />
+	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/restaurante-casa-lis.css">
@@ -80,8 +80,13 @@
     
     <div class="contenedor">
      
-     
-     
+     <h2><label  class="name">RESTAURANTE CASA LIS</label></h2>
+		 <label  class="horario">Horario: Lunes - Miercoles: 8:00- 17:30</label>
+		 <label  class="horario">Jueves: 8:00- 19:30</label>
+		 <label  class="horario">Viernes: 7:30- 21:00</label>
+		 <label  class="horario">Sabado: 8:00- 16:30</label>
+		 <label  class="horario">Domingo: 9:00- 17:00</label>
+		 <label  class="telefono">Teléfono: +5713423107 </label>
      
     <div class="mapa">
 
