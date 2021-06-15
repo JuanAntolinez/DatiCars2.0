@@ -25,14 +25,24 @@ body{
   position: relative;
   right:-35px;
   border-radius:20px;
- 
+  
 }
+
+.publicidad-casalis{
+	
+      position: relative;
+      right: -40px;
+      top: 5px;
+	
+}
+
+
 
 .codigo-qr{
 	 
 	  position: relative;
       right: -770px;
-      top: 40px;
+      top: -330px;
 	
 }
 
@@ -49,11 +59,18 @@ body{
  
 }
 
+.publicidad-terpel{
+	
+	 position: relative;
+      right: -25px;
+      top: -15px;
+}
+
 .codigo-qr-dos{
 	 
 	  position: relative;
-      right: -770px;
-      top: 40px;
+      right: -840px;
+      top: -310px;
 	
 }
 
@@ -70,12 +87,18 @@ body{
  
 }
 
+.publicidad-cda{
+	
+	 position: relative;
+      right: 10px;
+      top: -40px;
+}
 
 .codigo-qr-tres{
 	 
 	  position: relative;
       right: -770px;
-      top: 40px;
+      top: -355px;
 	
 }
 
@@ -96,12 +119,18 @@ body{
 .codigo-qr-cuatro{
 	 
 	  position: relative;
-      right: -770px;
-      top: 40px;
+      right: -820px;
+      top: -325px;
 	
 }
 
 
+.publicidad-res-playita{
+	
+	position: relative;
+    right: -45px;
+    top: -30px;
+}
 
 
 

@@ -16,6 +16,8 @@
 
   </head>
   <body>
+  
+  
 
     <!-- Boton "Volver Arriba" -->
     <div class="btn-volver-arriba" id="btnVolverArriba">
@@ -105,7 +107,9 @@
     <!-- Main -->
     <section class="main">
 
-
+     <div class="contenedor-visitas">
+     <a href="https://www.contadorvisitasgratis.com" title="contadores de visitas"><img src="https://counter6.stat.ovh/private/contadorvisitasgratis.php?c=317s1qk3qr64afk2tjpe6ca5clm9wwpj" border="0" title="contadores de visitas" alt="contadores de visitas"></a>
+     </div>
       <!-- Banner Principal MODAL LOGIN-->
 
       <section class="banner-principal">

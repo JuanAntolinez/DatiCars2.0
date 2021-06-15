@@ -113,19 +113,23 @@
         <div class="slider" id="slider">
           <div class="slide">
           <a href="Publicidad.jsp">
-            <img src="img/slide.jpg" alt="Slide" ></a>
+            <img src="img/slide.jpg" alt="Slide"></a>
           </div>
           <div class="slide">
           <a href="Publicidad.jsp">
-            <img src="img/bono.jpg" alt="Slide"></a>
+            <img src="img/slide1.jpg" alt="Slide"></a>
           </div>
           <div class="slide">
           <a href="Publicidad.jsp">
-            <img src="img/slide3.jpg" alt="Slide"></a>
+          	<img src="img/slide2.jpg" alt="Slide" width="100"></a>
           </div>
           <div class="slide">
           <a href="Publicidad.jsp">
-            <img src="img/slide4.jpg" alt="Slide"></a>
+            <img src="img/slide3.jpg" alt="Slide" width="100"></a>
+          </div>
+          <div class="slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide4.jpg" alt="Slide" width="100"></a>
           </div>
         </div>
         <div class="btn-anterior" id="btnAnterior">

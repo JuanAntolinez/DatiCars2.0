@@ -516,7 +516,7 @@ button:hover {
 /*Slider*/
 
 
-.main .contenedor-slider{
+.main .contenedor-slider {
   width: 100%;
   overflow: hidden;
   background: #F3F4FA;
@@ -524,13 +524,13 @@ button:hover {
   position: relative;
 }
 
-.main .contenedor-slider .slider{
+.main .contenedor-slider .slider {
   width: 400%;
   display: flex;
   margin-top: 30px;
 }
 
-.main .contenedor-slider .slider .slide{
+.main .contenedor-slider .slider .slide {
   width: 15%;
   max-width: 950px;
   margin-right: 0.3%;
@@ -560,12 +560,23 @@ button:hover {
 }
 
 .main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i{
-  color: #a4e31e;
+  color: #040D3B;
 }
 
 .main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover{
-  color: #040D3B;
+  color: #fff ;
 }
+
+/*cierre slider*/
+
+
+
+
+
+
+
+
+
 
 /*Nuestro equipo*/
 

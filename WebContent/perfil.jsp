@@ -79,15 +79,15 @@
 				
 	<br><form action = "ActualizacionDatosUsuario" method = "post" id="miformulario">		
              
-             <div id="MensajeRegistro"> 
+             <div id="openModalMensaje" class="modalMensajeJava">
       
-      <%
-      	if (request.getAttribute("mensaje")!=null){
-      		out.println(request.getAttribute("mensaje"));
-      	    
-      	}
-      %>
-     </div>
+			      <%
+			      	if (request.getAttribute("mensaje")!=null){
+			      		out.println(request.getAttribute("mensaje"));
+			      	    
+			      	}
+			      %>
+		     </div>
 
 					
 					<label for="usuario" class="usuario">Usuario</label>

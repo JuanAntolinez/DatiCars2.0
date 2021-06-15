@@ -151,6 +151,16 @@ body{
   display: none;
 }
 
+
+/*Vistas contador*/
+.contenedor-visitas{
+	position: relative;
+      right: -40px;
+      top: 150px;
+}
+
+/*cieere vistas contador*/
+
 /* ------ MAIN ------ */
 
 

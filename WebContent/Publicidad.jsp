@@ -81,10 +81,16 @@
     <center><h1>PROMOCIONES ACTUALES</h1></center>
     
     
+    
+    
     <div class="contenedor">	
      	
+     <div class="publicidad-casalis">	
+     	<img src="img/recasalis.png" alt="CDA revicars - DatiCars" width="650" height="350"> 
+     </div>	
+     
      <div class="codigo-qr">
-     <p>casa lis bono</p>
+     
      		<img src="img/codigo-qr-RestauranteCasaLis.png" alt="Restaurante casa lis - DatiCars" width="250" height="250">
       </div>
     </div>
@@ -92,8 +98,13 @@
     
    
    <div class="contenedor-dos">
+      
+      <div class="publicidad-terpel">
+        <img src="img/terpel-barrios.png" alt="CDA revicars - DatiCars" width="650" height="350"> 
+      </div>
+      
+      
      <div class="codigo-qr-dos">
-       <p>Terpel barrios unidos</p>
              <img src="img/codigo-qr-Terpel.png" alt="EDS Terpel- DatiCars" width="250" height="250">     
       </div>
    </div>
@@ -101,15 +112,30 @@
    
    
    <div class="contenedor-tres">
-      <div class="codigo-qr-tres">
-        <p>Cda CDA revicars</p>
-        <img src="img/codigo-qr-CDA-revicars.png" alt="CDA revicars - DatiCars" width="250" height="250">
-      </div>
+   
+      <div class="publicidad-cda">
+            <img src="img/cdarevicarspublicidad.png" alt="CDA revicars - DatiCars" width="650" height="350"> 
+            
+     </div>
+     
+     <div class="codigo-qr-tres">
+            <img src="img/codigo-qr-CDA-revicars.png" alt="CDA revicars - DatiCars" width="250" height="250">
+     	</div>
+      
+  
+        
+      
    </div>
    
    <div class="contenedor-cuatro">
+      
+      <div class="publicidad-res-playita">
+            <img src="img/reslaplayita.png" alt="RES la playita - DatiCars" width="650" height="350"> 
+            
+     </div>
+   
       <div class="codigo-qr-cuatro">
-        <p>Restaurante la playita</p>
+        
         <img src="img/codigo-qr-RES-laplayita.png" alt="CDA revicars - DatiCars" width="250" height="250">
       </div>
    </div>
