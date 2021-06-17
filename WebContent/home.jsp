@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -69,9 +70,10 @@
         <div class="top-User">
           <nav class="menu-principal"> 
               <ul class="nav"> 
-                <li><a><span class="input-item-Registro"><i class="fa fa-user-circle"></i></span></a>
+                <li><a><span class="input-item-Registro"><i class="fa fa-user-circle">&nbsp; ${usuario.getUsuario() }</i></span></a>
                   <ul>
                     <li><a href="perfil.jsp">PERFIL</a></li>
+                    <li><a href="#">ACTUALIZAR CONTRASEÑA</a></li>
                     <li><a href="index.jsp">CERRAR SESIÓN</a></li>
                   </ul>
                 </li>

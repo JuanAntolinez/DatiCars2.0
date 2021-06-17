@@ -8,9 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import beans.Actualizar;
 import model.ModeloActualizarDatosUsuario;
+import javax.servlet.http.HttpSession;
 
 	@WebServlet("/ActualizacionDatosUsuario")
-	public class ActualizacionDatosUsuario extends HttpServlet {
+	public class ServletActualizacionDatosUsuario extends HttpServlet {
 		private static final long serialVersionUID = 1L;
 
 		protected void service(HttpServletRequest request, HttpServletResponse response)
@@ -29,11 +30,12 @@ import model.ModeloActualizarDatosUsuario;
 
 			ModeloActualizarDatosUsuario modelo = new ModeloActualizarDatosUsuario();
 			@SuppressWarnings("unused")
-			boolean usuario = modelo.Guardar(id,user,nombre,apellido,email, contraseña);
+			boolean usuario = modelo.Guardar(id,user,nombre,apellido,email);
 
 			if (usuario) {
-				
+				HttpSession sesionActualizado= request.getSession(true);
 				request.setAttribute("mensaje", "Usuario Actualizado");
+				sesionActualizado.setAttribute("usuario", usuario);
 				request.getRequestDispatcher("perfil.jsp").forward(request, response);
 				
 			}

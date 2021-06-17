@@ -10,11 +10,10 @@ import beans.UsuarioRegistro;
 
 public class ModeloActualizarDatosUsuario {
 	public ModeloActualizarDatosUsuario () {}
-	public boolean Guardar(String id,String user,String nombre,String apellido,String email, String contraseña) {
+	public boolean Guardar(String id,String user,String nombre,String apellido,String email) {
 
 	
-			
-		//UsuarioRegistro usuario = null;//
+
 		Connection cn = null;
 		PreparedStatement pstm = null;
 		ResultSet rs = null;
@@ -22,14 +21,13 @@ public class ModeloActualizarDatosUsuario {
 		
 		try {
 			cn = Conexion.getConexion();
-			String sql = "UPDATE Usuarios SET usuario=? ,nombre=?, apellido=?, email=?, contraseña=? "+ "WHERE id";
+			String sql = "SELECT U.id, U.usuario, U.email, U.contraseña,U.nombre,U.apellido UPDATE Usuarios SET usuario=? ,nombre=?, apellido=?, email=?   WHERE id=?";   
 			
 			pstm = cn.prepareStatement(sql);
 			pstm.setString(1, user);
 			pstm.setString(2, nombre);
 			pstm.setString(3, apellido);
 			pstm.setString(4, email);
-			pstm.setString(5, contraseña);
 			actualizousuario = pstm.executeUpdate() > 0;
 			
 							

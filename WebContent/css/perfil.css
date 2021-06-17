@@ -354,7 +354,7 @@ input{
   transition:.5s;
   position: relative;
   right: -800px;
-  top: -220px;
+  top: -160px;
 }
 
 .boton_guardar:hover{

@@ -10,7 +10,30 @@ public class Actualizar {
 	private String email;
 	private String contraseña;
 	
+	public Actualizar(int id, String usuario, String email, String contraseña, String nombre, String apellido) {
+		super();
+		this.id = id;
+		this.usuario = usuario;
+		this.email = email;
+		this.contraseña = contraseña;
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+	
+	
+	public Actualizar() {
+		super();
+	}
 
+
+	public Actualizar(String usuario, String email, String contraseña, String nombre, String apellido) {
+		super();
+		this.usuario = usuario;
+		this.email = email;
+		this.contraseña = contraseña;
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
 	
 	public int getIdUsuario() {
 		return id;

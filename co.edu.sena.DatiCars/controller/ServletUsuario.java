@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import beans.Usuario;
 
@@ -29,6 +30,8 @@ public class ServletUsuario extends HttpServlet {
 			request.setAttribute("mensaje", "Error e-mail y/o clave incorrecta");
 			request.getRequestDispatcher("#openModal").forward(request, response);
 		} else {
+			HttpSession sesionUsuario= request.getSession(true);
+			sesionUsuario.setAttribute("usuario", usuario);
 			response.sendRedirect("home.jsp");
 		}
 	}
