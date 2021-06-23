@@ -83,7 +83,7 @@
      
      <h2><label  class="name">EDS Terpel 71</label></h2>
 		 <label  class="horario">Horario: 24 Horas</label>
-		 <label  class="web-terpel-71">Pagína web:<a style="text-decoration:none" href="https://www.terpel.com/"> terpel.com</a></label>
+		 <label  class="web-terpel-71">Pagína web:<a style="text-decoration:none" href="https://www.terpel.com/" target="_blank"> terpel.com</a></label>
      
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.2983950893145!2d-74.07545817641754!3d4.665755043841769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5576b2c821%3A0xf38d2c006c2be777!2sEstaci%C3%B3n%20de%20Servicio%20Terpel!5e0!3m2!1ses-419!2sco!4v1623542090681!5m2!1ses-419!2sco"

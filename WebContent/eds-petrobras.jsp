@@ -82,7 +82,7 @@
    
         <h2><label  class="name">EDS PETROBRAS</label></h2>
 				 <label  class="horario">Horario: 24 Horas</label>
-				 <label  class="webpetrobras">Pagína web:<a style="text-decoration:none" href="https://www.petrobras.com/main.jsp?lumPageId=4028803B2C405217012C40E49D115A38&lumA=1&lumII=4028803B2C405217012C411000367A9F&locale=es&doui_processActionId=setLocaleProcessAction"> petrobras.com</a></label>
+				 <label  class="webpetrobras">Pagína web:<a style="text-decoration:none" href="https://www.petrobras.com/es/paises/colombia/colombia-1.htm/" target="_blank"> petrobras.com</a></label>
 				 <label  class="telefono">Teléfono: 01 8000 919 088 </label>
 				 <label  class="correo">Correo: lineadeatencion@petrobras.com </label>
 		    

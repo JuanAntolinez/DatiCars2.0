@@ -9,8 +9,9 @@ public class Actualizar {
 	private String apellido;
 	private String email;
 	private String contraseña;
+	private String permisos;
 	
-	public Actualizar(int id, String usuario, String email, String contraseña, String nombre, String apellido) {
+	public Actualizar(int id, String usuario, String email, String contraseña, String nombre, String apellido, String permisos) {
 		super();
 		this.id = id;
 		this.usuario = usuario;
@@ -18,6 +19,7 @@ public class Actualizar {
 		this.contraseña = contraseña;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.permisos = permisos;
 	}
 	
 	
@@ -26,13 +28,14 @@ public class Actualizar {
 	}
 
 
-	public Actualizar(String usuario, String email, String contraseña, String nombre, String apellido) {
+	public Actualizar(String usuario, String email, String contraseña, String nombre, String apellido, String permisos) {
 		super();
 		this.usuario = usuario;
 		this.email = email;
 		this.contraseña = contraseña;
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.permisos = permisos;
 	}
 	
 	public int getIdUsuario() {
@@ -83,4 +86,13 @@ public class Actualizar {
 	public void setContraseña(String  contraseña) {
 		this.contraseña = contraseña;
 	}
+	
+	public String getPermisos() {
+		return permisos;
+	}
+
+	public void setPermisos(String permisos) {
+		this.permisos = permisos;
+	}
+	
 }

@@ -10,7 +10,7 @@ import beans.UsuarioRegistro;
 
 public class ModeloRegistroUsuario {
 	public ModeloRegistroUsuario () {}
-	public boolean Registrate(String user,String nombre,String apellido,String email, String contraseña) {
+	public boolean Registrate(String user,String nombre,String apellido,String email, String contraseña, String permisos) {
 
 	
 			
@@ -22,13 +22,14 @@ public class ModeloRegistroUsuario {
 		
 		try {
 			cn = Conexion.getConexion();
-			String sql = "insert into Usuarios (usuario, nombre , apellido , email , contraseña) values ( ?, ? , ?, ?, ?)";
+			String sql = "insert into Usuarios (usuario, nombre , apellido , email , contraseña, permisos) values ( ?, ? , ?, ?, ?, ?)";
 			pstm = cn.prepareStatement(sql);
 			pstm.setString(1, user);
 			pstm.setString(2, nombre);
 			pstm.setString(3, apellido);
 			pstm.setString(4, email);
 			pstm.setString(5, contraseña);
+			pstm.setString(6, permisos);
 			registrousuario = pstm.executeUpdate() > 0;
 			
 							

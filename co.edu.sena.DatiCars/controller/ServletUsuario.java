@@ -34,7 +34,15 @@ public class ServletUsuario extends HttpServlet {
 			sesionUsuario.setAttribute("usuario", usuario);
 			response.sendRedirect("home.jsp");
 		}
-	}
-
+		/*
+		HttpSession sessionUsuario = request.getSession(false);
+		if (sessionUsuario != null) {
+		    sessionUsuario.invalidate();
+		    request.getRequestDispatcher("index.jsp").forward(request,response);    
+		    
+		}
+       */
+	}	
+		
 }
 

@@ -20,16 +20,14 @@ import model.ModeloRegistroUsuario;
 			String user = request.getParameter("user");
 			String nombre = request.getParameter("nombre");
 			String apellido = request.getParameter("apellido");
-			String email = request.getParameter("email");
-			String confirmar_email = request.getParameter("confirmar_email");
-			String contraseña = request.getParameter("contraseña");
-			String confirmar_contraseña = request.getParameter("confirmar_contraseña");
-			
+			String email = request.getParameter("email");			
+			String contraseña = request.getParameter("contraseña");		
+			String permisos = request.getParameter("permisos");
 			
 
 			ModeloRegistroUsuario modelo = new ModeloRegistroUsuario();
 			@SuppressWarnings("unused")
-			boolean usuario = modelo.Registrate(user,nombre,apellido,email, contraseña);
+			boolean usuario = modelo.Registrate(user,nombre,apellido,email, contraseña, permisos);
 
 			if (usuario) {
 				

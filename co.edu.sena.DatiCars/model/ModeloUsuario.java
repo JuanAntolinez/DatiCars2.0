@@ -15,7 +15,7 @@ public class ModeloUsuario {
 		
 		try {
 			cn = Conexion.getConexion();
-			String sql = "SELECT U.id, U.usuario, U.email, U.contraseña,U.nombre,U.apellido FROM Usuarios U WHERE U.email = ? AND  U.contraseña = ?";
+			String sql = "SELECT U.id, U.usuario, U.email, U.contraseña,U.nombre,U.apellido, U.permisos FROM Usuarios U WHERE U.email = ? AND  U.contraseña = ?";
 			pstm = cn.prepareStatement(sql);
 			pstm.setString(1, email);
 			pstm.setString(2, contraseña);
@@ -29,6 +29,7 @@ public class ModeloUsuario {
 				usuario.setNombre(rs.getString("nombre"));
 				usuario.setApellido(rs.getString("apellido"));
 				usuario.setUsuario(rs.getString("usuario"));
+				usuario.setPermisos(rs.getString("permisos"));
 			}
 			
 		} catch (Exception e) {

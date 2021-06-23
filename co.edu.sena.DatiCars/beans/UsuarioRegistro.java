@@ -8,7 +8,23 @@ public class UsuarioRegistro {
 	private String apellido;
 	private String email;
 	private String contraseña;
+	private String permisos;
 	
+	public UsuarioRegistro(int id, String usuario, String email, String contraseña, String nombre, String apellido, String permisos) {
+		super();
+		this.id = id;
+		this.usuario = usuario;
+		this.email = email;
+		this.contraseña = contraseña;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.permisos = permisos;
+	}
+	
+	
+	public UsuarioRegistro() {
+		super();
+	}
 
 	
 	public int getIdUsuario() {
@@ -58,6 +74,14 @@ public class UsuarioRegistro {
 
 	public void setContraseña(String  contraseña) {
 		this.contraseña = contraseña;
+	}
+	
+	public String getPermisos() {
+		return permisos;
+	}
+
+	public void setPermisos(String permisos) {
+		this.permisos = permisos;
 	}
 	
 }

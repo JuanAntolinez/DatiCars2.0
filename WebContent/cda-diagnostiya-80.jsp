@@ -86,7 +86,7 @@
          <h2><label  class="name">CDA DIAGNOSTIYA 80</label></h2>
 		 <label  class="horario">Horario: Lunes - sabado: 6:30- 21:00</label><br>
 		 <br><label  class="horario">Domingo: 8:00- 15:00</label>
-		 <label  class="webdiagnostiya80">Pagína web:<a style="text-decoration:none" href="https://diagnostiautos.com/"> diagnostiya.com</a></label>
+		 <label  class="webdiagnostiya80">Pagína web:<a style="text-decoration:none" href="https://diagnostiautos.com/" target="_blank"> diagnostiya.com</a></label>
 		 <label  class="telefono">Teléfono: 3153009543 </label>
      
      

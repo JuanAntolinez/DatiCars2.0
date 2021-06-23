@@ -85,7 +85,7 @@
      <h2><label  class="name">CDA MEGASERVICE CAR</label></h2>
 		 <label  class="horario">Horario: Lunes - sabado: 7:00- 19:00</label><br>
 		 <br><label  class="horario">Domingo: 8:00- 13:00</label>
-		 <label  class="webmegaservicecar">Pagína web:<a style="text-decoration:none" href="http://www.megaservicecar.com/"> megaservicecar.com</a></label>
+		 <label  class="webmegaservicecar">Pagína web:<a style="text-decoration:none" href="http://www.megaservicecar.com/" target="_blank"> megaservicecar.com</a></label>
 		 <label  class="telefono">Teléfono: +5716060007 </label>
      
     <div class="mapa">

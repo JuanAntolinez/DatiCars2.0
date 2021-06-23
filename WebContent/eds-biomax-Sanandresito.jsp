@@ -83,7 +83,7 @@
      
     	<h2><label  class="name">EDS BIOMAX SAN ANDRESITO</label></h2>
 		 <label  class="horario">Horario: 24 Horas</label>
-		 <label  class="webbiomaxsanandresito">Pagína web:<a style="text-decoration:none" href="https://www.biomax.co/"> biomax.co</a></label>
+		 <label  class="webbiomaxsanandresito">Pagína web:<a style="text-decoration:none" href="https://www.biomax.co/" target="_blank"> biomax.co</a></label>
 		 <label  class="telefono">Teléfono: 13798000 </label>
      
 	    <div class="mapa">

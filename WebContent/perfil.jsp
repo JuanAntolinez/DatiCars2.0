@@ -94,7 +94,7 @@
 					<label for="usuario" class="usuario">Usuario</label>
 					<br>
 					<div class="input_usuario">
-						<input  class="input_usuario" id="txt-input" type="text" id="user" name="user" placeholder="${usuario.getUsuario() }" required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
+						<input  class="input_usuario" id="txt-input" type="text" id="user" name="user" readonly=»readonly» value="${usuario.getUsuario() }" required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
         	 <span class="validity"></span>
 					    
 					</div>
@@ -103,14 +103,14 @@
 					<label for="nombre" class="name">Nombre</label>
 					<br>
 					<div class="input_nombre">
-						<input type="text" class="input_nombre" id="nombre" name="nombre" placeholder="${usuario.getNombre() }"  required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
+						<input type="text" class="input_nombre" id="nombre" name="nombre"  readonly=»readonly» value="${usuario.getNombre() }"  required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
 					</div>
 					</br>
 				
 					<label for="Apellido" class="apellido">Apellido</label>
 					<br>
 					<div class="input_apellido">
-						<input class="input_apellido" id="txt-input" type="text" name = "apellido" placeholder="${usuario.getApellido() }" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El apellido debe tener almenos 3 digitos y no debe tener números.">
+						<input class="input_apellido" id="txt-input" type="text" name = "apellido"  readonly=»readonly» value="${usuario.getApellido() }" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El apellido debe tener almenos 3 digitos y no debe tener números.">
         	            <span class="validity"></span>
         	        </div>
 					</br>
@@ -118,7 +118,7 @@
 					<label for="email" class="email">Email</label>
 					<br>
 					<div class="input_email">
-						<input type="email" class="input_email" id="email" name="email" placeholder="${usuario.getEmail() }" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
+						<input type="email" class="input_email" id="email" name="email" value="${usuario.getEmail() }" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
 					    <span class="validity"></span>
 					</div>
 					</br>
@@ -126,7 +126,7 @@
 					<label for="Confirmar Email" class="confirmaremail">Confirmar Email</label>
 					<br>
 					<div class="input_confirmar_email">
-						<input type="confirmaremail" class="input_confirmar_email" id="confirmaremail" name="confirmaremail" placeholder="${usuario.getEmail() }" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
+						<input type="confirmaremail" class="input_confirmar_email" id="confirmaremail" name="confirmaremail" value="${usuario.getEmail() }" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
 					    <span class="validity"></span>
 					</div>
 					</br>
