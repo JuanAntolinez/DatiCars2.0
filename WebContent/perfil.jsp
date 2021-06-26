@@ -140,7 +140,7 @@
         	<div class="texto-banner">
           	
           	
-          	<td colspan="2"><button class="boton_guardar" type="submit" class="log-in" >GUARDAR</button>
+          	<td colspan="2"><button class="boton_guardar" type="submit" class="log-in" >GUARDAR</button></td>
           </div>
           </section>
           

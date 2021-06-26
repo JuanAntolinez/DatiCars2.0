@@ -4,33 +4,31 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import beans.actualizarContraseña;
+
 import connection.Conexion;
-import beans.Actualizar;
 
-
-public class ModeloActualizarDatosUsuario {
-	public ModeloActualizarDatosUsuario () {}
-	public boolean Guardar(String user,String nombre,String apellido,String email) {
+public class ModeloActualizarContraseña {
+	public  ModeloActualizarContraseña() {}
+	public boolean actualizar(String contraseña) {
 
 	
 
 		Connection cn = null;
 		PreparedStatement pstm = null;
 		ResultSet rs = null;
-		boolean actualizousuario = false;
+		boolean actualizarContraseña = false;
 		
 		try {
 			cn = Conexion.getConexion();
 			
-			String sql = " UPDATE Usuarios  SET usuario=? ,nombre=?, apellido=?, email=?  WHERE id=?";   
+			String sql = " UPDATE Usuarios  SET contraseña=?  WHERE id=?";   
 			
 			pstm = cn.prepareStatement(sql);
-			pstm.setString(1, user);
-			pstm.setString(2, nombre);
-			pstm.setString(3, apellido);
-			pstm.setString(4, email);
+			pstm.setString(1, contraseña);
+		;
 			
-			actualizousuario = pstm.executeUpdate() > 0;
+			actualizarContraseña = pstm.executeUpdate() > 0;
 			
 							
 		} catch (SQLException e) {
@@ -53,7 +51,7 @@ public class ModeloActualizarDatosUsuario {
 			}
 		}
 		
-		return actualizousuario;
+		return actualizarContraseña;
 	}
 }
 

@@ -193,7 +193,7 @@
 <!--        buttons -->
 <!--      button iniciar sesión -->
 
-		<td colspan="2"><button class="log-in">iniciar sesión</button></td>
+		<td colspan="2"><button class="log-in" onclick="myFunction()">iniciar sesión</button></td>
 
 
   				 </div>
@@ -617,13 +617,14 @@
     <script src="js/validacion.js"></script>
     <script src="js/menuMobile.js"></script>
 
-
-    <script src="js/parallax.min.js"></script>
-    <!-- Buscar:
-    t(e).on("ready.px.parallax.data-api",function(){t('[data-parallax="scroll"]').parallax()})}
-
-    Reemplazar por:
-    t(function(){t('[data-parallax="scroll"]').parallax()})} -->
+    
+      <script type="text/javascript">
+    function myFunction(){
+    	alert("Error E-mail o contraseña erronea");
+    } 
+    </script>
+    
+   
     <script src="js/prefixfree.min.js"></script>
         <script type="text/javascript">
 			$(document).ready(function () {

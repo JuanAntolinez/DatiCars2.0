@@ -1,5 +1,3 @@
-/*GENERALES*/
-
 *{
   margin:0;
   padding:0;
@@ -15,7 +13,7 @@ body{
 }
 
 
-/*usuario perfil sub menu*/
+/*Actualizar contraseña sub menu*/
 
       
       ul, ol {
@@ -148,64 +146,64 @@ body{
 }
 
 
-.container{
+.container_actualizar_contraseña{
       width: 450px;
-      height: 500px;
+      height: 400px;
       text-align: center;
       background-color: #A4E31E;
-      border-radius: 4px;
+      border-radius: 10px;
       margin: auto;
-      margin-top: 100px;
-    }
+      margin-top: 50px;
+}
 
 .container-input{
       padding: 10px 30px;
       display: flex;
       flex-wrap: wrap;
-    }
+}
 
-
-.password_anterior{
+.password_actual{
   padding:30px;
   height: 100px;
   position: relative;
-  right: -95px;
+  right: -90px;
   color:#000;
-  top: 30px;
+  top: 0px;
 }
 
-.input_password_anterior{
+.input_password_actual{
   width:225px;
   height:30px;
   position: relative;
   right: -40px;
-  top: -35px;
+  top: -20px;
 }
+	
 
-.password{
+.password_nueva{
   padding:30px;
   height: 100px;
   position: relative;
-  left: 95px;
+  right: -90px;
   color:#000;
-  top: -70px;
+  top: -40px;
 }
 
-.input_password{
+.input_password_nueva{
   width:225px;
   height:30px;
   position: relative;
   right: -40px;
-  top: -85px;
+  top: -40px;
 }
 
 .confirmarpassword{
   padding:30px;
   height: 100px;
   position: relative;
-  left: 70px;
+  left: 55px;
   color:#000;
-  top: -170px;
+  top: -80px;
 }
 
 .input_confirmar_password{
@@ -213,7 +211,7 @@ body{
   height:30px;
   position: relative;
   right: -40px;
-  top: -135px;
+  top: -65px;
 }
 
 
@@ -227,12 +225,12 @@ body{
 
 
 input{
-  display:block;
-  height: 30px;
-  width: 150px
-
+   display:block;
+  height:50px;
+  width:90%;
+  margin:0 auto;
+  border:none;
 }
-
 
 
 
@@ -261,7 +259,7 @@ input{
   transition:.5s;
   position: relative;
   right: -150px;
-  top: -200px;
+  top: -100px;
 }
 
 .boton_actualizar:hover{
@@ -274,6 +272,18 @@ input{
   background-color: #110DEC;
   margin: auto;
 }
+
+
+ 
+ .span{
+    position:absolute;
+    display:block;
+    margin:-10px 20%;
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    -webkit-transition:.5s;
+    transition:.5s;
+ }
 
 
  
