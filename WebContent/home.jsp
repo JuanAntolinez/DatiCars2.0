@@ -177,9 +177,10 @@
                     <i class="fal fa-alarm-clock"></i>
                     <p>24 horas</p>
                     </div>
-                    <button onclick="location.href='eds-petrobras.jsp'">Ver más</button>
+                    <button onclick="location.href='eds-petrobras.jsp'">Ver más</button><br>
                     
-                    <a href="https://www.google.com/maps/dir//Petrobras,+Cl.+24a+%2359-59,+Bogot%C3%A1/@4.644413,-74.101904,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9bea672c03e9:0x854a1346d9d18a58!2m2!1d-74.1019103!2d4.6444227?hl=es" class="btn btn-success">Como llega</a>
+                    <a href="https://www.google.com/maps/dir//Petrobras,+Cl.+24a+%2359-59,+Bogot%C3%A1/@4.644413,-74.101904,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9bea672c03e9:0x854a1346d9d18a58!2m2!1d-74.1019103!2d4.6444227?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
+          
             </div>
             
               <div class="contenedor-servicios-eds-dos" id="EDS" >
@@ -192,9 +193,9 @@
                     <p>Calle 71 #29B - 30 Bogotá D.C.</p>
                     <p>24 horas</p>
                     </div>
-                    <button onclick="location.href='eds-terpel-calle71.jsp'">Ver más</button>
+                    <button onclick="location.href='eds-terpel-calle71.jsp'">Ver más</button><br>
 
-               <a href="https://www.google.com/maps/dir//Estaci%C3%B3n+de+Servicio+Terpel,+Cl.+71+%2329B-30,+Barrios+Unidos,+Bogot%C3%A1/@4.66587,-74.074519,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9a5576b2c821:0xf38d2c006c2be777!2m2!1d-74.0745194!2d4.66587?hl=es-419" class="btn btn-success">Como llega</a>
+               <a href="https://www.google.com/maps/dir//Estaci%C3%B3n+de+Servicio+Terpel,+Cl.+71+%2329B-30,+Barrios+Unidos,+Bogot%C3%A1/@4.66587,-74.074519,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9a5576b2c821:0xf38d2c006c2be777!2m2!1d-74.0745194!2d4.66587?hl=es-419" class="btn btn-success" target="_blank">Como llegar</a>
             
             </div>
             
@@ -208,9 +209,9 @@
                     <p>Carrera 38 # 38 - 25 Bogotá D.C.</p>
                     <p>24 horas</p>
                     </div>
-                    <button onclick="location.href='eds-biomax-Sanandresito.jsp'" >Ver más</button>
+                    <button onclick="location.href='eds-biomax-Sanandresito.jsp'" >Ver más</button><br>
 
-                     <a href="https://www.google.com/maps/dir//BIOMAX+Estaci%C3%B3n+San+Andresito+De+La+38,+Cra.+38+%2338-25,+Puente+Aranda,+Bogot%C3%A1/@4.620158,-74.098946,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f99670b5e1f39:0xc14c56ff8795cb23!2m2!1d-74.0989471!2d4.6201589?hl=es" class="btn btn-success">Como llega</a>
+                     <a href="https://www.google.com/maps/dir//BIOMAX+Estaci%C3%B3n+San+Andresito+De+La+38,+Cra.+38+%2338-25,+Puente+Aranda,+Bogot%C3%A1/@4.620158,-74.098946,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f99670b5e1f39:0xc14c56ff8795cb23!2m2!1d-74.0989471!2d4.6201589?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
                      
             </div>
@@ -227,9 +228,9 @@
                     <p>Carrera 73A # 77A-62 Bogotá D.C.</p>
                     <p>24 horas</p>
                     </div>
-                    <button onclick="location.href='cda-diagnostiya-80.jsp'" >Ver más</button>
+                    <button onclick="location.href='cda-diagnostiya-80.jsp'" >Ver más</button><br>
    
-              <a href="https://www.google.com/maps/dir//Diagnostiautos+CDA+-+Revisi%C3%B3n+T%C3%A9cnico+Mec%C3%A1nica+Bogot%C3%A1,+Cra.+63+%23%2368-37,+Bogot%C3%A1,+Cundinamarca/@4.673706,-74.082615,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9b047a1b0847:0x3bc6c58adb8a4f2f!2m2!1d-74.0826142!2d4.6737046?hl=es" class="btn btn-success">Como llega</a>
+              <a href="https://www.google.com/maps/dir//Diagnostiautos+CDA+-+Revisi%C3%B3n+T%C3%A9cnico+Mec%C3%A1nica+Bogot%C3%A1,+Cra.+63+%23%2368-37,+Bogot%C3%A1,+Cundinamarca/@4.673706,-74.082615,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9b047a1b0847:0x3bc6c58adb8a4f2f!2m2!1d-74.0826142!2d4.6737046?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
               
                </div>
@@ -245,9 +246,9 @@
                     <p>Carrera 24 # 73-38 Bogotá D.C.</p>
                     <p>Lunes – Sábado  7:00 am – 19:00 pm</p>
                     </div>
-                    <button onclick="location.href='cda-revicars.jsp'" >Ver más</button>
+                    <button onclick="location.href='cda-revicars.jsp'" >Ver más</button><br>
                     
-              <a href="https://www.google.com/maps/dir//CDA+Revicars+Colombia+S.A.S,+Cl.+80+%23%2320-61,+Bogot%C3%A1,+Cundinamarca/@4.665947,-74.061377,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9baa49be4c81:0xc2c4ea89b2616b96!2m2!1d-74.0613601!2d4.6659772?hl=es" class="btn btn-success">Como llega</a>
+              <a href="https://www.google.com/maps/dir//CDA+Revicars+Colombia+S.A.S,+Cl.+80+%23%2320-61,+Bogot%C3%A1,+Cundinamarca/@4.665947,-74.061377,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9baa49be4c81:0xc2c4ea89b2616b96!2m2!1d-74.0613601!2d4.6659772?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
               
                </div>
@@ -263,9 +264,9 @@
                     <p>Calle 68 # 20-41 Bogotá D.C.</p>
                     <p>Lunes – Viernes  7:00 am– 18:00 pm</p>
                     </div>
-                    <button onclick="location.href='cda-megaservice-car.jsp'" >Ver más</button>
+                    <button onclick="location.href='cda-megaservice-car.jsp'" >Ver más</button><br>
   
-               <a href="https://www.google.com/maps/dir//megaservice+car,+Cl.+68+%23%23%2320-41,+Bogot%C3%A1/@4.657535,-74.067704,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9a502c46e841:0x7a578322631ad0c4!2m2!1d-74.0677202!2d4.6575107?hl=es" class="btn btn-success">Como llega</a>
+               <a href="https://www.google.com/maps/dir//megaservice+car,+Cl.+68+%23%23%2320-41,+Bogot%C3%A1/@4.657535,-74.067704,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9a502c46e841:0x7a578322631ad0c4!2m2!1d-74.0677202!2d4.6575107?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
                
                </div>
@@ -282,9 +283,9 @@
                     <p>Carrera 70 # 71a - 03 Bogotá D.C.</p>
                     <p>lunes – jueves    7:00 am – 4:00 pm</p>
                     </div>
-                    <button onclick="location.href='restaurante-la-playita.jsp'" >Ver más</button>
+                    <button onclick="location.href='restaurante-la-playita.jsp'" >Ver más</button><br>
 
-               <a href="https://www.google.com/maps/dir//Restaurante+La+Playita,+Ak.+70+%23%2371a-03,+Bogot%C3%A1,+Cundinamarca/@4.683508,-74.091962,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9b16e0cf09a3:0xba3a6f185f2e61de!2m2!1d-74.091962!2d4.683508?hl=es" class="btn btn-success">Como llega</a>
+               <a href="https://www.google.com/maps/dir//Restaurante+La+Playita,+Ak.+70+%23%2371a-03,+Bogot%C3%A1,+Cundinamarca/@4.683508,-74.091962,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f9b16e0cf09a3:0xba3a6f185f2e61de!2m2!1d-74.091962!2d4.683508?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
                </div>
                
@@ -298,9 +299,9 @@
                     <p>carrera 7 #17-10 Bogotá D.C.</p>
                     <p>lunes – miércoles  8:00 am – 17:30 pm</p>
                     </div>
-                    <button onclick="location.href='restaurante-casa-lis.jsp'" >Ver más</button>
+                    <button onclick="location.href='restaurante-casa-lis.jsp'" >Ver más</button><br>
                     
-               <a href="https://www.google.com/maps/dir//CASA+LIS+S.A.S.,+Cra.+7+%2317-10,+Santa+F%C3%A9,+Bogot%C3%A1/@4.603533,-74.072156,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f99a16c2aece3:0xbdd741bf1ef5e376!2m2!1d-74.0721557!2d4.6035325?hl=es" class="btn btn-success">Como llega</a>
+               <a href="https://www.google.com/maps/dir//CASA+LIS+S.A.S.,+Cra.+7+%2317-10,+Santa+F%C3%A9,+Bogot%C3%A1/@4.603533,-74.072156,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f99a16c2aece3:0xbdd741bf1ef5e376!2m2!1d-74.0721557!2d4.6035325?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
                </div>
                
@@ -314,9 +315,9 @@
                     <p>Carrera 19 #148 - 52 Bogotá D.C..</p>
                     <p>lunes – domingo  8:00 am – 17:00 pm</p>
                     </div>
-                    <button onclick="location.href='restaurante-tan-pinchado-el-gordo.jsp'" >Ver más</button>
+                    <button onclick="location.href='restaurante-tan-pinchado-el-gordo.jsp'" >Ver más</button><br>
                     
-               <a href="https://www.google.com/maps/dir//Tan+Ponchado+El+Gordo,+Av.+Cra+19+%23%23148-52,+Usaqu%C3%A9n,+Bogot%C3%A1/@4.731119,-74.04488,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f856ed4f87857:0x90f4b8664e01da08!2m2!1d-74.0448805!2d4.7311192?hl=es" class="btn btn-success">Como llegar</a>
+               <a href="https://www.google.com/maps/dir//Tan+Ponchado+El+Gordo,+Av.+Cra+19+%23%23148-52,+Usaqu%C3%A9n,+Bogot%C3%A1/@4.731119,-74.04488,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f856ed4f87857:0x90f4b8664e01da08!2m2!1d-74.0448805!2d4.7311192?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
                </div>
             
