@@ -1,3 +1,5 @@
+/*GENERALES*/
+
 *{
   margin:0;
   padding:0;
@@ -13,7 +15,7 @@ body{
 }
 
 
-/*Actualizar contraseña sub menu*/
+/*usuario perfil sub menu*/
 
       
       ul, ol {
@@ -146,143 +148,135 @@ body{
 }
 
 
-.container_actualizar_contraseña{
-      width: 450px;
-      height: 400px;
-      text-align: center;
-      background-color: #A4E31E;
-      border-radius: 10px;
-      margin: auto;
-      margin-top: 50px;
-}
 
-.container-input{
-      padding: 10px 30px;
-      display: flex;
-      flex-wrap: wrap;
-}
 
-.password_actual{
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: -90px;
-  color:#000;
-  top: 0px;
-}
 
-.input_password_actual{
-  width:225px;
-  height:30px;
-  position: relative;
-  right: -40px;
-  top: -20px;
-}
+/* contenedor*/
+
+
+.container{
+			width: 450px;
+			height: 350px;
+			text-align: center;
+			background-color: #a4e31e;
+			border-radius: 4px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		.container img{
+			width: 200px;
+			height: 80px;
+			margin-top: -50px;
+			margin-bottom: 30px;
+		}
+
+		.Titulo{
+			color: #040D3B;
+			text-align: center;
+		}
+
+		.input-100{
+			width: 100%;
+		}
+
+		input{
+			margin-bottom: 15px;
+			padding: 15px;
+			
+		}
+		
 	
 
-.password_nueva{
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: -90px;
-  color:#000;
-  top: -40px;
-}
+		.container-input{
+			padding: 10px 20px;
+			display: flex;
+			flex-wrap: wrap;
+			
+		}
+		
 
-.input_password_nueva{
-  width:225px;
-  height:30px;
-  position: relative;
-  right: -40px;
-  top: -40px;
-}
+		.container-input-texto{
+			padding: 15px 20px;
+			display: flex;
+			flex-wrap: wrap;
+			
+		}
 
-.confirmarpassword{
-  padding:30px;
-  height: 100px;
-  position: relative;
-  left: 55px;
-  color:#000;
-  top: -80px;
-}
+		.btn-recuperar{
+			padding: 15px 30px;
+			cursor: pointer;
+			border-radius: 4px;
+			border: none;
+			color: #fff;
+			background-color: #040D3B;
+			margin: auto; 
+		} 
+		
+	
+		.btn-recuperar:hover{
+			color: #fff;
+			background-color: #110DEC;
+			margin: auto;
+		}
 
-.input_confirmar_password{
-  width:225px;
-  height:30px;
-  position: relative;
-  right: -40px;
-  top: -65px;
-}
+		.btn-recuperar:active{
+			color: #fff;
+			background-color: #110DEC;
+			margin: auto;
+		}
+		
+		
+		.btnatras{
+			padding: 15px 30px;
+			cursor: pointer;
+			border-radius: 4px;
+			border: none;
+			color: #fff;
+			background-color: #040D3B;
+			margin: auto; 
+		} 
+		.btnatras:hover{
+			color: #fff;
+			background-color: #040D3B;
+			margin: auto;
+		}
+			.btnatras:active{
+			color: #fff;
+			background-color: #040D3B;
+			margin: auto;
+		}
+		
+		
+		/* ------ PIE DE PAGINA ------ */
 
-
-.h3{
-  padding:30px;
-  height: 100px;
-  font-weight:lighter;
-  text-transform:uppercase;
-  color:#fff;
-}
-
-
-input{
-   display:block;
-  height:50px;
-  width:90%;
-  margin:0 auto;
-  border:none;
-}
-
-
-
-.placeholder{
-  -webkit-transform:translateY(0px);
-  transform:translateY(0px);
-  -webkit-transition:.5s;
-      transition:.5s;
-}
-
-
-  
-.boton_actualizar{
-  cursor:pointer; 
-  display:inline-block;
-  float:left;
-  width:150px;
-  height:60px;
-  margin-top:-10px;
-  border:none;
-  font-family: 'Open Sans', sans-serif;
-  text-transform:uppercase;
-  color:#fff;
-  background-color: #040D3B;
-  -webkit-transition:.5s;
-  transition:.5s;
-  position: relative;
-  right: -150px;
-  top: -100px;
-}
-
-.boton_actualizar:hover{
-  color: #fff;
-  background-color: #110DEC;
-  margin: auto;
-}
-.boton_actualizar:active{
-  color: #fff;
-  background-color: #110DEC;
-  margin: auto;
-}
-
-
-
- 
-.container_actualizar_contraseña span{
-    position: absolute;
-    right: -40px;
-    top: -15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 2px 10px;
-    background-color: #dadada;
-}
+		footer{
+		  background: #040D3B;
+		  padding: 20px 0;
+		  text-align: center;
+		  margin-top: 150px;
+		}
+		
+		footer .copy{
+		  color: #fff;
+		  font-size: 0.9rem;
+		  font-weight: 400;
+		  margin-bottom: 15px;
+		}
+		
+		footer .footer-redes a{
+		  display: inline-block;
+		  padding: 0 10px;
+		  color: #040D3B;
+		  text-decoration: none;
+		  font-weight: 500;
+		  font-size: 0.875rem;
+		  letter-spacing: 0;
+		  line-height: 1.5em;
+		  transition: all .3s ease;
+		}
+		
+		footer .footer-redes a:hover{
+		  color: #fff;
+		}
 

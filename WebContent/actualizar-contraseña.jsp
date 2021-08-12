@@ -92,7 +92,10 @@
     			<label for="password" class="password_actual">Contraseña Actual</label>
     				<div class="input_password_actual">
     				 	<input type="password" class="input_password_actual" id="password" name="password" placeholder="Contraseña Actual"  required>
+    				 	 	<span>Mostrar</span>
     				</div>
+    				 
+    				
 				
 				<label for="Password" class="password_nueva">Nueva Contraseña</label>
 				          <div class="input_password_nueva">
@@ -128,10 +131,32 @@
     <script src="js/menuMobile.js"></script>
 
 
-    <script src="js/parallax.min.js"></script>     				
-						
- </body>
+    <script src="js/parallax.min.js"></script>    
+     				
+	<script type="text/javascript">
+	$document.querySelector('.campo span').addEventListener('click', e => {
+    const passwordInput = document.querySelector('#password');
+    if (e.target.classList.contains('show')) {
+        e.target.classList.remove('show');
+        e.target.textContent = 'Ocultar';
+        passwordInput.type = 'text';
+    } 
+    
+    else {
+        e.target.classList.add('show');
+        e.target.textContent = 'Mostrar';
+        passwordInput.type = 'password';
+       }
+    });
+	
+	</script>
+	
+</body>
 
 </html>
 
+<!-- 
+<div class="input_password_actual">
+    				 	<input type="password" class="input_password_actual" id="password" name="password" placeholder="Contraseña Actual"  required>
+    				 </div> -->
 		

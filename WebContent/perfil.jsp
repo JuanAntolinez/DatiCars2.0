@@ -37,6 +37,7 @@
         </div>
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
+          
           <a href="index.jsp">CERRAR SESIÓN</a>
         </nav>
       </div>
@@ -50,6 +51,7 @@
 
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
+        
           <a href="index.jsp">CERRAR SESIÓN</a>
         </nav>
 
@@ -64,6 +66,7 @@
       </a>
       <nav class="menu-principal">
         <a href="home.jsp">INICIO</a>
+       
         <a href="index.jsp">CERRAR SESIÓN</a>
       </nav>
   
@@ -74,6 +77,9 @@
      
     </header>
     <!-- FIn encabezado -->
+    
+ 
+    
     
     <br><br><h3 style="text-align:center">ACTUALIZAR PERFIL</h3>
 				
@@ -89,7 +95,7 @@
 			      %>
 		     </div>
    
-        	       <span class="input-item-Registro"><i class="fa fa-user-circle">&nbsp; ${usuario.getIdUsuario() }</i></span>
+        	       
 					
 					<label for="usuario" class="usuario">Usuario</label>
 					<br>

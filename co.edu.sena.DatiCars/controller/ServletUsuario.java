@@ -21,28 +21,24 @@ public class ServletUsuario extends HttpServlet {
 			throws ServletException, IOException {
 		String email = request.getParameter("email");
 		String contraseña = request.getParameter("contraseña");
-
+	
 		ModeloUsuario modelo = new ModeloUsuario();
 		Usuario usuario = modelo.iniciarSesion(email, contraseña);
 		
 
-		if (usuario == null) {
-			request.setAttribute("mensaje", "Error e-mail y/o clave incorrecta");
+		if (usuario == null ) {
+			request.setAttribute("mensajelogin", "Error e-mail y/o clave incorrecta");
 			request.getRequestDispatcher("#openModal").forward(request, response);
-		} else {
+		
+		}else {
 			HttpSession sesionUsuario= request.getSession(true);
 			sesionUsuario.setAttribute("usuario", usuario);
 			response.sendRedirect("home.jsp");
 		}
-		/*
-		HttpSession sessionUsuario = request.getSession(false);
-		if (sessionUsuario != null) {
-		    sessionUsuario.invalidate();
-		    request.getRequestDispatcher("index.jsp").forward(request,response);    
-		    
-		}
-       */
-	}	
+
+	}
+			
+}	
 		
-}
+
 

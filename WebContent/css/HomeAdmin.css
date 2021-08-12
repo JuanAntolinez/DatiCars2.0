@@ -1,4 +1,3 @@
-
 /*GENERALES*/
 
 *{
@@ -19,7 +18,6 @@ body{
 
 
 }
-
 
 .titulo-seccion{
   text-align: center;
@@ -67,6 +65,57 @@ body{
   color: #fff;
   line-height: 40px;
 }
+
+/*usuario perfil sub menu*/
+
+      
+      ul, ol {
+        list-style:none;
+      }
+      
+      .nav {
+        width:150px; /*Le establecemos un ancho*/
+        margin:0 auto; /*Centramos automaticamente*/
+      }
+
+      .nav > li {
+        float:left;
+      }
+      
+      .nav li a {
+
+        background-color:#040D3B;
+        color:#fff;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block;
+      }
+      
+      .nav li a:hover {
+        background-color:#040D3B;
+      }
+      
+      .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+      }
+      
+      .nav li:hover > ul {
+        display:block;
+      }
+      
+      .nav li ul li {
+        position:relative;
+      }
+      
+      .nav li ul li ul {
+        right:-140px;
+        top:0px;
+      }
+
+/*cerrar css submenu usuario perfil*/
+
 
 
 /* ------ ENCABEZADO ------ */
@@ -151,352 +200,9 @@ body{
   display: none;
 }
 
-
-/*Vistas contador*/
-.contenedor-visitas{
-	position: relative;
-      right: -40px;
-      top: 150px;
-}
-
-/*cieere vistas contador*/
-
 /* ------ MAIN ------ */
 
-
-/*MODAL LOGIN*/
-.modalDialog {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 50px;
-  margin-top: -180px;
-  right: 800px;
-  bottom: 0;
-  left: 400px;
-  z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 800ms ease-in;
-  -moz-transition: opacity 800ms ease-in;
-  transition: opacity 800ms ease-in;
-  pointer-events: none;
-}
-.modalDialog:target {
-  opacity:1;
-  pointer-events: auto;
-}
-.modalDialog > div {
-  width: 420px;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-
-form .con {
-    display: -webkit-flex;
-    display: flex;
-  
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-  
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  
-      margin: 0 auto;
-}
-
-
-.input-item {
-    background: #fff;
-    color: #333;
-    padding: 14.5px 0px 15px 9px;
-    border-radius: 5px 0px 0px 5px;
-}
-
-
-/* Show/hide contrase帽a icon */
-#eye {
-    background: #fff;
-    color: #333;
-  
-    margin: 5.9px 0 0 0;
-    margin-left: -20px;
-    padding: 15px 9px 19px 0px;
-    border-radius: 0px 5px 5px 0px;
-  
-    float: right;
-    position: relative;
-    right: 1%;
-    top: -.2%;
-    z-index: 5;
-    
-    cursor: pointer;
-}
-/* inputs form  */
-input[class="form-input"]{
-    width: 240px;
-    height: 50px;
-  
-    margin-top: 2%;
-    padding: 15px;
-    
-    font-size: 16px;
-    font-family: 'Abel', sans-serif;
-    color: #5E6472;
-  
-    outline: none;
-    border: none;
-  
-    border-radius: 0px 5px 5px 0px;
-    transition: 0.2s linear;
-    
-}
-input[id="txt-input"] {width: 250px;}
-/* focus  */
-input:focus {
-    transform: translateX(-2px);
-    border-radius: 5px;
-}
-
-/* botones  */
-button {
-    display: inline-block;
-    color: #FFFFFF;
-  
-    width: 280px;
-    height: 50px;
-  
-    padding: 0 20px;
-    background: #040D3B;
-    border-radius: 5px;
-    
-    outline: none;
-    border: none;
-  
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.2s linear;
-    
-    margin: 7% auto;
-    letter-spacing: 0.05em;
-}
-/* Submits */
-.submits {
-    width: 48%;
-    display: inline-block;
-    float: left;
-    margin-left: 2%;
-}
-
-/*     contrase帽a button FAF3DD  */
-.frgt-pass {background: transparent;}
-
-/*     olvide mi contrase帽a button  */
-
-.sign-up {
-  background: #A4E31E;
-  width: 100%;
-}
-
-/* buttons hover */
-button:hover {
-    transform: translatey(3px);
-    box-shadow: none;
-}
-
-/* buttons hover animaci贸n */
-button:hover {
-    animation: ani9 0.4s ease-in-out infinite alternate;
-}
-@keyframes ani9 {
-    0% {
-        transform: translateY(3px);
-    }
-    100% {
-        transform: translateY(5px);
-    }
-}
-
-
-
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
- 
-  
-}
-.close:hover { background: #00d9ff; }
-
-/* contenedor de mensaje error login */
-
-.contenedor-mensaje-login{
-	
-	        width: 450px;
-			height: 350px;
-			text-align: center;
-			background-color: #a4e31e;
-			border-radius: 4px;
-			margin: auto;
-			margin-top: 100px;
-}
-
-
-/* cerrar contenedor de error login */
-
-
-
-/*MODAL REGISTRO*/
-
-.modalDialogRegistro {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 50px;
-  margin-top: -180px;
-  right: 800px;
-  bottom: 0;
-  left: 400px;
-  z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 800ms ease-in;
-  -moz-transition: opacity 800ms ease-in;
-  transition: opacity 800ms ease-in;
-  pointer-events: none;
-}
-.modalDialogRegistro:target {
-  opacity:1;
-  pointer-events: auto;
-}
-.modalDialogRegistro > div {
-  width: 450px;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-
-
-
-.form-input{
-
-  position: relative;
-  margin: 0% auto;
-   border-radius: 5px;
- border-radius: 5px;
-   border: 1px solid #39c
-}
-
-/*registro inputs*/
-
-.input-item-Registro {
-    background: #fff;
-    color: #333;
-    padding: 9px 0px 9px 15px;
-    border-radius: 5px 0px 0px 5px;
-}
-
-#eyeRegistro {
-    background: #fff;
-    color: #333;
-    margin: 5.9px 0 0 0;
-    margin-left: -20px;
-    padding: 9px 3px 9px 0px;
-    border-radius: 0px 5px 5px 0px;
-    float: right;
-    position: relative;
-    right: 1%;
-    top: 0%;
-    z-index: 5;
-    cursor: pointer;
-}
-
-/* inputs form  */
-input[class="form-input-Registro"]{
-    width: 240px;
-    height: 35px;
-  
-    margin-top: 2%;
-    padding: 15px;
-    
-    font-size: 16px;
-    font-family: 'Abel', sans-serif;
-    color: #5E6472;
-  
-    outline: none;
-    border: none;
-  
-    border-radius: 0px 5px 5px 0px;
-    transition: 0.2s linear;
-    
-}
-input[id="txt-input"] {width: 250px;}
-/* focus  */
-input:focus {
-    transform: translateX(-2px);
-    border-radius: 5px;
-}
-
-
-
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
- 
-  
-}
-.close:hover { background: #ff0000; }
-
-
-/*cierra model*/
-
-.terminosycondiciones{
-	
-	 width: 100%;
-	position: relative;
-	  height: 100vh;
-  margin-top: 80px;
-}
-
-
-
-
 /*Banner principal*/
-
 
 .main{
   width: 100%;
@@ -544,8 +250,19 @@ input:focus {
   margin-bottom: 30px;
 }
 
+.main .banner-principal .texto-banner a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #040D3B;
+  color: #fff;
+  transition: all .7s ease;
+}
 
-
+.main .banner-principal .texto-banner a:hover{
+  background: #fff;
+  color: #0089E0;
+}
 
 /*Proyectos*/
 
@@ -611,6 +328,158 @@ input:focus {
   line-height: 50px;
 }
 
+
+
+
+
+
+/*contenedores de servicios*/
+
+/*Estaciones de servicio contenedores*/
+
+.contenedor-servicios-eds-uno {
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+  margin: 5px;
+  
+  
+}
+
+.nombre-empresa h2 , h3, h4, h5, h6{
+      font-weight: normal;
+}
+
+.texto{
+	opacity:0.5;
+}
+
+.contenedor-servicios-eds-dos{
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+   margin: 5px;
+ 
+}
+
+.contenedor-servicios-eds-tres {
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+  margin: 5px;
+  
+}
+
+.contenedor-servicios-cda-uno {
+  width: 350px;
+  heigth: 350px;
+  color: #000000;
+  background: #fff;
+  padding: 54px 0;
+  text-align: center;
+  margin: 5px;
+  
+}
+
+
+
+
+/*cierre estaciones de servicio contenedores*/
+
+/* cda contenedores*/
+
+.contenedor-servicios-cda-uno{
+	 width: 350px;
+ 	 heigth: 350px;
+ 	 color: #000000;
+ 	 background: #fff;
+     padding: 54px 0;
+     text-align: center;
+     margin:6px;
+     margin-top: 25px;
+}
+
+/*cierre contenedores de cda*/
+
+
+
+
+
+
+/*pone de color azul la letra del contenedor
+.contenedor-servicios-cda-uno:hover{
+  color: #369DE1;
+}
+*/
+
+button {
+    display: inline-block;
+    color: #FFFFFF;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #040D3B;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*     contrase帽a button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     olvide mi contrase帽a button  */
+
+.sign-up {
+  background: #A4E31E;
+  width: 100%;
+}
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover animaci贸n */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+
+
+
+/*cierre contenedores de servicios*/
+
+/**cierre proyectos*/
+
+
+
 /*Acerca de*/
 
 .main .acerca-de{
@@ -646,7 +515,8 @@ input:focus {
 
 /*Slider*/
 
-.main .contenedor-slider{
+
+.main .contenedor-slider {
   width: 100%;
   overflow: hidden;
   background: #F3F4FA;
@@ -654,16 +524,18 @@ input:focus {
   position: relative;
 }
 
-.main .contenedor-slider .slider{
+.main .contenedor-slider .slider {
   width: 400%;
   display: flex;
+  margin-top: 30px;
 }
 
-.main .contenedor-slider .slider .slide{
+.main .contenedor-slider .slider .slide {
   width: 15%;
   max-width: 950px;
-  margin-right: 0.7%;
+  margin-right: 0.3%;
   box-shadow: 0px 20px 40px #aaa;
+
 }
 
 .main .contenedor-slider .slider .slide img{
@@ -676,7 +548,7 @@ input:focus {
   cursor: pointer;
   position: absolute;
   top:50%;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
 }
 
 .main .contenedor-slider .btn-anterior{
@@ -688,12 +560,23 @@ input:focus {
 }
 
 .main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i{
-  color: #a4e31e;
+  color: #040D3B;
 }
 
 .main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover{
-  color: #040D3B;
+  color: #fff ;
 }
+
+/*cierre slider*/
+
+
+
+
+
+
+
+
+
 
 /*Nuestro equipo*/
 
@@ -755,7 +638,7 @@ input:focus {
   font-weight: 400;
 }
 
-/*Secci贸n informaci贸n extra*/
+/*Secci髇 informaci髇 extra*/
 
 .main .info-extra{
   background: #040D3B;
@@ -809,7 +692,6 @@ input:focus {
   color: #979797;
   font-size: 1rem;
   font-weight: 400;
-  
 }
 
 .main .info-extra .contenedor .foto{
@@ -820,8 +702,6 @@ input:focus {
   background-position: center;
   background-size: cover;
 }
-
-
 
 /*Contacto*/
 
@@ -927,7 +807,7 @@ input:focus {
   margin-bottom: 10px;
 }
 
-/* ------ PIE DE PAGINA ------ */
+/* ------ PIE DE P罣INA ------ */
 
 footer{
   background: #A4E31E;
@@ -981,7 +861,7 @@ footer .footer-redes a:hover{
     margin-right: 20px;
   }
 
-  /*Secci贸n informaci贸n extra*/
+  /*Secci髇 informaci髇 extra*/
   .main .info-extra .contenedor .info{
     width: 100%;
   }
@@ -1093,7 +973,7 @@ footer .footer-redes a:hover{
     align-items: center;
     text-align: center;
   }
-  /*Secci贸n informaci贸n extra*/
+  /*Secci髇 informaci髇 extra*/
   .main .info-extra .contenedor .info .contenido-info{
     flex-wrap: wrap;
     text-align: center;

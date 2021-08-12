@@ -45,6 +45,7 @@
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
           <a href="#contacto" class="scroll-suave">CONTACTO</a>
+       
         </nav>
       </div>
 
@@ -62,6 +63,7 @@
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
           <a href="#contacto" class="scroll-suave">CONTACTO</a>
+       
         </nav>
 
         <div class="top-redes">
@@ -90,6 +92,7 @@
         <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
         <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
         <a href="#contacto" class="scroll-suave">CONTACTO</a>
+    
       </nav>
       <div class="top-redes">
         <a href="#">
@@ -147,8 +150,8 @@
    
    
        <%
-      	if (request.getAttribute("mensaje")!=null){
-      		out.println(request.getAttribute("mensaje"));
+      	if (request.getAttribute("mensajelogin")!=null){
+      		out.println(request.getAttribute("mensajelogin"));
       	    
       	}
         %>
@@ -443,7 +446,7 @@
               <p><center><br>Restaurantes</center></p>
             </div>
           </div>
-          <a style="text-decoration:none" href="http://localhost:8080/DatiCarsProyecto/index.jsp#openModal"><center><p><h3>Para acceder a nuestros servicios debe iniciar sesión.</h3></p></center></a>
+          <a style="text-decoration:none" href="http://localhost:8080/DatiCars2.0Final/index.jsp#openModal"><center><p><h3>Para acceder a nuestros servicios debe iniciar sesión.</h3></p></center></a>
            
         </div>
       </section>
@@ -617,13 +620,13 @@
     <script src="js/validacion.js"></script>
     <script src="js/menuMobile.js"></script>
 
-    
+    <!--  
       <script type="text/javascript">
     function myFunction(){
     	alert("Error E-mail o contraseña erronea");
     } 
     </script>
-    
+    -->
    
     <script src="js/prefixfree.min.js"></script>
         <script type="text/javascript">

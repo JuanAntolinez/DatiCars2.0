@@ -23,9 +23,7 @@ public class ServletActualizarContraseña extends HttpServlet {
 	    
 		String contraseña = request.getParameter("contraseña");
 	
-		
-		
-		
+
 
 		ModeloActualizarContraseña modelo = new ModeloActualizarContraseña();
 		@SuppressWarnings("unused")

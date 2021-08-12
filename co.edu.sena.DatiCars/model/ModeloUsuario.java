@@ -15,10 +15,11 @@ public class ModeloUsuario {
 		
 		try {
 			cn = Conexion.getConexion();
-			String sql = "SELECT U.id, U.usuario, U.email, U.contraseña,U.nombre,U.apellido, U.permisos FROM Usuarios U WHERE U.email = ? AND  U.contraseña = ?";
+			String sql = "SELECT U.id, U.usuario, U.email, U.contraseña,U.nombre,U.apellido, U.permisos FROM Usuarios U WHERE U.email = ? AND  U.contraseña = ? "  ;
 			pstm = cn.prepareStatement(sql);
 			pstm.setString(1, email);
 			pstm.setString(2, contraseña);
+			
 			rs = pstm.executeQuery();
 			
 			while (rs.next()) {

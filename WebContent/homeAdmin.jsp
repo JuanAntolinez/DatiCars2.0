@@ -1,23 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta lang = "esp">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title>DatiCars</title>
-    <link rel="icon" href="img/logoicon.png" type="image/png" />
+    <title>DatiCars - Administrador</title>
+     <link rel="icon" href="img/logoicon.png" type="image/png" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
-    <link rel="stylesheet" href="css/homeadmi.css">
-    
-
+    <link rel="stylesheet" href="css/HomeAdmin.css">
   </head>
   <body>
-  
-  
 
     <!-- Boton "Volver Arriba" -->
     <div class="btn-volver-arriba" id="btnVolverArriba">
@@ -28,7 +23,7 @@
 
     <!-- Encabezado -->
     <header>
-      <!-- VersiÛn mÛvil -->
+      <!-- Versi√≥n m√≥vil -->
       <div class="menu-mobile">
         <div class="barra">
           <a href="#" class="logo">
@@ -41,41 +36,45 @@
         <nav class="menu-principal">
           <a href="#" class="volver-arriba">INICIO</a>
           <a href="#acercaDe" class="scroll-acercaDe">NUESTROS SERVICIOS</a>
-          <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+          <a href="#acercaDe" class="scroll-acercaDe">PREGUNTAS FRECUENTES</a>
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
           <a href="#contacto" class="scroll-suave">CONTACTO</a>
+          <a href="perfil.jsp">PERFIL</a>
+        <a href="index.jsp">CERRAR SESI√ìN</a>
+          
         </nav>
       </div>
 
-      <!-- VersiÛn escritorio -->
+      <!-- Versi√≥n escritorio -->
       <div class="menu-bar-pc">
 
         <a href="#" class="logo">
           <img src="img/logotipo.png" alt="Logo Daticars - DatiCars">
         </a>
 
-        <nav class="menu-principal">
-          <a href="#" class="volver-arriba">INICIO</a>
-          <a href="#proyectos" class="scroll-suave">NUESTROS SERVICIOS</a>
-          <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
-          <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
-          <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-          <a href="#contacto" class="scroll-suave">CONTACTO</a>
-        </nav>
+      
+        
+        <!-- espacio perfil uaurio -->
 
-        <div class="top-redes">
-          <a href="#">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
+        <div class="top-User">
+          <nav class="menu-principal"> 
+              <ul class="nav"> 
+                <li><a><span class="input-item-Registro"><i class="fa fa-user-circle">&nbsp; ${administrador.getUsuarioAdmin() } </i></span></a>
+                  <ul>
+                    <li><a href="home.jsp">INICIO</a></li>
+                    <li><a href="perfil.jsp">PERFIL</a></li>
+                    <li><a href="listaUsuarios.jsp">LISTA DE USUARIOS</a></li>
+                    <li><a href="actualizar-contrase√±a.jsp">ACTUALIZAR CONTRASE√ëA</a></li>
+                    <li><a href="index.jsp">CERRAR SESI√ìN</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </nav>             
         </div>
 
+        <!-- fin espacio perfil usuario-->
+        
       </div>
     </header>
 
@@ -86,344 +85,330 @@
       <nav class="menu-principal">
         <a href="#" class="volver-arriba">INICIO</a>
         <a href="#proyectos" class="scroll-suave">NUESTROS SERVICIOS</a>
-        <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
+        <a href="#acercaDe" class="scroll-acercaDe">PREGUNTAS FRECUENTES</a>
         <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
         <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
         <a href="#contacto" class="scroll-suave">CONTACTO</a>
+        
+        
       </nav>
+      <!-- espacio para redes -->
       <div class="top-redes">
-        <a href="#">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-      </div>
+        </div>
+      <!-- fin espacio para redes -->  
     </div>
 
     <!-- Main -->
     <section class="main">
-
-     <!--  <div class="contenedor-visitas">
-     <a href="https://www.contadorvisitasgratis.com" title="contadores de visitas"><img src="https://counter6.stat.ovh/private/contadorvisitasgratis.php?c=317s1qk3qr64afk2tjpe6ca5clm9wwpj" border="0" title="contadores de visitas" alt="contadores de visitas"></a>
      
-     </div>-->
-      <!-- Banner Principal MODAL LOGIN-->
 
-      <section class="banner-principal">
-        <div class="banner" id="banner"></div>
-        <div class="texto-banner">
-          <h2>°Todo para ti y tu vehÌculo!</h2>
-          <h1>DatiCars</h1>
-          <button onclick="location.href='#openModal'">INICIO DE SESI”N</button>
-          <button onclick="location.href='#openModalRegistro'">REGISTRARSE</button>
-       
-
-<!-- MODAL LOGIN-->
-
-<div id="openModal" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close">X</a>
-    
-    <!-- login -->
-    
-    <div class="login-box">
-    
-    
-		<form action="usuario" method="post">
-		
-		<div class="con">
-
-   <div class="head-form">
-    <br>
-      <h2>Iniciar SesiÛn</h2>
-      <!--     bienvenida  -->
-      <p>Inicie sesiÛn aquÌ≠ con su email y contraseÒa</p>
-      <br>
-   </div>
-   
-   
-       <%
-      	if (request.getAttribute("mensaje")!=null){
-      		out.println(request.getAttribute("mensaje"));
-      	    
-      	}
-        %>
-   
-   <br>
-   <div class="field-set">
-     
-     
-      <!--   email -->
-         <span class="input-item">
-           <i class="fa fa-user-circle"></i>
-         </span>
-        <!--   email Input-->
-         
-         <input class="form-input" id="txt-input" type="text" name="email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su direcciÛn de correo electrÛnico.">
-        	 <span class="validity"></span>     
-      
-      
-      <br>
-         
-      
-           <!--   contraseÒa -->
-           
-     
-      <span class="input-item">
-        <i class="fa fa-key"></i>
-       </span>
-      <!--   contraseÒa Input-->
-      
-       <input class="form-input" type="password" placeholder="password" id="pwd"  name="contraseÒa" required >
-        	 
-     
-     
-<!--      Show/hide contraseÒa ver  -->
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-     </span>
-      <br>
-      
-      
-      
-<!--        buttons -->
-<!--      button iniciar sesiÛn -->
-
-		<td colspan="2"><button class="log-in">iniciar sesiÛn</button></td>
-
-
-  				 </div>
- 
-       		 </div>
-			
-		</form>
-		
-		
-	</div>
-	
-	
-	                               <!--     olvide mi contraseÒa  -->
-      
-        <a href="olvidemiContraseÒa.jsp">øOlvidaste tu contraseÒa?</a> 
-        
-        
-        
-  </div>
-  <div>
-  
-  </div>
-  
-  
-</div>
-
-                                        <!-- cierre login -->
-
-                                     <!-- CIERRE MODAL LOGIN-->
-
-
-                                       <!-- MODAL REGISTRO-->
-                                       
-                                       
-        <div id="openModalRegistro" class="modalDialogRegistro">
-            <div>
-              <a href="#close" title="Close" class="close">X</a>
-              <div class="overlay">
-
-<!-- Registro-->
-
-<form action = "ServletRegistroUsuario" method = "post" id="miformulario">
-   
-   <div class="con">
-   
-   <div class="head-form">
-    <br>
-      <h2>RegÌstrate </h2>
-      <!--     Bienvenida -->
-      <p>Ingresa tus datos y se parte de esta gran familia.</p>
-      <br>
-      <br>
-      
-     <div id="MensajeRegistro"> 
-      
-      <%
-      	if (request.getAttribute("mensaje")!=null){
-      		out.println(request.getAttribute("mensaje"));
-      	    
-      	}
-      %>
-     </div>
+      <!-- Slider -->
+      <section class="contenedor-slider">
+        <div class="slider" id="slider">
+          <div class="slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide.jpg" alt="Slide"></a>
+          </div>
+          <div class="slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide1.jpg" alt="Slide"></a>
+          </div>
+          <div class="slide">
+          <a href="Publicidad.jsp">
+          	<img src="img/slide2.jpg" alt="Slide" width="100"></a>
+          </div>
+          <div class="slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide3.jpg" alt="Slide" width="100"></a>
+          </div>
+          <div class="slide">
+          <a href="Publicidad.jsp">
+            <img src="img/slide4.jpg" alt="Slide" width="100"></a>
+          </div>
+        </div>
+        <div class="btn-anterior" id="btnAnterior">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <div class="btn-siguiente" id="btnSiguiente">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </section>
       
 
-      
-      <br>
-   </div>
+             <!-- Proyectos -->
+      <section class="proyectos" id="proyectos">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Nuestros Servicios</h2>
+            <p>Aqu√≠ podr√°s ver tus sitios de inter√©s.</p>
+          </div>
+          <div class="galeria-proyectos">
 
-   <br>
-   <div class="field-set">
-   
-
-
-
-      <!--   usuario -->
-         <span class="input-item-Registro">
-           <i class="fa fa-user-circle"></i>
-         </span>
-        <!--   usuario Input-->
-        
-         
-         <input class="form-input-Registro" id="txt-input" type="text" id="user" name="user" placeholder="@pepito03" required size="11" pattern="[@]+[-a-zA-ZÒ—·ÈÌÛ˙¡…Õ”⁄¸‹]{4,12}" title="EstÈ campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
-        	 <span class="validity"></span>
-         
-      <br>
-
-
-                                              <!--   Nombre -->
-      
-         <span class="input-item-Registro">
-           <i class="fa fa-user-circle"></i>
-         </span>
           
-                                             <!--   Nombre Input-->
-                                             
-        <input class="form-input-Registro" id="txt-input" type="text" name = "nombre" placeholder="Nombre" required size="29" pattern= "[a-zA-ZÒ—·ÈÌÛ˙¡…Õ”⁄¸‹]{3,25}" title="El nombre debe tener almenos 3 digitos y no debe tener n˙meros.">
-        	 <span class="validity"></span>
-        <br>
-      
-      
-      
-                                              <!--   Apellido -->
-       
-         <span class="input-item-Registro">
-           <i class="fa fa-user-circle"></i>
-         </span>
          
-        <!--   Apellido Input-->
-        
-        
-         
-     	<input class="form-input-Registro" id="txt-input" type="text" name = "apellido" placeholder="Apellido" required size="29" pattern= "[a-zA-ZÒ—·ÈÌÛ˙¡…Õ”⁄¸‹]{3,25}" title="El apellido debe tener almenos 3 digitos y no debe tener n˙meros.">
-        	 <span class="validity"></span>
-        <br>
-
-                                                 <!--   Email -->
-                                                   
-         <span class="input-item-Registro">
-           <i class="fa fa-fas fa-envelope"></i>
-         </span>
-        <!--   Email Input-->
-        
-        
-         
-      <input class="form-input-Registro" id="txt-input" type="email" name = "email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su direcciÛn de correo electrÛnico.">
-        	 <span class="validity"></span>
-      <br>
-
-
-                                         <!--  Confirmar  Email -->
-             
-             
-         <span class="input-item-Registro">
-           <i class="fa fa-fas fa-envelope"></i>
-         </span>
-         
-         
-                                       <!--  confirmar Email Input-->
-                                       
-                                       
-         
-        
-        
-        <input class="form-input-Registro" id="txt-input" type="email" name = "confirmar_email " placeholder="Confirmar E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su direcciÛn de correo electrÛnico.">
-        	 <span class="validity"></span>
-         <br>
-
-           <!--   ContrasÒea -->
-     
-        <span class="input-item-Registro">
-        <i class="fa fa-key"></i>
-        </span>
-       
-       
-                                               <!--   ContraseÒa Input-->
- 		
-      	 <input class="form-input-Registro" id="pwd" type="password" name="contraseÒa" required placeholder="ContraseÒa"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseÒa debe tener entre 8 y 16 caracteres, al menos un dÌgito, al menos una min˙scula y al menos una may˙scula.">
-        	 <span class="validity"></span>
-         		
-      
-      
-           									 <!--      Show/hide ContraseÒa  -->
+                <p>¬°Tan solo a un clic tu sitio de inter√©s!</p><br>
+                <a href="#EDS">Estaciones de Servicio </a><br>
+				<a href="#RES">Restaurantes </a><br>
+			    <a href="#CDA">Centro de disagnostico automotriz(CDA) </a>
+	           
+	       
+	        
+	        <!-- Estaciones de servicio -->
             
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
-     </span>
-      <br>
-
-       										<!--  Confirmar ContrasÒea -->
-     
-      <span class="input-item-Registro">
-        <i class="fa fa-key"></i>
-       </span>
-       
-       
-     									 <!--  Confirmar ContraseÒa Input-->
-      
-      
-       <input class="form-input-Registro" id="pwd" type="password"  name="confirmar_contraseÒa" required placeholder="Confirmar contraseÒa"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseÒa debe tener entre 8 y 16 caracteres, al menos un dÌgito, al menos una min˙scula y al menos una may˙scula.">
-        	 <span class="validity"></span>
-         		
-         		
-  
-<!--      Show/hide Confirmar ContraseÒa  -->
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
-     </span>
-      <br>
-      
-    <!-- permisos Para usuarioConductor -->
-    
-         <input class="form-input-Registro"  id="txt-permisos" type="hidden" id="permisoUsuario"  value="1" name="permisos" required size="3" pattern="[0-9]{1,4}" title="rol 1 usuarios y rol 2 administrador">     
-         <span class="validity"></span>	
-        	  
-        	 
-    <!-- cierre permisos-->
-    
-    
-    
-<br>
-    <input style="opacity:1;" type="checkbox" data-required="1"  name="terminos" required pattern="true"><p style="color:black;padding-left:20px;">Aceptar los <a style="color:blue;"  href="TerminosyCondiciones.jsp">TÈrminos y Condiciones</a></p>  
-    
-   
-
-
-<!--        buttons -->
-<!--      button Registro -->
-     
-      <td colspan="2"><button type="submit" class="log-in" >RegÌstrate</button></td>
-   </div>
-  </div>
-  
- 
-  
-  
-  
-</form>
-</div>
          
+          
+             <div class="contenedor-servicios-eds-uno" id="EDS">
+             <img src="img/petrobras-avesperanza.png" alt="Proyecto" width="300px" height="200px"><br>
+              		
+              		<br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >EDS Petrobras</h2>
+              		</div>
+              		<div class="texto">
+                    <p>Calle 24a # 59-59 Bogot√° D.C.</p>
+                    <i class="fal fa-alarm-clock"></i>
+                    <p>24 horas</p>
+                    </div>
+                    <button onclick="location.href='eds-petrobras.jsp'">Ver m√°s</button>
+            </div>
+            
+              <div class="contenedor-servicios-eds-dos" id="EDS" >
+              <img src="img/terpel-ak30.png" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >EDS terpel</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Calle 71 #29B - 30 Bogot√° D.C.</p>
+                    <p>24 horas</p>
+                    </div>
+                    <button onclick="location.href='eds-terpel-calle71.jsp'">Ver m√°s</button>
+            </div>
+            
+             <div class="contenedor-servicios-eds-tres" id="EDS">
+             <img src="img/biomaxalqueria.jpg" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >Biomax San Andresito</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Carrera 38 # 38 - 25 Bogot√° D.C.</p>
+                    <p>24 horas</p>
+                    </div>
+                    <button onclick="location.href='eds-biomax-Sanandresito.jsp'" >Ver m√°s</button>
+            </div>
+            
+           									  <!-- CDA -->
+            
+               <div class="contenedor-servicios-eds-uno" id="CDA">
+               <img src="img/cda80.jpg" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >CDA Diagnostiya 80</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Carrera 73A # 77A-62 Bogot√° D.C.</p>
+                    <p>24 horas</p>
+                    </div>
+                    <button onclick="location.href='cda-diagnostiya-80.jsp'" >Ver m√°s</button>
+               </div>
+               
+               
+                <div class="contenedor-servicios-eds-uno" id="CDA">
+               <img src="img/CDArevicars.jpg" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >CDA revicars</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Carrera 24 # 73-38 Bogot√° D.C.</p>
+                    <p>Lunes ‚Äì S√°bado  7:00 am ‚Äì 19:00 pm</p>
+                    </div>
+                    <button onclick="location.href='cda-revicars.jsp'" >Ver m√°s</button>
+               </div>
+               
+               
+               <div class="contenedor-servicios-eds-uno" id="CDA">
+               <img src="img/CDAmegaservice.jpg" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >CDA Megaservice car</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Calle 68 # 20-41 Bogot√° D.C.</p>
+                    <p>Lunes ‚Äì Viernes  7:00 am‚Äì 18:00 pm</p>
+                    </div>
+                    <button onclick="location.href='cda-megaservice-car.jsp'" >Ver m√°s</button>
+               </div>
+            
+            								<!-- RESTAURANTES -->
+            
+            <div class="contenedor-servicios-eds-uno" id="RES">
+               <img src="img/laplayita.png" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >Restaurante La Playita</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Carrera 70 # 71a - 03 Bogot√° D.C.</p>
+                    <p>lunes ‚Äì jueves    7:00 am ‚Äì 4:00 pm</p>
+                    </div>
+                    <button onclick="location.href='restaurante-la-playita.jsp'" >Ver m√°s</button>
+               </div>
+               
+               <div class="contenedor-servicios-eds-uno" id="RES">
+               <img src="img/casalis.jpg" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >Restaurante Casa lis</h2>
+                    </div>
+                    <div class="texto">
+                    <p>carrera 7 #17-10 Bogot√° D.C.</p>
+                    <p>lunes ‚Äì mi√©rcoles  8:00 am ‚Äì 17:30 pm</p>
+                    </div>
+                    <button onclick="location.href='restaurante-casa-lis.jsp'" >Ver m√°s</button>
+               </div>
+               
+               <div class="contenedor-servicios-eds-uno" id="RES">
+               <img src="img/tanpinchado.jpg" alt="Proyecto" width="300px" height="200px"><br>
+             
+                    <br><div class="nombre-empresa">
+              		<h2 class="name" itemprop="name" >Tan pinchado el gordo</h2>
+                    </div>
+                    <div class="texto">
+                    <p>Carrera 19 #148 - 52 Bogot√° D.C..</p>
+                    <p>lunes ‚Äì domingo  8:00 am ‚Äì 17:00 pm</p>
+                    </div>
+                    <button onclick="location.href='restaurante-tan-pinchado-el-gordo.jsp'" >Ver m√°s</button>
+               </div>
+            
+            
+            
+            
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Acerca de -->
+      <section class="acerca-de" id="acercaDe">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Conoce m√°s sobre nosotros, lo que hacemos y c√≥mo lo hacemos</p>
+          </div>
+          <div class="texto-acerca-de">
+            <p>Somos un grupo de estudiantes del SENA, el cual dise√±amos este sistema de informacion, para que todos los conductores de la ciudad puedan encontrar todos sus sitios de inter√©s que permita tener informaci√≥n clara, optima y concisa con todo lo relacionado a su vehiculo con el fin de optimizar tiempos de b√∫squeda y no afectar su jornada laboral.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- Nuestro equipo -->
+      <section class="nuestro-equipo" id="equipo">
+        <div class="contenedor">
+          <div class="titulo-seccion">
+            <h2>Nuestro equipo</h2>
+            <p>Estudiantes del SENA apasionados por lo que hacen.</p>
+          </div>
+          <div class="equipo">
+            <div class="persona-equipo">
+              <div class="foto">
+                <img src="img/foto1.jpg" alt="Persona">
+              </div>
+              <div class="texto">
+                <h3>Over Felipe Orejuela Castro</h3>
+                <h4>Analista y desarrollador de sistemas de informaci√≥n</h4>
+                <p>Estudiante de quinto trimestre de analisis y desarrollo de sistemas de informacion en el servicio nacional de aprendizaje SENA.</p>
+              </div>
+            </div>
+
+            <div class="persona-equipo">
+              <div class="foto">
+                <img src="img/foto2.jpg" alt="Persona">
+              </div>
+              <div class="texto">
+                <h3>Nancy Carolina Flechas</h3>
+                <h4>Analista y desarrollador de sistemas de informaci√≥n</h4>
+                <p>Estudiante de quinto trimestre de analisis y desarrollo de sistemas de informacion en el servicio nacional de aprendizaje SENA.</p>
+              </div>
+            </div>
+
+            <div class="persona-equipo">
+              <div class="foto">
+                <img src="img/foto3.jpg" alt="Persona">
+              </div>
+              <div class="texto">
+                <h3>Juan Gabriel Antolinez Galarza</h3>
+                <h4>Analista y desarrollador de sistemas de informaci√≥n</h4>
+                <p>Estudiante de quinto trimestre de analisis y desarrollo de sistemas de informacion en el servicio nacional de aprendizaje SENA.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion Informaci√≥n extra -->
+      <section class="info-extra" id="extra">
+        <div class="contenedor">
+          <div class="info">
+
+            <div class="contenido-info">
+              
+              <div class="texto-info">
+                <h4>MISI√ìN</h4>
+                <p>Mejorar por medio de la tecnolog√≠a el trabajo diario de los conductores, satisfaciendo sus necesidades, con el fin de mejorar su calidad laboral.</p>
+              </div>
+            </div>
+
+            <div class="contenido-info">
+              
+              <div class="texto-info">
+                <h4>VISI√ìN</h4>
+                <p>En el a√±o 2030 seremos reconocidos como una de las mejores compa√±√≠as de sistema de informaci√≥n para conductores de servicio p√∫blico.</p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-    </div>
-  </section>
+      <!-- Contacto -->
+      <div class="contacto" id="contacto" data-parallax="scroll" data-image-src="img/bg-contacto.jpg">
+        <div class="contenedor">
+          <div class="contenedor-formulario">
+            <div class="formulario" id="formulario">
+              <h2>Cont√°ctate con nosotros</h2>
+              <p>Ingresa tus datos personales y cuentanos en que te podemos ayudar.</p>
+              <form>
+                <div>
+                  <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                  <p class="error">Por favor escribe tu nombre</p>
+                </div>
+                <div>
+                  <input type="email" name="email" placeholder="Correo electr√≥nico" id="email">
+                  <p class="error">Por favor escribe tu correo</p>
+                </div>
+                <div>
+                  <textarea name="mensaje" placeholder="Cu√©ntanos tu experiencia" id="mensaje"></textarea>
+                  <p class="error">Por favor escribe tu mensaje</p>
+                </div>
+                <div>
+                  <input type="submit" name="enviar" value="Enviar">
+                </div>
+              </form>
+            </div>
 
-<!--CIERRE MODAL REGISTRO-->
+            <div class="foto">
 
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </section>
 
-    <!-- Pie de p·gina -->
+    <!-- Pie de p√°gina -->
     <footer>
       <div class="copy">
         <p>Todos los derechos reservados</p>
@@ -459,34 +444,7 @@
     Reemplazar por:
     t(function(){t('[data-parallax="scroll"]').parallax()})} -->
     <script src="js/prefixfree.min.js"></script>
-        <script type="text/javascript">
-			$(document).ready(function () {
-			    //Disable full page
-			    $('body').bind('cut copy paste', function (e) {
-			        e.preventDefault();
-			    });
-			    
-			    //Disable part of page
-			    $('#id').bind('cut copy paste', function (e) {
-			        e.preventDefault();
-			    });
-			    
-			   <% if (request.getAttribute("mensaje")!=null){ %>
-			   
-			   $('#openModal').modal('show');
-		      	    
-		      <%	} %>
-			});
-	
-	</script>
-	
-	
-	
-	<!-- validaciÛn contraseÒas -->
-	
-
-	
-	
 
   </body>
-</html> 
+</html>
+ 
