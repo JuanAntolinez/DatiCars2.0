@@ -169,9 +169,7 @@
          <input class="form-input" id="txt-input" type="text" name="email" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
         	 <span class="validity"></span>     
       
-      
       <br>
-         
       
            <!--   contraseña -->
            
