@@ -1,22 +1,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
-<head>
-<meta lang = "esp">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<title>DatiCars - LoginAdmin</title>
- <link rel="icon" href="img/logoicon.png" type="image/png" />
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>DatiCars</title>
+     <link rel="icon" href="img/logoicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
-    <link rel="stylesheet" href="css/LoginAdmin.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/listaEmpresa.css">
+    
+  </head>
+  <body>
+
 
 <header>
-
-
+      <!-- Boton "Volver Arriba" -->
+    <div class="btn-volver-arriba" id="btnVolverArriba">
+      <a href="#" class="volver-arriba">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
 
     <!-- Encabezado -->
     <header>
@@ -31,8 +37,13 @@
           </a>
         </div>
         <nav class="menu-principal">
-          <a href="home.jsp">INICIO</a>
+          <a href="inicioAdmin.jsp" >INICIO</a>
+          <a href="listaUsuarios.jsp" >USUARIOS</a>
+          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
+          <a href="listaEmpresas.jsp">EMPRESAS</a>
+           <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
           <a href="index.jsp">CERRAR SESIÓN</a>
+       
         </nav>
       </div>
 
@@ -44,79 +55,37 @@
         </a>
 
         <nav class="menu-principal">
-          <a href="index.jsp">INICIO</a>
-        
+       <a href="inicioAdmin.jsp" >INICIO</a>
+          <a href="listaUsuarios.jsp" >USUARIOS</a>
+          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
+          <a href="listaEmpresas.jsp">EMPRESAS</a>
+           <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
+          <a href="index.jsp">CERRAR SESIÓN</a>
+       
         </nav>
 
     
 
+        <div class="top-redes">
+          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars </a><!-- &nbsp; ${usuario.getUsuario() } -->
+        </div>
+
       </div>
     </header>
 
-    <div class="fixed-header" id="fixedHeader">
-      <a href="#"  class="logo">
-        <img src="img/logotipo.png" alt="logotipoDaticars - Daticars">
-      </a>
-      <nav class="menu-principal">
-        <a href="index.jsp">INICIO</a>
- 
-      </nav>
-  
-    </div>
 
-  <!-- fin espacio perfil usuario-->
-        
-     
-    </header>
-    <!-- FIn encabezado -->
-    
+   
 
-    <div class="container">
-        
-        <div class="imagen">	
-		<a title="Inicio" href="index.jsp"><img src="img/logotipo.png" alt="Logo Daticars - DatiCars">
-		</a></div>
-		<h2 class="Titulo">Bienvenido Administrador</h2><br>
-		
-		<form action="ServletAdministrador" method="post">
-			
-       <%
-      	if (request.getAttribute("mensajeAdmin")!=null){
-      		out.println(request.getAttribute("mensajeAdmin"));
-      	    
-      	}
-        %>
-		
-			
-			 	 <div class="container-input-texto">
-			 	<input class="form-input" id="txt-input" type="text" name="adminEmail" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
-        	 <span class="validity"></span>     
-			 
-		       <input class="form-input" type="password" placeholder="password" id="pwd"  name="adminContraseña" required >
-           
-     
 
-			 	
-			 	<button class="log-i" onclick="myFunction()">iniciar sesión</button>
-			 	
-			 	
-			 </div>
-		</form>
-	</div>	
-    
-  
+<h1>listar empresas</h1>
 
 
 
-
-
-
-
-
+</div>
 
 <!-- Pie de página -->
     <footer>
-      <div class="mensaje">
+      <div class="copy">
         <p>Todos los derechos reservados</p>
       </div>
       <div class="footer-redes">
@@ -131,8 +100,8 @@
         </a>
       </div>
     </footer>
-  
-<script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
     <!-- <script src="js/banner.js"></script> -->
     <script src="js/stickyHeader.js"></script>
     <script src="js/scrollSuave.js"></script>
@@ -142,13 +111,14 @@
     <script src="js/validacion.js"></script>
     <script src="js/menuMobile.js"></script>
 
-
-    <script src="js/parallax.min.js"></script>
-    <!-- Buscar:
-    t(e).on("ready.px.parallax.data-api",function(){t('[data-parallax="scroll"]').parallax()})}
-
-    Reemplazar por:
-    t(function(){t('[data-parallax="scroll"]').parallax()})} -->
+    <!--  
+      <script type="text/javascript">
+    function myFunction(){
+    	alert("Error E-mail o contraseña erronea");
+    } 
+    </script>
+    -->
+   
     <script src="js/prefixfree.min.js"></script>
         <script type="text/javascript">
 			$(document).ready(function () {
@@ -171,5 +141,7 @@
 	
 	</script>
 	
+
+
 </body>
-</html>
+</html></html>

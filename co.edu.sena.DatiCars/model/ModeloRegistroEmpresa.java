@@ -63,7 +63,8 @@ public class ModeloRegistroEmpresa {
 				
 				return registroempresa;
 		}
-		
+	
+	
 }
 	
 

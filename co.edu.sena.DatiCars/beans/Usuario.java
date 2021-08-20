@@ -27,15 +27,6 @@ public class Usuario {
 	}
 
 
-	public Usuario(String usuario, String email, String contraseña, String nombre, String apellido ,  String permisos) {
-		super();
-		this.usuario = usuario;
-		this.email = email;
-		this.contraseña = contraseña;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.permisos = permisos;
-	}
 
 
 	public String getUsuario() {

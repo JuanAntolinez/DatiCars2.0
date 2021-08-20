@@ -606,6 +606,9 @@
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
       </div>
+      <nav class="menu-secundario">
+         <STYLE>A {text-decoration: none;} </STYLE> <a href="LoginAdmin.jsp">INICIAR SESIÓN ADMINISTRADOR</a>
+          </nav>
     </footer>
 
     <script src="js/jquery.min.js"></script>
