@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import connection.Conexion;
-import com.mysql.jdbc.Blob;
+
 import beans.EmpresaRegistro;
 
 

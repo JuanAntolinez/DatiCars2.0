@@ -156,8 +156,8 @@ body{
 /* ------ MAIN ------ */
 
 .container_registro_empresa{
-      width: 800px;
-      height: 600px;
+      width: 650px;
+      height: 450px;
       text-align: center;
       background-color: #A4E31E;
       border-radius: 10px;
@@ -182,21 +182,21 @@ body{
 	top: 250px;
 }
 
-.Nombre_empresa{
+.Usuario{
   width:225px;
   padding:30px;
   height: 100px;
   position: relative;
-  right: 240px;
+  right: 260px;
   color:#000;
   top: -50px;
 }
 
-.input_Nombre_empresa{
+.input_Usuario{
   width:225px;
   height:30px;
   position: relative;
-  right: 200px;
+  right: 180px;
   top: -40px;
 }
 
@@ -205,7 +205,7 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: -110px;
+  right: -70px;
   color:#000;
   top: -100px;
 }
@@ -218,76 +218,22 @@ body{
   top: -95px;
 }
 
-.Direccion{
+.Apellido{
   width:225px;
   padding:30px;
   height: 100px;
   position: relative;
-  right: 275px;
+  right: 260px;
   color:#000;
   top: -80px;
 }
 
-.input_Direccion{
+.input_Apellido{
   width:225px;
   height:30px;
   position: relative;
-  right: 200px;
-  top: -80px;
-}
-
-.Telefono{
-  width:225px;
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: -70px;
-  color:#000;
-  top: -135px;
-}
-
-.input_Telefono{
-  width:225px;
-  height:30px;
-  position: relative;
-  right: -150px;
-  top: -135px;
-}
-
-.Horario_atencion{
-  width:225px;
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: 235px;
-  color:#000;
-  top: -110px;
-}
-
-.input_Horario_atencion{
-  width:225px;
-  height:30px;
-  position: relative;
-  right: 200px;
-  top: -110px;
-}
-
-.Tipo_empresa{
-  width:225px;
-  padding:30px;
-  height: 100px;
-  position: relative;
-  right: -100px;
-  color:#000;
-  top: -165px;
-}
-
-.input_Tipo_empresa{
-  width:225px;
-  height:30px;
-  position: relative;
-  right: -150px;
-  top: -165px;
+  right: 180px;
+  top: -75px;
 }
 
 .Email{
@@ -295,17 +241,17 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: 290px;
+  right: 230px;
   color:#000;
-  top: -10px;
+  top: -60px;
 }
 
 .input_Email{
   width:225px;
   height:30px;
   position: relative;
-  right: 200px;
-  top: -10px;
+  right: 180px;
+  top: -60px;
 }
 
 .Confirmar_Email{
@@ -313,9 +259,9 @@ body{
   padding:30px;
   height: 100px;
   position: relative;
-  right: -100px;
+  right: -60px;
   color:#000;
-  top: -195px;
+  top: -190px;
 }
 
 .input_Confirmar_Email{
@@ -323,43 +269,43 @@ body{
   height:30px;
   position: relative;
   right: -150px;
-  top: -195px;
+  top: -185px;
 }
 
-.Foto_empresa{
+.Email1{
   width:225px;
   padding:30px;
   height: 100px;
   position: relative;
-  right: 255px;
+  right: 200px;
   color:#000;
-  top: -180px;
+  top: -90px;
 }
 
-.input_Foto_empresa{
+.input_Email1{
   width:225px;
   height:30px;
   position: relative;
-  right: 200px;
-  top: -180px;
+  right: 180px;
+  top: -90px;
 }
 
-.Camara_comercio{
+.Confirmar_Email1{
   width:225px;
   padding:30px;
   height: 100px;
   position: relative;
-  right: -125px;
+  right: -85px;
   color:#000;
-  top: -235px;
+  top: -220px;
 }
 
-.input_Camara_comercio{
+.input_Confirmar_Email1{
   width:225px;
   height:30px;
   position: relative;
   right: -150px;
-  top: -235px;
+  top: -215px;
 }
 
 .boton_guardar{
@@ -377,8 +323,8 @@ body{
   -webkit-transition:.5s;
   transition:.5s;
   position: relative;
-  right: -330px;
-  top: -190px;
+  right: -360px;
+  top: -170px;
 }
 
 .boton_guardar:hover{

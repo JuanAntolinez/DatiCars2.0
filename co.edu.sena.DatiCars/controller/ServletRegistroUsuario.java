@@ -21,24 +21,32 @@ import model.ModeloRegistroUsuario;
 			String nombre = request.getParameter("nombre");
 			String apellido = request.getParameter("apellido");
 			String email = request.getParameter("email");			
-			String contraseña = request.getParameter("contraseña");		
+			String contraseña = request.getParameter("contrasena");		
 			String permisos = request.getParameter("permisos");
 			
 
 			ModeloRegistroUsuario modelo = new ModeloRegistroUsuario();
-			@SuppressWarnings("unused")
-			boolean usuario = modelo.Registrate(user,nombre,apellido,email, contraseña, permisos);
+			
+			
+			if(!modelo.validarCorreo(email)) {
+				@SuppressWarnings("unused")
+				boolean usuario = modelo.Registrate(user,nombre,apellido,email, contraseña, permisos);
 
-			if (usuario) {
-				
-				request.setAttribute("mensaje", "Usuario Registrado");
+				if (usuario) {
+					
+					request.setAttribute("mensaje", "Usuario Registrado");
+					request.getRequestDispatcher("#openModalRegistro").forward(request, response);
+					
+				}
+				else {
+					request.setAttribute("mensaje", "Usuario No Registrado");
+					request.getRequestDispatcher("#openModalRegistro").forward(request, response);
+				}
+			}else {
+				request.setAttribute("mensaje", "El correo ingresado ya existe");
 				request.getRequestDispatcher("#openModalRegistro").forward(request, response);
-				
 			}
-			else {
-				request.setAttribute("mensaje", "Usuario No Registrado");
-				request.getRequestDispatcher("#openModalRegistro").forward(request, response);
-			}
+			
 		}
 
 	}

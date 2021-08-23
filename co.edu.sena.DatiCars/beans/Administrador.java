@@ -4,18 +4,18 @@ public class Administrador {
 	private int id;
 	private String adminUsuario;
 	private String adminEmail;
-	private String adminContraseña;
+	private String adminContrasena;
 	private String adminNombre;
 	private String adminApellido;
 
 	
 	
-	public Administrador(int id, String adminUsuario, String adminEmail, String adminContraseña, String adminNombre, String adminApellido) {
+	public Administrador(int id, String adminUsuario, String adminEmail, String adminContrasena, String adminNombre, String adminApellido) {
 		super();
 		this.id = id;
 		this.adminUsuario = adminUsuario;
 		this.adminEmail = adminEmail;
-		this.adminContraseña = adminContraseña;
+		this.adminContrasena = adminContrasena;
 		this.adminNombre = adminNombre;
 		this.adminApellido = adminApellido;
 
@@ -46,21 +46,21 @@ public class Administrador {
 	}
 	
 
-	public String getEmailAdmin() {
+	public String getadminEmail() {
 		return adminEmail;
 	}
 
-	public void setEmailAdmin(String adminEmail) {
+	public void setadminEmail(String adminEmail) {
 		this.adminEmail = adminEmail;
 	}
 	
 
-	public String getContraseñaAdmin() {
-		return adminContraseña;
+	public String getadminContrasena() {
+		return adminContrasena;
 	}
 
-	public void setContraseñaAdmin(String adminContraseña) {
-		this.adminContraseña = adminContraseña;
+	public void setadminContrasena(String adminContrasena) {
+		this.adminContrasena = adminContrasena;
 	}
 	
 

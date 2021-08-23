@@ -115,17 +115,17 @@
 		
 		
 		
-		        										<!--   nombre empresa Input-->
+		        									<!--   Usuario Input-->
 		        
-		         <label for="Nombre_empresa" class="Nombre_empresa">Usuario</label>
+		         <label for="Usuario" class="Usuario">Usuario</label>
 		         <br>
-		         <input class="input_Nombre_empresa" id="txt-input" type="text"  name="adminUsuario" placeholder="@pepito03" required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
-        	 <span class="validity"></span>
+		         <input class="input_Usuario" id="txt-input" type="text"  name="adminUsuario" placeholder="@pepito03" required size="11" pattern="[@]+[-a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{4,12}" title="Esté campo es obligatorio iniciando con una @, y debe tener de 4 a 12 caracteres.">     
+        	 	 <span class="validity"></span>
 		         
 		      	<br>
 		
 		
-		                                             <!--   Nombre contacto Input-->
+		                                            <!--   Nombre Input-->
 		         
 		        <label for="Nombre_contacto" class="Nombre_contacto">Nombre</label>
 		         <br>                                     
@@ -134,18 +134,18 @@
 		        <br>
 
 		        
-													<!--  direccion Input-->
+												<!--  Apellido Input-->
 		                                             
-		        <label for="Direccion" class="Direccion">Apellido</label>
+		        <label for="Direccion" class="Apellido">Apellido</label>
 		        <br>                                     
-		        <input class="input_Direccion" id="txt-input" type="text" name = "adminApellido" placeholder="Apellido" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
+		        <input class="input_Apellido" id="txt-input" type="text" name = "adminApellido" placeholder="Apellido" required size="29" pattern= "[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{3,25}" title="El nombre debe tener almenos 3 digitos y no debe tener números.">
 		        	 <span class="validity"></span>
 		        <br>
 		       
 
-							<!--   Email Input-->
+												<!--   Email Input-->
 		        		         
-		      <label for="Email" class="Email">Email</label>
+		      <label for="Email" class="Email">Confirmar Email</label>
 		      <br>   		         
 		      <input class="input_Email" id="txt-input" type="email" name = "adminEmail" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
 		        	 <span class="validity"></span>
@@ -154,20 +154,29 @@
 
 		                                       <!--  confirmar Email Input-->
 		                                       
-		      <label for="Confirmar_Email" class="Confirmar_Email">Confirmar Email</label>
+		      <label for="Confirmar_Email" class="Confirmar_Email">Email</label>
 		      <br>
 		      <input class="input_Confirmar_Email" id="txt-input" type="email" name = "confirmar_email " placeholder="Confirmar E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
 		        	 <span class="validity"></span>
 		       <br>
 		       
 		       
-		       										<!-- telefono Input-->
+		       									<!-- Contraseña Input-->
 													
-		        <label for="Telefono" class="Telefono">Contraseña</label>
-		        <br>                                     
-				<input class="form-input-Registro" id="pwd" type="password" name="adminContraseña" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+		       <label for="Email" class="Email1">Confirmar Contraseña</label>
+		       <br>   		         
+		       <input class="input_Email1" id="pwd" type="password" name="adminContrasena" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 <span class="validity"></span>
-		        <br>
+		       <br>
+				       
+				         
+				         						<!-- Confirmar Contraseña Input-->
+				          
+			   <label for="Confirmar_Email" class="Confirmar_Email1">Contraseña</label>
+		       <br>
+		       <input class="input_Confirmar_Email1" id="pwd" type="password" name="adminContrasena" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        	 <span class="validity"></span>
+		       <br>
 		
 		    
 		

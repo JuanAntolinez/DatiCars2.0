@@ -10,25 +10,27 @@ import connection.Conexion;
 
 public class ModeloActualizarContraseña {
 	public  ModeloActualizarContraseña() {}
-	public boolean actualizar(String contraseña) {
+	public boolean actualizar(String contrasena , int id) {
 
 	
 
 		Connection cn = null;
 		PreparedStatement pstm = null;
 		ResultSet rs = null;
-		boolean actualizarContraseña = false;
+		boolean actualizarContrasena = false;
 		
 		try {
 			cn = Conexion.getConexion();
 			
-			String sql = " UPDATE Usuarios  SET contraseña=?  WHERE id=?";   
+			String sql = " UPDATE Usuarios  SET contrasena=?  WHERE id=?";   
 			
 			pstm = cn.prepareStatement(sql);
-			pstm.setString(1, contraseña);
+			
+			pstm.setString(1, contrasena);
+			pstm.setInt(2, id);
 		;
 			
-			actualizarContraseña = pstm.executeUpdate() > 0;
+			actualizarContrasena = pstm.executeUpdate() > 0;
 			
 							
 		} catch (SQLException e) {
@@ -51,7 +53,53 @@ public class ModeloActualizarContraseña {
 			}
 		}
 		
-		return actualizarContraseña;
+		return actualizarContrasena;
+	}
+	
+	public boolean recuperar(String contrasena , String codigo) {
+
+		
+
+		Connection cn = null;
+		PreparedStatement pstm = null;
+		ResultSet rs = null;
+		boolean actualizarContrasena = false;
+		
+		try {
+			cn = Conexion.getConexion();
+			
+			String sql = " UPDATE Usuarios  SET contrasena=?,codigo=''  WHERE codigo=?";   
+			
+			pstm = cn.prepareStatement(sql);
+			
+			pstm.setString(1, contrasena);
+			pstm.setString(2, codigo);
+		;
+			
+			actualizarContrasena = pstm.executeUpdate() > 0;
+			
+							
+		} catch (SQLException e) {
+			System.out.print(e.getMessage());
+		} finally {
+			try {
+				if (rs != null) {
+					rs.close();
+				}
+				
+				if (pstm != null) {
+					pstm.close();
+				}
+				
+				if (cn != null) {
+					cn.close();
+				}
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		
+		return actualizarContrasena;
 	}
 }
 

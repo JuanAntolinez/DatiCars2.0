@@ -21,7 +21,19 @@
 		<a title="Inicio" href="index.jsp"><img src="img/logotipo.png" alt="Logo Daticars - DatiCars">
 		</a></div>
 		<h2 class="Titulo">Recuperar contraseña</h2><br>
-		<form>
+		
+		<%
+      	if (request.getAttribute("mensajeOlvideContraseña")!=null){
+      		out.println(request.getAttribute("mensajeOlvideContraseña"));
+      	    
+      	}
+        %>
+   
+		
+		
+		
+		
+		<form action="ServletEnviarCorreo" method="post">
 			 <div class="container-input">
 			 	<p class="Titulo">La contraseña se enviara al correo que registro al inicio de la creación de la cuenta, por favor digítelo.</p>
 			</div>

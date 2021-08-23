@@ -4,18 +4,18 @@ public class Usuario {
 	private int id;
 	private String usuario;
 	private String email;
-	private String contraseña;
+	private String contrasena;
 	private String nombre;
 	private String apellido;
 	private String permisos;
 	
 	
-	public Usuario(int id, String usuario, String email, String contraseña, String nombre, String apellido, String permisos) {
+	public Usuario(int id, String usuario, String email, String contrasena, String nombre, String apellido, String permisos) {
 		super();
 		this.id = id;
 		this.usuario = usuario;
 		this.email = email;
-		this.contraseña = contraseña;
+		this.contrasena = contrasena;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.permisos = permisos;
@@ -53,12 +53,12 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
 
 	public int getId() {

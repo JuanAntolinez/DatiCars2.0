@@ -5,13 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import connection.Conexion;
-import com.mysql.jdbc.Blob;
+
 import beans.AdministradorRegistro;
 
 public class ModeloRegistroAdministrador {
 	
 	public ModeloRegistroAdministrador () {}
-	public boolean RegistrateAdministrador( String adminUsuario, String adminEmail, String adminContraseña, String adminNombre, String adminApellido) {
+	public boolean RegistrateAdministrador( String adminUsuario,  String adminNombre, String adminApellido,String adminEmail, String adminContrasena) {
 	
 	
 				Connection cn = null;
@@ -21,13 +21,13 @@ public class ModeloRegistroAdministrador {
 				
 				try {
 					cn = Conexion.getConexion();
-					String sql = "insert into Administradores (adminUsuario, adminEmail, adminContraseña, adminNombre, adminApellido ) values (?, ?, ?, ?, ?)";
+					String sql = "insert into Administradores (adminUsuario, adminNombre, adminApellido , adminEmail, adminContrasena) values (?, ?, ?, ?, ?)";
 					pstm = cn.prepareStatement(sql);
 					pstm.setString(1, adminUsuario);
-					pstm.setString(2, adminEmail);
-					pstm.setString(3, adminContraseña);
-					pstm.setString(4, adminNombre);
-					pstm.setString(5, adminApellido);
+					pstm.setString(2, adminNombre);
+					pstm.setString(3, adminApellido);
+					pstm.setString(4, adminEmail);
+					pstm.setString(5, adminContrasena);
 				
 					registroadministrador = pstm.executeUpdate() > 0;		
 					

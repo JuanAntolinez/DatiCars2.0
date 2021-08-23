@@ -83,7 +83,10 @@
     
     <br><br><h3 style="text-align:center">ACTUALIZAR PERFIL</h3>
 				
-	<br><form action = "ActualizacionDatosUsuario" method = "post" id="miformulario">		
+	<br><form action = "ActualizacionDatosUsuario" method = "post" id="miformulario">	
+	
+	
+	<input type="hidden" name="id" value="<% out.print(request.getParameter("id")); %>">	
              
              <div id="openModalMensaje" class="modalMensajeJava">
       

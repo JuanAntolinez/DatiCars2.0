@@ -9,7 +9,7 @@ import beans.Administrador;
 
 
 public class ModeloAdministrador {	
-		public Administrador iniciarSesion(String adminEmail, String adminContraseña) {
+		public Administrador iniciarSesionAdmin(String adminEmail, String adminContrasena) {
 			Administrador administrador = null;
 			Connection cn = null;
 			PreparedStatement pstm = null;
@@ -17,18 +17,18 @@ public class ModeloAdministrador {
 			
 			try {
 				cn = Conexion.getConexion();
-				String sql = "SELECT U.id, U.adminUsuario, U.adminEmail, U.adminContraseña, U.adminNombre, U.adminApellido, FROM Administradores U WHERE U.adminEmail = ? AND  U.adminContraseña = ? "  ;
+				String sql = "SELECT U.id, U.adminUsuario, U.adminEmail, U.adminContrasena, U.adminNombre, U.adminApellido FROM Administradores U WHERE U.adminEmail = ? AND  U.adminContrasena = ?";
 				pstm = cn.prepareStatement(sql);
 				pstm.setString(1, adminEmail);
-				pstm.setString(2, adminContraseña);
+				pstm.setString(2, adminContrasena);
 				
 				rs = pstm.executeQuery();
 				
 				while (rs.next()) {
 					administrador = new Administrador();
 					administrador.setIdUsuarioAdmin(rs.getInt("id"));
-					administrador.setEmailAdmin(rs.getString("adminEmail"));
-					administrador.setContraseñaAdmin(rs.getString("adminContraseña"));
+					administrador.setadminEmail(rs.getString("adminEmail"));
+					administrador.setadminContrasena(rs.getString("adminContrasena"));
 					administrador.setNombreAdmin(rs.getString("adminNombre"));
 					administrador.setApellidoAdmin(rs.getString("adminApellido"));
 					administrador.setUsuarioAdmin(rs.getString("adminUsuario"));

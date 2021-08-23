@@ -84,7 +84,7 @@
     
     	<form action = "ActualizarContraseña" method = "post" id="miformulario">
     	
-    	 
+    	 <input type="hidden" name="id" value="<% out.print(request.getParameter("id")); %>">
     		
     		<div class="container-input">
     		
@@ -99,15 +99,16 @@
 				
 				<label for="Password" class="password_nueva">Nueva Contraseña</label>
 				          <div class="input_password_nueva">
-				           	 <input type="password" class="input_password_nueva" id="password" name="´password" placeholder="Nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+				           	 <input type="password" class="input_password_nueva" id="password" name="contrasena" placeholder="Nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 				<span class="validity"></span>
 				         </div>
 				          
 				<label for="Confirmar password" class="confirmarpassword">Confirmar nueva contraseña</label>
           			<div class="input_confirmar_password">
-           				 <input type="password" class="input_confirmar_password" id="confirmarpassword" name="´confirmarpassword" placeholder="Confirmar la nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+           				 <input type="password" class="input_confirmar_password" id="confirmarpassword" name="confirmarpassword" placeholder="Confirmar la nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 			 <span class="validity"></span>
           		    </div>
+          		    
 		    </div>          
 			 
 		          <button class="boton_actualizar" type="submit">Actualizar</button>
@@ -150,6 +151,8 @@
     });
 	
 	</script>
+	
+		
 	
 </body>
 

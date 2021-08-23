@@ -179,7 +179,7 @@
        </span>
       <!--   contraseña Input-->
       
-       <input class="form-input" type="password" placeholder="password" id="pwd"  name="contraseña" required >
+       <input class="form-input" type="password" placeholder="password" id="pwd"  name="contrasena" required >
         	 
      
      
@@ -351,7 +351,7 @@
        
                                                <!--   Contraseña Input-->
  		
-      	 <input class="form-input-Registro" id="pwd" type="password" name="contraseña" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+      	 <input class="form-input-Registro" id="pwd" type="password" name="contrasena" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 <span class="validity"></span>
          		
       

@@ -1,23 +1,23 @@
 package beans;
 
-import com.mysql.jdbc.Blob;
+
 
 public class EmpresaRegistro {
 	
 	private int id;
 	private String nombreEmpresa;
 	private String nombreContacto;
-	private Blob camaradeComercio;
+	private String camaradeComercio;
 	private String direccion;
 	private String telefono;
 	private String horarioAtencion;
 	private String producto;
-	private Blob fotoLocal;
+	private String fotoLocal;
 	private String email;
 	
 	
 
-	public EmpresaRegistro(int id, String nombreEmpresa, String nombreContacto, Blob camaradeComercio, String direccion, String telefono, String horarioAtencion, String producto, Blob fotoLocal, String email) {
+	public EmpresaRegistro(int id, String nombreEmpresa, String nombreContacto, String camaradeComercio, String direccion, String telefono, String horarioAtencion, String producto, String fotoLocal, String email) {
 		super();
 		this.id = id;
 		this.nombreEmpresa = nombreEmpresa;
@@ -72,11 +72,11 @@ public class EmpresaRegistro {
 		 
 		 /*4*/
 		 
-		 public Blob getcamaradeComercio() {
+		 public String getcamaradeComercio() {
 				return camaradeComercio;
 			}
 
-		 public void setcamaradeComercio(Blob camaradeComercio) {
+		 public void setcamaradeComercio(String camaradeComercio) {
 				this.camaradeComercio = camaradeComercio;
 			
 		    }
@@ -127,11 +127,11 @@ public class EmpresaRegistro {
 		 
 		 /*9*/
 		 
-		 public Blob getfotoLocal() {
+		 public String getfotoLocal() {
 				return fotoLocal;
 			}
 
-		 public void fotoLocal(Blob fotoLocal) {
+		 public void fotoLocal(String fotoLocal) {
 				this.fotoLocal = fotoLocal;
 			
 		    }

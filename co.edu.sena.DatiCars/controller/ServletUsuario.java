@@ -20,10 +20,10 @@ public class ServletUsuario extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String email = request.getParameter("email");
-		String contraseña = request.getParameter("contraseña");
+		String contrasena = request.getParameter("contrasena");
 	
 		ModeloUsuario modelo = new ModeloUsuario();
-		Usuario usuario = modelo.iniciarSesion(email, contraseña);
+		Usuario usuario = modelo.iniciarSesion(email, contrasena);
 		
 
 		if (usuario == null ) {

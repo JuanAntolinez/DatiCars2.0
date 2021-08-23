@@ -11,7 +11,7 @@ import beans.AdministradorRegistro;
 import model.ModeloRegistroAdministrador;
 import model.ModeloRegistroAdministrador;
 
-import com.mysql.jdbc.Blob;
+
 
 
 @WebServlet("/ServletRegistroAdministrador")
@@ -23,10 +23,11 @@ public class ServletRegistroAdministrador extends HttpServlet {
 		
 		
 		String adminUsuario = request.getParameter("adminUsuario");
-		String adminEmail = request.getParameter("adminEmail");
-		String adminContraseña = request.getParameter("adminContraseña");
 		String adminNombre = request.getParameter("adminNombre");
 		String adminApellido = request.getParameter("adminApellido");
+		String adminEmail = request.getParameter("adminEmail");
+		String adminContrasena = request.getParameter("adminContrasena");
+		
 					
 			
 		
@@ -34,17 +35,17 @@ public class ServletRegistroAdministrador extends HttpServlet {
 
 		ModeloRegistroAdministrador modelo = new ModeloRegistroAdministrador();
 		@SuppressWarnings("unused")
-		boolean administrador = modelo.RegistrateAdministrador( adminUsuario, adminEmail, adminContraseña, adminNombre, adminApellido);
+		boolean administrador = modelo.RegistrateAdministrador( adminUsuario,adminNombre, adminApellido, adminEmail, adminContrasena);
 
 		if (administrador) {
 			
 			request.setAttribute("mensajeAdministrador", "Registro Administrador.");
-			request.getRequestDispatcher("homeAdmin.jsp").forward(request, response);
+			request.getRequestDispatcher("listaRegistroAdmin.jsp").forward(request, response);
 			
 		}
 		else {
 			request.setAttribute("mensajeAdministrador", "No se Registro Administrador.");
-			request.getRequestDispatcher("homeAdmin.jsp").forward(request, response);
+			request.getRequestDispatcher("listaRegistroAdmin.jsp").forward(request, response);
 		}
 	}
 

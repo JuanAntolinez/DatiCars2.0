@@ -18,17 +18,16 @@ import javax.servlet.http.HttpSession;
 				throws ServletException, IOException {
 			
 		    
-			String user = request.getParameter("user");
-			String nombre = request.getParameter("nombre");
-			String apellido = request.getParameter("apellido");
+			
 			String email = request.getParameter("email");
+			int id = Integer.parseInt(request.getParameter("id"));
 			
 			
 			
 
 			ModeloActualizarDatosUsuario modelo = new ModeloActualizarDatosUsuario();
 			@SuppressWarnings("unused")
-			boolean usuario = modelo.Guardar(user,nombre,apellido,email);
+			boolean usuario = modelo.Guardar(email, id);
 
 			if (usuario) {
 				

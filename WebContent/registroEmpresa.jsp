@@ -77,7 +77,7 @@
 
 <div class="container_registro_empresa">
 
-		<form action = "ServletRegistroEmpresa" method = "post" id="miformulario">
+		<form action = "ServletRegistroEmpresa" method = "post" id="miformulario" enctype="multipart/form-data">
 		   
 		   <div class="con">
 		   
@@ -184,7 +184,7 @@
 		        
 		       <label for="Foto_empresa" class="Foto_empresa">Foto empresa</label>
 		       <br>                                    
-		       <input class="input_Foto_empresa" id="txt-input" type="file" name="producto" />	    
+		       <input class="input_Foto_empresa" id="txt-input" type="file" name="fotolocal" />	    
 		       <br>
 		        
 		        									<!-- camara de comercio Input-->

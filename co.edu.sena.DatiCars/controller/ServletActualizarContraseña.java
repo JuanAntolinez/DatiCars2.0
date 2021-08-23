@@ -21,13 +21,14 @@ public class ServletActualizarContraseña extends HttpServlet {
 			throws ServletException, IOException {
 		
 	    
-		String contraseña = request.getParameter("contraseña");
+		String contrasena = request.getParameter("contrasena");
+		int id = Integer.parseInt(request.getParameter("id")) ;
 	
 
 
 		ModeloActualizarContraseña modelo = new ModeloActualizarContraseña();
 		@SuppressWarnings("unused")
-		boolean usuario = modelo.actualizar(contraseña);
+		boolean usuario = modelo.actualizar(contrasena, id);
 
 		if (usuario) {
 			

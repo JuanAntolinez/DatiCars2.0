@@ -75,8 +75,8 @@
               <ul class="nav"> 
                 <li><a><span class="input-item-Registro"><i class="fa fa-user-circle">&nbsp; ${usuario.getUsuario() }</i></span></a>
                   <ul>
-                    <li><a href="perfil.jsp">PERFIL</a></li>
-                    <li><a href="actualizar-contraseña.jsp">ACTUALIZAR CONTRASEÑA</a></li>
+                    <li><a href="perfil.jsp?id=${usuario.getId() }">PERFIL</a></li>
+                    <li><a href="actualizar-contraseña.jsp?id=${usuario.getId() }">ACTUALIZAR CONTRASEÑA</a></li>
                     <li><a href="registroEmpresa.jsp">REGISTRAR MI EMPRESA</a></li>
                     <li><a href="index.jsp">CERRAR SESIÓN</a></li>
                   </ul>
