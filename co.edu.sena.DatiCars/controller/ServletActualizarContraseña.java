@@ -30,7 +30,7 @@ public class ServletActualizarContraseña extends HttpServlet {
 		@SuppressWarnings("unused")
 		boolean usuario = modelo.actualizar(contrasena, id);
 
-		if (usuario) {
+		if (usuario ) {
 			
 			request.setAttribute("mensaje", "Contraseña Actualizada");
 			

@@ -11,9 +11,36 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/inicioAdmin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     
+    
+    
+      <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer1", {
+
+     
+      data: [//array of dataSeries              
+        { //dataSeries object
+
+         /*** Change type "column" to "bar", "area", "line" or "pie"***/
+         type: "column",
+         animationEnabled: true,
+         dataPoints:  ${total }
+       }]
+     }); 
+     
+    chart.render();
+  }
+
+  
+    
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </head>
   <body>
+
+
 
 
 <header>
@@ -42,7 +69,7 @@
           <a href="listaAdmins.jsp">ADMINISTRADORES</a>
           <a href="listaEmpresas.jsp">EMPRESAS</a>
            <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
       </div>
@@ -60,7 +87,7 @@
           <a href="listaAdmins.jsp">ADMINISTRADORES</a>
           <a href="listaEmpresas.jsp">EMPRESAS</a>
            <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
 
@@ -81,6 +108,55 @@
 
 </div>
 
+
+  
+  
+  <div class="container">
+  		<div class="row">
+    		<div class="col" style="align-items:center">
+				<div class="card">
+ 		 			
+  					<div class="card-body">
+						<h5 class="card-title">Cantidad usuarios</h5>
+						<div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+ 		 			</div>
+				</div>
+				
+				
+    	
+    		</div>
+    		
+    		<div class="col" style="align-items:center">
+				<div class="card">
+ 		 			
+  					<div class="card-body">
+						<h5 class="card-title">% Empresas Registradas</h5>
+						<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+ 		 			</div>
+				</div>
+    	
+    		</div>
+    
+  		</div>
+		
+		<div class="row" style="padding-top: 20px;">
+    		<div class="col" style="align-items:center">
+				<div class="card">
+ 		 			
+  					<div class="card-body">
+						<h5 class="card-title">Empresas aliadas</h5>
+						<center><iframe src="https://www.google.com/maps/d/embed?mid=1rBpfAoQ_cfbrvGoSbd4uwGq-Uqz4BXsB" width="800" height="400"></iframe></center>
+ 		 			</div>
+				</div>
+    	
+    		</div>
+   		        
+  		</div>
+		
+	</div>
+
+
+
 <!-- Pie de página -->
     <footer>
       <div class="copy">
@@ -99,6 +175,7 @@
       </div>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <!-- <script src="js/banner.js"></script> -->
     <script src="js/stickyHeader.js"></script>

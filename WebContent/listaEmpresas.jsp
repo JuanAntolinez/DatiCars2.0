@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import= "java.util.ArrayList"%> 
+<%@ page import= "java.util.List"%> 
+<%@ page import= "beans.Empresas"%> 
+
 
 <!DOCTYPE html>
 <html>
@@ -37,12 +41,12 @@
           </a>
         </div>
         <nav class="menu-principal">
-          <a href="inicioAdmin.jsp" >INICIO</a>
-          <a href="listaUsuarios.jsp" >USUARIOS</a>
-          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
-          <a href="listaEmpresas.jsp">EMPRESAS</a>
+          
+          <a href="ServletListarUsuarios" >USUARIOS</a>
+          <a href="ServletListarAdministradores">ADMINISTRADORES</a>
+          <a href="ServletListarEmpresas">EMPRESAS</a>
            <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
       </div>
@@ -55,19 +59,19 @@
         </a>
 
         <nav class="menu-principal">
-       <a href="inicioAdmin.jsp" >INICIO</a>
-          <a href="listaUsuarios.jsp" >USUARIOS</a>
-          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
-          <a href="listaEmpresas.jsp">EMPRESAS</a>
+       
+          <a href="ServletListarUsuarios" >USUARIOS</a>
+          <a href="ServletListarAdministradores">ADMINISTRADORES</a>
+          <a href="ServletListarEmpresas">EMPRESAS</a>
            <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
 
     
 
         <div class="top-redes">
-          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars </a><!-- &nbsp; ${usuario.getUsuario() } -->
+          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars &nbsp; ${administrador.getUsuarioAdmin() } </a>
         </div>
 
       </div>
@@ -76,8 +80,60 @@
 
    
 
+<table>
+	<thead>
+		<tr>
+                    <th class="color_texto"> Id</th>
+                    <th class="color_texto">nombreEmpresa</th>
+                    <th class="color_texto">nombreContacto</th>
+                    <th class="color_texto">camaradeComercio</th>
+                    <th class="color_texto">direccion</th>
+                    <th class="color_texto">telefono</th>
+                    <th class="color_texto">horarioAtencion</th>
+                    <th class="color_texto">producto</th>
+                    <th class="color_texto">fotoLocal</th>
+                    <th class="color_texto">email</th>
+                </tr>
+	</thead>
+    <tbody>
+ 
+ 			<%
+ 				  List<Empresas> listaEmpresa = (List<Empresas>)request.getAttribute("listaEmpresa");
+            	  for (int i=0;i<listaEmpresa.size();i++) {%> 
+	            
+	           		
+	           		
+	           		<tr>
+	           			<td> <% out.println(listaEmpresa.get(i).getIdEmpresa());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getNombreEmpresa());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getNombreContacto());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getCamaradeComercio());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getDireccion());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getTelefono());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getHorarioAtencion());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getProducto());%> </td>
+	           			<td> <% out.println(listaEmpresa.get(i).getFotoLocal());%> </td>
+	                 	<td> <% out.println(listaEmpresa.get(i).getEmail());%> </td>
+	                    <td>
+                        <a href="ServletActualizacionDatosEmpresa?id=<% out.println(listaEmpresa.get(i). getIdEmpresa());%>" >Editar</a>
+                        <a href="ServletEliminarEmpresa?id=<% out.println(listaEmpresa.get(i). getIdEmpresa());%>" >Eliminar</a>
+                      </td>
+                  	</tr> 
+	         	<% } %> 
+	
+	          
+	    
+            	   
+  </tbody> 
+                     
+</table> 
 
-<h1>listar empresas</h1>
+
+
+
+
+
+
 
 
 

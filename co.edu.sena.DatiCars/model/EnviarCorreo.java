@@ -25,8 +25,9 @@ public class EnviarCorreo {
 	static final String HOST="smtp.gmail.com";
 	static final int PORT= 587;
 	static final String SUBJECT="Envio de correo desde JAVA";
-	String BODY=String.join(System.getProperty("line.separator"),"prueba de envio correo desde JavaMAil",
-			"<h1>Hola amigos</h1>","Este mensaje ah sido enviado con tecnologia java");
+	
+	String BODY=String.join(System.getProperty("line.separator"),
+			"<h1>DatiCars</h1>","Accede al siguiente enlace para recuperar tu contraseña.");
 	
 	public boolean enviarCorreoRec(String correo, String url) throws Exception{
 		
@@ -97,6 +98,8 @@ public class EnviarCorreo {
 
         return EnviarCorreo.getHash(txt, "SHA1");
     }
+    
+   
 
 }
 

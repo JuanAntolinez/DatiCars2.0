@@ -1,4 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import= "java.util.ArrayList"%> 
+<%@ page import= "java.util.List"%> 
+<%@ page import= "beans.Administrador"%> 
+
+
+
 
 <!DOCTYPE html>
 <html>
@@ -37,12 +43,12 @@
           </a>
         </div>
         <nav class="menu-principal">
-          <a href="inicioAdmin.jsp" >INICIO</a>
-          <a href="listaUsuarios.jsp" >USUARIOS</a>
-          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
-          <a href="listaEmpresas.jsp">EMPRESAS</a>
+          
+          <a href="ServletListarUsuarios" >USUARIOS</a>
+          <a href="ServletListarAdministradores">ADMINISTRADORES</a>
+          <a href="ServletListarEmpresas">EMPRESAS</a>
            <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
       </div>
@@ -55,25 +61,64 @@
         </a>
 
         <nav class="menu-principal">
-       <a href="inicioAdmin.jsp" >INICIO</a>
-          <a href="listaUsuarios.jsp" >USUARIOS</a>
-          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
-          <a href="listaEmpresas.jsp">EMPRESAS</a>
+       
+          <a href="ServletListarUsuarios" >USUARIOS</a>
+          <a href="ServletListarAdministradores">ADMINISTRADORES</a>
+          <a href="ServletListarEmpresas">EMPRESAS</a>
            <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
 
     
 
         <div class="top-redes">
-          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars </a><!-- &nbsp; ${usuario.getUsuario() } -->
+          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars &nbsp; ${administrador.getUsuarioAdmin() }</a>
         </div>
 
       </div>
     </header>
 
 
+<table>
+	<thead>
+		<tr>
+                    <th class="color_texto"> Id</th>
+                    <th class="color_texto">adminUsuario</th>
+                    <th class="color_texto">adminNombre</th>
+                    <th class="color_texto">adminApellido</th>
+                    <th class="color_texto">adminEmail</th>
+                    <th class="color_texto">rol</th>
+                </tr>
+	</thead>
+	<tbody>
+ 
+ 			<%
+            	 List<Administrador> listaAdministrador = (List<Administrador>)request.getAttribute("listaAdministrador");
+            	  for (int i=0;i<listaAdministrador.size();i++) {%> 
+	            
+	           		
+	           		
+	           		<tr>
+	           			<td> <% out.println(listaAdministrador.get(i).getIdUsuarioAdmin());%> </td>
+	           			<td> <% out.println(listaAdministrador.get(i).getUsuarioAdmin());%> </td>
+	                    <td> <% out.println(listaAdministrador.get(i).getNombreAdmin());%> </td>
+	                    <td> <% out.println(listaAdministrador.get(i).getApellidoAdmin());%> </td>
+	                    <td> <% out.println(listaAdministrador.get(i).getadminEmail());%> </td>
+	                       <td> <% out.println(listaAdministrador.get(i).getRol());%> </td>
+	                    <td>
+                        <a href="ServletActualizacionDatosAdministrador?id=<% out.println(listaAdministrador.get(i).getIdUsuarioAdmin());%>" >Editar</a>
+                        <a href="ServletEliminarAdministrador?id=<% out.println(listaAdministrador.get(i).getIdUsuarioAdmin());%>" >Eliminar</a>
+                      </td>
+                  	</tr> 
+	         	<% } %> 
+	
+	          
+	    
+            	   
+  </tbody>
+                     
+</table> 
 
 
 
@@ -82,7 +127,6 @@
 
 
 
-<h1>Lista admis Vista</h1>
 
 
 </div>

@@ -94,7 +94,7 @@ public class EmpresaRegistro {
 		
 		 /*6*/
 		 
-		 public String telefono() {
+		 public String gettelefono() {
 				return telefono;
 			}
 
@@ -116,7 +116,7 @@ public class EmpresaRegistro {
 		 
 		 /*8*/
 		 
-		 public String producto() {
+		 public String getproducto() {
 				return producto;
 			}
 
@@ -131,14 +131,14 @@ public class EmpresaRegistro {
 				return fotoLocal;
 			}
 
-		 public void fotoLocal(String fotoLocal) {
+		 public void setfotoLocal(String fotoLocal) {
 				this.fotoLocal = fotoLocal;
 			
 		    }
 		 
 		 /*10*/
 		 
-		 public String email() {
+		 public String getemail() {
 				return email;
 			}
 

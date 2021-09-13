@@ -37,7 +37,7 @@
         </div>
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
         </nav>
       </div>
 
@@ -50,7 +50,7 @@
 
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
         </nav>
 
     
@@ -64,7 +64,7 @@
       </a>
       <nav class="menu-principal">
         <a href="home.jsp">INICIO</a>
-        <a href="index.jsp">CERRAR SESIÓN</a>
+        <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
       </nav>
   
     </div>

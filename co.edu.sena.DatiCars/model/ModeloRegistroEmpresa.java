@@ -4,8 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import connection.Conexion;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
+import connection.Conexion;
 import beans.EmpresaRegistro;
 
 
@@ -65,6 +68,73 @@ public class ModeloRegistroEmpresa {
 		}
 	
 	
+	//completo
+
+	
+	
+	
+	
+	
+		
+			public EmpresaRegistro obtenerUsuario(int id) {
+				EmpresaRegistro empresa = null;
+				Connection cn = null;
+				PreparedStatement pstm = null;
+				ResultSet rs = null;
+				
+				try {
+					cn = Conexion.getConexion();
+					String sql = "SELECT U.id, U.nombreEmpresa, U.nombreContacto, U.camaradeComercio, U.direccion, U.telefono, U.horarioAtencion, U.producto, U.fotoLocal, U.email FROM Empresas U WHERE U.id=? "  ;
+					pstm = cn.prepareStatement(sql);
+					pstm.setInt(1, id);
+					
+					rs = pstm.executeQuery();
+					
+					while (rs.next()) {
+						empresa = new EmpresaRegistro();
+						
+						empresa.setnombreEmpresa(rs.getString("nombreEmpresa"));
+						empresa.setnombreContacto(rs.getString("nombreContacto"));
+						empresa.setcamaradeComercio(rs.getString("camaradeComercio"));
+						empresa.setdireccion(rs.getString("direccion"));
+						empresa.settelefono(rs.getString("telefono"));
+						empresa.sethorarioAtencion(rs.getString("horarioAtencion"));
+						empresa.setproducto(rs.getString("producto"));
+						empresa.setfotoLocal(rs.getString("fotoLocal"));
+						empresa.setemail(rs.getString("email"));
+						empresa.setIdEmpresa(rs.getInt("id"));
+					
+					}
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					try {
+						if (rs != null) {
+							rs.close();
+						}
+						
+						if (pstm != null) {
+							pstm.close();
+						}
+						
+						if (cn != null) {
+							cn.close();
+						}
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+				
+				return empresa;
+			}
+
+	
+			
+	
+	
+	
+		
 }
 	
 

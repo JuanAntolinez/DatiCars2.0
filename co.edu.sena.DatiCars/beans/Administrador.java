@@ -7,10 +7,11 @@ public class Administrador {
 	private String adminContrasena;
 	private String adminNombre;
 	private String adminApellido;
+	private String rol;
 
 	
 	
-	public Administrador(int id, String adminUsuario, String adminEmail, String adminContrasena, String adminNombre, String adminApellido) {
+	public Administrador(int id, String adminUsuario, String adminEmail, String adminContrasena, String adminNombre, String adminApellido, String rol) {
 		super();
 		this.id = id;
 		this.adminUsuario = adminUsuario;
@@ -18,6 +19,7 @@ public class Administrador {
 		this.adminContrasena = adminContrasena;
 		this.adminNombre = adminNombre;
 		this.adminApellido = adminApellido;
+		this.rol = rol;
 
 	}
 	
@@ -82,6 +84,13 @@ public class Administrador {
 		this.adminApellido = adminApellido;
 	}
 	
+	public String getRol() {
+		return rol;
+	}
+	
+	public void setRol(String rol) {
+		this.rol = rol;
+	}
 	
 }
 

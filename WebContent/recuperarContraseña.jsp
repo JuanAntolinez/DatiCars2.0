@@ -31,8 +31,8 @@
           </a>
         </div>
         <nav class="menu-principal">
-          <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="index.jsp">INICIO</a>
+          
         </nav>
       </div>
 
@@ -44,8 +44,8 @@
         </a>
 
         <nav class="menu-principal">
-          <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="index.jsp">INICIO</a>
+          
         </nav>
 
     
@@ -58,8 +58,8 @@
         <img src="img/logotipo.png" alt="logotipoDaticars - Daticars">
       </a>
       <nav class="menu-principal">
-        <a href="home.jsp">INICIO</a>
-        <a href="index.jsp">CERRAR SESIÓN</a>
+        <a href="index.jsp">INICIO</a>
+      
       </nav>
   
     </div>

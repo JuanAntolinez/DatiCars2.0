@@ -7,10 +7,10 @@ public class Usuario {
 	private String contrasena;
 	private String nombre;
 	private String apellido;
-	private String permisos;
+	private String rol;
 	
 	
-	public Usuario(int id, String usuario, String email, String contrasena, String nombre, String apellido, String permisos) {
+	public Usuario(int id, String usuario, String email, String contrasena, String nombre, String apellido, String rol) {
 		super();
 		this.id = id;
 		this.usuario = usuario;
@@ -18,7 +18,7 @@ public class Usuario {
 		this.contrasena = contrasena;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.permisos = permisos;
+		this.rol = rol;
 	}
 	
 	
@@ -85,12 +85,12 @@ public class Usuario {
 		this.apellido = apellido;
 	}
 	
-	public String getPermisos() {
-		return permisos;
+	public String getRol() {
+		return rol;
 	}
 
-	public void setPermisos(String permisos) {
-		this.permisos = permisos;
+	public void setRol(String rol) {
+		this.rol = rol;
 	}
 
 }

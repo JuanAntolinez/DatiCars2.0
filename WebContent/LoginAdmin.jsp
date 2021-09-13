@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
     <link rel="stylesheet" href="css/LoginAdmin.css">
 </head>
 <body>
@@ -32,7 +37,7 @@
         </div>
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
         </nav>
       </div>
 
@@ -88,31 +93,33 @@
         %>
 		
 			
-			 	 <div class="container-input-texto">
-			 	<input class="form-input" id="txt-input" type="text" name="adminEmail" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
-        	 <span class="validity"></span>     
-			 
-		       <input class="form-input" type="password" placeholder="password" id="pwd"  name="adminContrasena" required >
-           
+			 	 
+			 	 
+			 	<label for="Email" class="Email">Email</label>
+		        <br>
+			 	<input class="input_Email" id="txt-input" type="text" name="adminEmail" placeholder="E-mail" required size="29" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Digite su dirección de correo electrónico.">
+        	    <span class="validity"></span>    
+        
+        		<label class="Contrasena" >Contraseña</label>		        
+        		<div class="input-group">
+      			<input ID="txtPassword" type="Password" Class="input_Contrasena" placeholder="password" id="pwd"  name="adminContrasena" required >
+      			<div class="input_boton_Contrasena">
+           		<button id="show_password" class="btn btn-dark" type="button" onclick="mostrarPassword()"> <span class="fa fa-eye-slash icon"></span> </button>
+          		</div>
+   			    </div>
+   			    
+    
+               
      
 
+			 	<td colspan="2"><button class="boton_actualizar" type="submit" class="log-in" onclick="myFunction()" >iniciar sesión</button></td>
 			 	
-			 	<button class="log-i" onclick="myFunction()">iniciar sesión</button>
 			 	
-			 	
-			 </div>
+			 
 		</form>
 	</div>	
     
   
-
-
-
-
-
-
-
-
 
 <!-- Pie de página -->
     <footer>
@@ -170,6 +177,26 @@
 			});
 	
 	</script>
+	
+	<script type="text/javascript">
+function mostrarPassword(){
+		var cambio = document.getElementById("txtPassword");
+		if(cambio.type == "password"){
+			cambio.type = "text";
+			$('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+		}else{
+			cambio.type = "password";
+			$('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+		}
+	} 
+	
+	$(document).ready(function () {
+	//CheckBox mostrar contraseña
+	$('#ShowPassword').click(function () {
+		$('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+	});
+});
+</script>
 	
 </body>
 </html>

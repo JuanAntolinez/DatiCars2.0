@@ -37,12 +37,12 @@
           </a>
         </div>
         <nav class="menu-principal">
-          <a href="inicioAdmin.jsp" >INICIO</a>
-          <a href="listaUsuarios.jsp" >USUARIOS</a>
-          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
-          <a href="listaEmpresas.jsp">EMPRESAS</a>
+          
+          <a href="ServletListarUsuarios" >USUARIOS</a>
+          <a href="ServletListarAdministradores">ADMINISTRADORES</a>
+          <a href="ServletListarEmpresas">EMPRESAS</a>
           <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
       </div>
@@ -55,19 +55,19 @@
         </a>
 
         <nav class="menu-principal">
-       <a href="inicioAdmin.jsp" >INICIO</a>
-          <a href="listaUsuarios.jsp" >USUARIOS</a>
-          <a href="listaAdmins.jsp">ADMINISTRADORES</a>
-          <a href="listaEmpresas.jsp">EMPRESAS</a>
+      
+         <a href="ServletListarUsuarios" >USUARIOS</a>
+          <a href="ServletListarAdministradores">ADMINISTRADORES</a>
+          <a href="ServletListarEmpresas">EMPRESAS</a>
           <a href="listaRegistroAdmin.jsp">REGISTRAR ADMINISTRADOR</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
 
     
 
         <div class="top-redes">
-          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars </a><!-- &nbsp; ${usuario.getUsuario() } -->
+          <a href="home.jsp" class="scroll-suave">Bienvenido A DatiCars &nbsp; ${administrador.getUsuarioAdmin() } </a>
         </div>
 
       </div>

@@ -13,10 +13,20 @@
     <link rel="stylesheet" href="css/mainHome.css">
     <link rel="stylesheet" href="style.css">
     
+    
+    
    
   </head>
   <body>
-
+	
+			<%
+                    HttpSession sesion = request.getSession();
+                    
+                    if (sesion.getAttribute("rolUsuario")==null){
+                    	out.println("<script>location.replace('index.jsp');</script>");
+                        sesion.invalidate();
+                    }
+                %>
     <!-- Boton "Volver Arriba" -->
     <div class="btn-volver-arriba" id="btnVolverArriba">
       <a href="#" class="volver-arriba">
@@ -42,9 +52,9 @@
           <a href="#acercaDe" class="scroll-acercaDe">PREGUNTAS FRECUENTES</a>
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-          <a href="#contacto" class="scroll-suave">CONTACTO</a>
+          
           <a href="perfil.jsp">PERFIL</a>
-        <a href="index.jsp">CERRAR SESIÓN</a>
+        <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
           
         </nav>
       </div>
@@ -63,7 +73,7 @@
           <a href="#acercaDe" class="scroll-acercaDe">PREGUNTAS FRECUENTES</a>
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-          <a href="#contacto" class="scroll-suave">CONTACTO</a>
+         
           
 
         </nav>
@@ -78,7 +88,7 @@
                     <li><a href="perfil.jsp?id=${usuario.getId() }">PERFIL</a></li>
                     <li><a href="actualizar-contraseña.jsp?id=${usuario.getId() }">ACTUALIZAR CONTRASEÑA</a></li>
                     <li><a href="registroEmpresa.jsp">REGISTRAR MI EMPRESA</a></li>
-                    <li><a href="index.jsp">CERRAR SESIÓN</a></li>
+                    <li><a href="usuario">CERRAR SESIÓN</a></li>
                   </ul>
                 </li>
               </ul>
@@ -100,7 +110,7 @@
         <a href="#acercaDe" class="scroll-acercaDe">PREGUNTAS FRECUENTES</a>
         <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
         <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-        <a href="#contacto" class="scroll-suave">CONTACTO</a>
+      
         
         
       </nav>
@@ -147,16 +157,23 @@
       </section>
       
 
+			
+
              <!-- Proyectos -->
       <section class="proyectos" id="proyectos">
         <div class="contenedor">
+        
           <div class="titulo-seccion">
+ 			
+ 			
             <h2>Nuestros Servicios</h2>
+            
+ 
             <p>Aquí podrás ver tus sitios de interés.</p>
           </div>
+   
           <div class="galeria-proyectos">
 
-          
          
                 <p>Encuentra lo que necesitas</p><br>
                 
@@ -325,18 +342,25 @@
                     
               <img src="img/ubicacion.png" alt="Proyecto" width="30px" height="30px"> <br> <a style="text-decoration:none" href="https://www.google.com/maps/dir//Tan+Ponchado+El+Gordo,+Av.+Cra+19+%23%23148-52,+Usaqu%C3%A9n,+Bogot%C3%A1/@4.731119,-74.04488,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e3f856ed4f87857:0x90f4b8664e01da08!2m2!1d-74.0448805!2d4.7311192?hl=es" class="btn btn-success" target="_blank">Como llegar</a>
             
+            
                </div>
-            
-            
-            
-            
+
 
           </div>
         </div>
+        
+      
+        
       </section>
       
       
-      
+        <div class="titulo-seccion">
+        
+        <h2>Nuestras Empresas Aliadas</h2>
+			
+			<center><iframe src="https://www.google.com/maps/d/embed?mid=1rBpfAoQ_cfbrvGoSbd4uwGq-Uqz4BXsB" width="800" height="400"></iframe></center>
+          
+        </div>
       
       
       
@@ -426,38 +450,7 @@
         </div>
       </section>
 
-      <!-- Contacto -->
-      <div class="contacto" id="contacto" data-parallax="scroll" data-image-src="img/bg-contacto.jpg">
-        <div class="contenedor">
-          <div class="contenedor-formulario">
-            <div class="formulario" id="formulario">
-              <h2>Contáctate con nosotros</h2>
-              <p>Ingresa tus datos personales y cuentanos en que te podemos ayudar.</p>
-              <form>
-                <div>
-                  <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                  <p class="error">Por favor escribe tu nombre</p>
-                </div>
-                <div>
-                  <input type="email" name="email" placeholder="Correo electrónico" id="email">
-                  <p class="error">Por favor escribe tu correo</p>
-                </div>
-                <div>
-                  <textarea name="mensaje" placeholder="Cuéntanos tu experiencia" id="mensaje"></textarea>
-                  <p class="error">Por favor escribe tu mensaje</p>
-                </div>
-                <div>
-                  <input type="submit" name="enviar" value="Enviar">
-                </div>
-              </form>
-            </div>
 
-            <div class="foto">
-
-            </div>
-          </div>
-        </div>
-      </div>
 
     </section>
 

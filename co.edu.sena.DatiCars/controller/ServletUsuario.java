@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import org.json.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,6 +20,9 @@ public class ServletUsuario extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		HttpSession sesion = request.getSession();
+		
 		String email = request.getParameter("email");
 		String contrasena = request.getParameter("contrasena");
 	
@@ -31,10 +35,36 @@ public class ServletUsuario extends HttpServlet {
 			request.getRequestDispatcher("#openModal").forward(request, response);
 		
 		}else {
-			HttpSession sesionUsuario= request.getSession(true);
-			sesionUsuario.setAttribute("usuario", usuario);
-			response.sendRedirect("home.jsp");
-		}
+			String rolUsuario = usuario.getRol();
+			String nombreUsuario = usuario.getUsuario();
+			sesion.setAttribute("rolUsuario", rolUsuario);
+			sesion.setAttribute("nombreUsuario", nombreUsuario);
+			
+			if(rolUsuario.equals("administrador")) {
+				String totalUsuarios = modelo.totalUsuarios();
+				JSONArray  myJson = new JSONArray (totalUsuarios);
+				request.setAttribute("total", myJson);
+				request.getRequestDispatcher("inicioAdmin.jsp").forward(request, response);
+				
+								
+			}else {
+				request.setAttribute("usuario", usuario);
+				request.getRequestDispatcher("home.jsp").forward(request, response);
+				
+				
+				
+			}
+			
+			}
+
+	}
+	
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		HttpSession sesionUsuario = request.getSession();
+		sesionUsuario.invalidate();
+	    response.sendRedirect("index.jsp");
 
 	}
 			

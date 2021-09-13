@@ -39,7 +39,7 @@
         <nav class="menu-principal">
           <a href="home.jsp" >INICIO</a>
           <a href="perfil.jsp">PERFIL</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href=ServletCerrarSesion>CERRAR SESIÓN</a>
        
         </nav>
       </div>
@@ -54,7 +54,7 @@
         <nav class="menu-principal">
           <a href="home.jsp" >INICIO</a>
           <a href="perfil.jsp">PERFIL</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
        
         </nav>
 
@@ -85,9 +85,11 @@
 		    <br>
 		       <h2>Regístrate </h2>
 		      <!--     Bienvenida -->
+		      <br>
 		      <label for="mensaje_registo_empresa" class="mensaje_registo_empresa">Ingresa tus datos y se parte de esta gran familia.</label>
 		      <br>
-		      
+		      <br>
+		      <br>
 		      
 		   
 		      <%

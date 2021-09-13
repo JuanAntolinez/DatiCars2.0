@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>Actualizar Contraseña</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	 <link rel="icon" href="img/logoicon.png" type="image/png" />
 	 <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
@@ -32,7 +35,7 @@
         </div>
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
         </nav>
       </div>
 
@@ -45,7 +48,7 @@
 
         <nav class="menu-principal">
           <a href="home.jsp">INICIO</a>
-          <a href="index.jsp">CERRAR SESIÓN</a>
+          <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
         </nav>
 
     
@@ -59,7 +62,7 @@
       </a>
       <nav class="menu-principal">
         <a href="home.jsp">INICIO</a>
-        <a href="index.jsp">CERRAR SESIÓN</a>
+        <a href="ServletCerrarSesion">CERRAR SESIÓN</a>
       </nav>
   
     </div>
@@ -91,22 +94,29 @@
     		
     			<label for="password" class="password_actual">Contraseña Actual</label>
     				<div class="input_password_actual">
-    				 	<input type="password" class="input_password_actual" id="password" name="password" placeholder="Contraseña Actual"  required>
-    				 	 	<span>Mostrar</span>
+    				 	<input type="password" class="input_password_actual" id="password1" name="password" placeholder="Contraseña Actual"  required>
+    				 	 <div class="col2">
+							  <button class="btn btn-dark" type="button" onclick="mostrarContrasena1()">ver</button>
+							</div>	
     				</div>
     				 
     				
 				
 				<label for="Password" class="password_nueva">Nueva Contraseña</label>
 				          <div class="input_password_nueva">
-				           	 <input type="password" class="input_password_nueva" id="password" name="contrasena" placeholder="Nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
-        	 				<span class="validity"></span>
+				           	 <input type="password" class="input_password_nueva" id="password2" name="contrasena" placeholder="Nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+				        	 <div class="col1">
+							  <button class="btn btn-dark" type="button" onclick="mostrarContrasena2()">ver</button>
+							</div>
+				         
 				         </div>
 				          
 				<label for="Confirmar password" class="confirmarpassword">Confirmar nueva contraseña</label>
           			<div class="input_confirmar_password">
-           				 <input type="password" class="input_confirmar_password" id="confirmarpassword" name="confirmarpassword" placeholder="Confirmar la nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
-        	 			 <span class="validity"></span>
+           				 <input type="password" class="input_confirmar_password" id="password" name="contrasena" placeholder="Confirmar la nueva contraseña" required size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+        	 			 <div class="col">
+							  <button class="btn btn-dark" type="button" onclick="mostrarContrasena()">ver</button>
+							</div>
           		    </div>
           		    
 		    </div>          
@@ -150,6 +160,39 @@
        }
     });
 	
+	</script>
+	
+	<script>
+		  function mostrarContrasena(){
+		      var tipo = document.getElementById("password1");
+		      if(tipo.type == "password"){
+		          tipo.type = "text";
+		      }else{
+		          tipo.type = "password";
+		      }
+		  }
+	</script>
+	
+	<script>
+		  function mostrarContrasena1(){
+		      var tipo = document.getElementById("password2");
+		      if(tipo.type == "password"){
+		          tipo.type = "text";
+		      }else{
+		          tipo.type = "password";
+		      }
+		  }
+	</script>
+	
+	<script>
+		  function mostrarContrasena2(){
+		      var tipo = document.getElementById("password");
+		      if(tipo.type == "password"){
+		          tipo.type = "text";
+		      }else{
+		          tipo.type = "password";
+		      }
+		  }
 	</script>
 	
 		

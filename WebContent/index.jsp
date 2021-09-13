@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="http://www.example.com/style.css?ts=<?=time()?>" />
     <link rel="stylesheet" href="css/main.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
 
   </head>
   <body>
@@ -44,7 +48,7 @@
           <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-          <a href="#contacto" class="scroll-suave">CONTACTO</a>
+         
        
         </nav>
       </div>
@@ -62,7 +66,7 @@
           <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
           <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
           <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-          <a href="#contacto" class="scroll-suave">CONTACTO</a>
+          
        
         </nav>
 
@@ -91,7 +95,7 @@
         <a href="#acercaDe" class="scroll-acercaDe">ACERCA DE</a>
         <a href="#equipo" class="scroll-equipo">NUESTRO EQUIPO</a>
         <a href="#extra" class="scroll-equipo">QUIENES SOMOS</a>
-        <a href="#contacto" class="scroll-suave">CONTACTO</a>
+        
     
       </nav>
       <div class="top-redes">
@@ -177,17 +181,18 @@
       <span class="input-item">
         <i class="fa fa-key"></i>
        </span>
+       
       <!--   contraseña Input-->
       
-       <input class="form-input" type="password" placeholder="password" id="pwd"  name="contrasena" required >
-        	 
-     
-     
-<!--      Show/hide contraseña ver  -->
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-     </span>
-      <br>
+       <input ID="txtPassword" class="form-input" type="password" placeholder="password" id="pwd"  name="contrasena" required >
+       <button id="show_password" class="btn btn-dark" type="button" onclick="mostrarPassword()" style='width:50px; height:45px; top:-50px' > <span class="fa fa-eye-slash icon"></span> </button>
+       <br>
+       <br>
+
+            
+
+      
+      
       
       
       
@@ -206,6 +211,8 @@
 		
 	</div>
 	
+	
+	<br>
 	
 	                               <!--     olvide mi contraseña  -->
       
@@ -351,17 +358,10 @@
        
                                                <!--   Contraseña Input-->
  		
-      	 <input class="form-input-Registro" id="pwd" type="password" name="contrasena" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+      	 <input ID="txtPassword" class="form-input-Registro" id="pwd" type="password" name="contrasena" required placeholder="Contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 <span class="validity"></span>
-         		
-      
-      
-           									 <!--      Show/hide Contraseña  -->
-            
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
-     </span>
-      <br>
+         <button id="show_password" class="btn btn-dark" type="button" onclick="mostrarPassword1()" style='width:50px; height:45px; top:-50px' > <span class="fa fa-eye-slash icon"></span> </button>
+        <br>
 
        										<!--  Confirmar Contrasñea -->
      
@@ -373,16 +373,11 @@
      									 <!--  Confirmar Contraseña Input-->
       
       
-       <input class="form-input-Registro" id="pwd" type="password"  name="confirmar_contraseña" required placeholder="Confirmar contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
+       <input ID="txtPassword" class="form-input-Registro" id="pwd" type="password"  name="confirmar_contraseña" required placeholder="Confirmar contraseña"  size="15" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.">
         	 <span class="validity"></span>
-         		
-         		
-  
-<!--      Show/hide Confirmar Contraseña  -->
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eyeRegistro"></i>
-     </span>
-      <br>
+       <button id="show_password" class="btn btn-dark" type="button" onclick="mostrarPassword2()" style='width:50px; height:45px; top:-50px'> <span class="fa fa-eye-slash icon"></span> </button>
+      
+      
       
     <!-- permisos Para usuarioConductor -->
     
@@ -555,38 +550,8 @@
         </div>
       </section>
 
-      <!-- Contacto -->
-      <div class="contacto" id="contacto" data-parallax="scroll" data-image-src="img/bg-contacto.jpg">
-        <div class="contenedor">
-          <div class="contenedor-formulario">
-            <div class="formulario" id="formulario">
-              <h2>Contáctate con nosotros</h2>
-              <p>Ingresa tus datos personales y cuentanos en que te podemos ayudar.</p>
-              <form>
-                <div>
-                  <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                  <p class="error">Por favor escribe tu nombre</p>
-                </div>
-                <div>
-                  <input type="email" name="email" placeholder="Correo electrónico" id="email">
-                  <p class="error">Por favor escribe tu correo</p>
-                </div>
-                <div>
-                  <textarea name="mensaje" placeholder="Cuéntanos tu experiencia" id="mensaje"></textarea>
-                  <p class="error">Por favor escribe tu mensaje</p>
-                </div>
-                <div>
-                  <input type="submit" name="enviar" value="Enviar">
-                </div>
-              </form>
-            </div>
-
-            <div class="foto">
-
-            </div>
-          </div>
-        </div>
-      </div>
+  
+  
 
     </section>
 
@@ -651,6 +616,26 @@
 	
 	</script>
 	
+	<script type="text/javascript">
+		function mostrarPassword(){
+		var cambio = document.getElementById("txtPassword");
+		if(cambio.type == "password"){
+			cambio.type = "text";
+			$('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+		}else{
+			cambio.type = "password";
+			$('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+		}
+	} 
+	
+	$(document).ready(function () {
+	//CheckBox mostrar contraseña
+	$('#ShowPassword').click(function () {
+		$('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+	});
+});
+</script>
+
 	
 	
 	<!-- validación contraseñas -->
